@@ -174,7 +174,8 @@ function onSubmit(event: Event) {
             </li>
           </ul>
           <p class="pw-note hosts-block__note">
-            No degree, transcript, test score, polished portfolio or athletic benchmark is required.
+            No degree, transcript, test score, polished portfolio or athletic benchmark is required. Supporters can be based
+            anywhere; a six-week stay is not a condition of support.
           </p>
         </div>
 

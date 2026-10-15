@@ -49,7 +49,7 @@ const threeThings = [
 const commitments = [
   {
     title: 'Who this is for.',
-    text: 'Adults aged 18 or over who could join the six-week programme in Jasper. Beginners and returning learners are welcome. No transcript, test score, expensive portfolio or athletic benchmark is required for this proposed introductory programme.',
+    text: 'Adults aged 18 or over who could join the six-week programme in Jasper, in a small cohort of 6–8. Beginners and returning learners are welcome. No transcript, test score, expensive portfolio or athletic benchmark is required for this proposed introductory programme.',
   },
   {
     title: 'The rhythm.',
@@ -159,7 +159,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
           </label>
           <label class="draft-check">
             <input type="checkbox" name="offline-understood" value="Yes" data-export="Offline format understood" required>
-            <span>I have read the offline format: personal phones and internet are set aside during learning and camps, with staff emergency communications and private access exceptions.</span>
+            <span>I have read the offline format: personal phones, internet and live AI are set aside during learning and camps, with staff emergency communications and private access exceptions.</span>
           </label>
           <label class="draft-check">
             <input type="checkbox" name="status-understood" value="Yes" data-export="Proposed-programme status understood" required>
@@ -198,7 +198,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
           </li>
         </ol>
         <p class="pw-note s-offline">
-          Personal phones and internet are set aside during learning and camps. Staff emergency communications and private
+          Personal phones, internet and live AI are set aside during learning and camps. Staff emergency communications and private
           medical, accessibility and essential-contact exceptions remain available.
         </p>
         <p class="pw-actions">

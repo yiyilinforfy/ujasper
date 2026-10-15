@@ -7,37 +7,37 @@ import '../styles/pathway.css'
 
 const areas = [
   {
-    name: 'Fieldcraft & outdoor judgment',
+    name: 'Fieldcraft and physical practice',
     focus: ['Preparation', 'Navigation', 'Hiking', 'Camping'],
     hours: 36,
     text: 'Teach preparation, navigation, hiking and serviced camping. Bring terrain-appropriate qualifications, first aid and sound local judgment.',
   },
   {
-    name: 'Martial arts & restraint',
+    name: 'Martial arts and restraint',
     focus: ['Balance', 'Footwork', 'Pad work', 'Knowing when to stop'],
     hours: 18,
     text: 'Teach balance, footwork, controlled pad work and the decision to stop. Bring relevant coaching competence and consent-based beginner teaching.',
   },
   {
-    name: 'Attention & reflective practice',
+    name: 'Attention and reflective practice',
     focus: ['Meditation', 'Reflection', 'Equal alternatives'],
     hours: 12,
     text: 'Offer short, accessible meditation and reflection, with equal alternatives. Bring appropriate training, clear boundaries and a thoughtful response to discomfort.',
   },
   {
-    name: 'Mathematics & physics',
+    name: 'Jasper as Laboratory',
     focus: ['Units', 'Mechanics', 'Uncertainty', 'Experiments'],
     hours: 30,
     text: 'Make models testable. Teach units, mechanics, uncertainty and reproducible experiments, including the introductory chemistry investigation.',
   },
   {
-    name: 'Philosophy & world humanities',
+    name: 'Philosophy and the Jasper Tutorial',
     focus: ['Primary texts', 'Context', 'Opposing arguments'],
     hours: 30,
     text: 'Help learners read primary texts carefully, understand context, present opposing arguments fairly and revise their own claims.',
   },
   {
-    name: 'Original inquiry & the commons',
+    name: 'The Commons and original inquiry',
     focus: ['Questions', 'Tested artifacts', 'Feedback', 'Authorship'],
     hours: 18,
     text: 'Guide useful projects from a question to a tested artifact. Teach feedback, authorship, resource choices and individual accountability.',
@@ -246,7 +246,8 @@ const pad = (n: number) => String(n).padStart(2, '0')
         </ol>
         <p class="pw-note t-areas__note">
           Hours shown are the learner-facing course allocation across six weeks. Preparation, assessment, coordination
-          and camping supervision require separate time and agreed resources. More than one person may share an area.
+          and camping supervision require separate time and agreed resources. More than one person may share an area, and
+          one person may contribute to more than one area when qualified and available.
         </p>
       </div>
     </section>
