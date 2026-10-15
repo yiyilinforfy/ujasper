@@ -3,30 +3,10 @@ import AppLink from '../components/AppLink.vue'
 import { imageUrl } from '../images'
 
 const pathways = [
-  {
-    to: '/join/students',
-    title: 'Bring a question',
-    text: 'Explore the Field Semester and prepare a thoughtful introduction.',
-    image: 'apply-signing',
-  },
-  {
-    to: '/join/teachers',
-    title: 'Teach something that matters',
-    text: 'Help a learner see, test and explain what they could not before.',
-    image: 'teach-classroom',
-  },
-  {
-    to: '/join/hosts',
-    title: 'Make a place for learning',
-    text: 'Offer a local connection, a session, resources or a useful task.',
-    image: 'join-hosts',
-  },
-  {
-    to: '/support',
-    title: 'Help establish the first chapter',
-    text: 'Start with people, a defined milestone and evidence.',
-    image: 'founding-chairs',
-  },
+  { to: '/join/teachers', title: 'Teach in the field semester', image: 'teach-classroom' },
+  { to: '/join/students', title: 'Apply for the field semester', image: 'apply-signing' },
+  { to: '/join/hosts', title: 'Offer a place, a skill or a hand in founding', image: 'join-hosts' },
+  { to: '/support', title: 'Help found the university', image: 'founding-chairs' },
 ]
 </script>
 
@@ -34,22 +14,16 @@ const pathways = [
   <section class="join" aria-labelledby="join-title">
     <div class="container join__inner">
       <div class="join__copy">
-        <p class="join__label">The founding community</p>
-        <h1 id="join-title" class="join__title">A school begins<br><em>with people.</em></h1>
+        <p class="join__label">Join us</p>
+        <h1 id="join-title" class="join__title">We are recruiting <em>teachers, students and hosts.</em></h1>
         <p class="join__text">
-          Bring intellectual depth, practical skill, local knowledge or a question worth pursuing. There are several ways
-          to help shape the first chapter.
+          Choose the entry that fits you. Each one opens an application form: fill it in, download your answers and
+          email them to us.
         </p>
-        <p class="join__label join__label--ways">Choose your way in</p>
-        <h2 class="join__subtitle">What would you<br><em>bring to Jasper?</em></h2>
-        <p class="join__text">
-          General inquiries are welcome at vincent@ujasper.ca. Formal admissions and appointments are not open. Website
-          forms prepare local drafts and never submit automatically; a draft is not an application, reservation or offer.
-        </p>
-        <p class="join__actions">
-          <a class="cta cta--primary" href="mailto:vincent@ujasper.ca?subject=University%20of%20Jasper%20inquiry">
-            Send a general inquiry <span class="cta__arrow" aria-hidden="true">→</span>
-          </a>
+        <p class="join__note">
+          Formal admissions and appointments are not open yet. Forms prepare a draft on your device and never submit
+          automatically; a draft is not an application, reservation or offer. General inquiries:
+          <a href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>.
         </p>
       </div>
 
@@ -57,7 +31,6 @@ const pathways = [
         <li v-for="item in pathways" :key="item.to">
           <AppLink class="join-card" :to="item.to" :style="{ '--join-card-image': `url('${imageUrl(item.image, 960)}')` }">
             <span class="join-card__title">{{ item.title }} <span aria-hidden="true">→</span></span>
-            <span class="join-card__text">{{ item.text }}</span>
           </AppLink>
         </li>
       </ul>
@@ -76,7 +49,7 @@ const pathways = [
   font-family: var(--font-sans);
 }
 
-.join :where(h1, h2, p, ul) {
+.join :where(h1, p, ul) {
   margin: 0;
 }
 
@@ -96,11 +69,6 @@ const pathways = [
   color: var(--color-cobalt);
 }
 
-.join__label--ways {
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-3);
-}
-
 .join__title {
   font-family: var(--font-serif);
   font-size: var(--text-display);
@@ -109,18 +77,9 @@ const pathways = [
   line-height: 1.2;
 }
 
-.join__title em,
-.join__subtitle em {
+.join__title em {
   display: block;
   color: var(--color-cobalt);
-}
-
-.join__subtitle {
-  font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
 }
 
 .join__text {
@@ -132,12 +91,18 @@ const pathways = [
   color: var(--color-muted);
 }
 
-.join__label--ways + .join__subtitle + .join__text {
-  margin-top: var(--space-4);
+.join__note {
+  max-width: 34rem;
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-line);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-muted);
 }
 
-.join__actions {
-  margin-top: var(--space-5);
+.join__note a {
+  color: inherit;
 }
 
 .join__cards {
@@ -184,14 +149,6 @@ const pathways = [
   font-family: var(--font-serif);
   font-size: 1.5rem;
   line-height: 1.25;
-}
-
-.join-card__text {
-  max-width: 28rem;
-  font-size: 0.9375rem;
-  font-weight: 300;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.86);
 }
 
 .join-card:focus-visible {

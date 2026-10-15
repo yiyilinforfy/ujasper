@@ -122,26 +122,10 @@ const inquiries = [
 ]
 
 const routes = [
-  {
-    title: 'Bring a question',
-    text: 'Explore the Field Semester and prepare a thoughtful introduction.',
-    to: '/join/students',
-  },
-  {
-    title: 'Teach something that matters',
-    text: 'Help a learner see, test and explain what they could not before.',
-    to: '/join/teachers',
-  },
-  {
-    title: 'Make a place for learning',
-    text: 'Offer a local connection, a session, resources or a useful task.',
-    to: '/join/hosts',
-  },
-  {
-    title: 'Help establish the first chapter',
-    text: 'Start with people, a defined milestone and evidence.',
-    to: '/support',
-  },
+  { who: 'Teachers', title: 'Join our teaching team', to: '/join/teachers' },
+  { who: 'Students', title: 'Join the first semester', to: '/join/students' },
+  { who: 'Hosts', title: 'Share your place or skills', to: '/join/hosts' },
+  { who: 'Founding supporters', title: 'Help found the university', to: '/support' },
 ]
 
 const activeInquiry = ref(0)
@@ -329,8 +313,8 @@ function onTabKeydown(event: KeyboardEvent, index: number) {
       <ul class="home-routes">
         <li v-for="route in routes" :key="route.to">
           <AppLink class="home-routes__card" :to="route.to">
+            <span class="sec-label">{{ route.who }}</span>
             <span class="home-routes__title">{{ route.title }}</span>
-            <span class="home-routes__text">{{ route.text }}</span>
             <span class="home-routes__arrow" aria-hidden="true">→</span>
           </AppLink>
         </li>
@@ -872,10 +856,8 @@ h3 {
   transition: color var(--duration) var(--ease);
 }
 
-.home-routes__text {
-  font-size: 0.875rem;
-  line-height: 1.625;
-  color: var(--color-muted);
+.home-routes__card .sec-label {
+  color: var(--color-cobalt);
 }
 
 .home-routes__arrow {
@@ -1108,14 +1090,20 @@ h3 {
   }
 
   .home-routes__card {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: var(--space-4);
     padding-right: 0;
   }
 
+  .home-routes__card .sec-label {
+    flex-basis: 100%;
+  }
+
   .home-routes__arrow {
-    margin-left: 0;
-    padding-top: var(--space-2);
+    margin-left: auto;
+    padding-top: 0;
   }
 
   .home-work__media {

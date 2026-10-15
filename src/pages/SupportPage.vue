@@ -57,7 +57,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
                 <span>Read the supporter brief</span>
                 <span aria-hidden="true">↗</span>
               </a>
-              <AppLink class="fd-button fd-button--ghost" to="/join/hosts?role=Supporter#draft">
+              <AppLink class="fd-button fd-button--ghost" to="/join/hosts#introduction">
                 <span>Prepare a supporter introduction</span>
                 <span aria-hidden="true">→</span>
               </AppLink>
@@ -202,7 +202,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
           before considering a commitment. You can begin with a short email or a private draft.
         </p>
         <div class="fd-close__actions">
-          <AppLink class="fd-button fd-button--dark" to="/join/hosts?role=Supporter#draft">
+          <AppLink class="fd-button fd-button--dark" to="/join/hosts#introduction">
             <span>Prepare a supporter introduction</span>
             <span aria-hidden="true">→</span>
           </AppLink>

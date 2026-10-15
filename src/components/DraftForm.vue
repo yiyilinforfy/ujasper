@@ -1,40 +1,24 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useApplicationForm, type ApplicationKind } from '../composables/useApplicationForm'
 import ResponsiveImage from './ResponsiveImage.vue'
 
 const props = defineProps<{
   kind: ApplicationKind
-  /** Optional uppercase label above the hero title. */
-  label?: string
-  /** Hero title; may include <br> and <em> (trusted page copy). */
   heading: string
   text: string
   /** Hero photo name from scripts/optimize-images.mjs. */
   image: string
+  formTitle: string
   worksheet: string
-  /** Query parameter that may pre-select a matching field, e.g. `area` or `role`. */
-  preselect?: string
+  subject: string
 }>()
 
-const {
-  current,
-  message,
-  reviewText,
-  stepLabel,
-  remember,
-  confirmClear,
-  next,
-  back,
-  download,
-  chooseRole,
-  setRemember,
-  saveNow,
-  clearDraft,
-} = useApplicationForm(props.kind, props.preselect)
+const { current, message, reviewText, stepLabel, next, back, download, chooseRole } = useApplicationForm(props.kind)
 
 defineExpose({ chooseRole })
 
-const onRemember = (event: Event) => setRemember((event.target as HTMLInputElement).checked)
+const mailto = computed(() => `mailto:vincent@ujasper.ca?subject=${encodeURIComponent(props.subject)}`)
 </script>
 
 <template>
@@ -42,28 +26,24 @@ const onRemember = (event: Event) => setRemember((event.target as HTMLInputEleme
     <section class="draft-hero hero-media" aria-labelledby="application-heading">
       <ResponsiveImage class="hero-media__image" :name="image" priority />
       <div class="container draft-hero__inner">
-        <p v-if="label" class="draft-hero__label">{{ label }}</p>
-        <h1 id="application-heading" class="draft-hero__title" v-html="heading"></h1>
+        <h1 id="application-heading" class="draft-hero__title">{{ heading }}</h1>
         <p class="draft-hero__text">{{ text }}</p>
       </div>
     </section>
 
-    <section id="draft" class="draft-section" aria-labelledby="application-form-title">
+    <section id="application" class="draft-section" aria-labelledby="application-form-title">
       <div class="container draft-section__inner">
         <div class="draft__paper">
           <noscript>
             <p class="draft-help">
-              The guided form needs JavaScript. <a :href="worksheet">Download the blank worksheet</a> instead.
+              The guided form needs JavaScript. <a :href="worksheet">Download the blank worksheet instead.</a>
             </p>
           </noscript>
           <div class="draft__intro">
             <div>
-              <p class="draft__eyebrow">A local draft · nothing submitted</p>
-              <h2 id="application-form-title" class="draft__title">
-                Begin with something<br><em>only you can bring.</em>
-              </h2>
+              <h2 id="application-form-title" class="draft__title">{{ formTitle }}</h2>
               <p class="draft-help">
-                Use this as a thinking space. Required fields are marked. Keep the draft until formal instructions are published. For a short general inquiry, email <a href="mailto:vincent@ujasper.ca">vincent@ujasper.ca.</a>
+                Fill in the form, download your answers and email them to <a :href="mailto">vincent@ujasper.ca</a>.
               </p>
             </div>
             <div class="draft__progress" role="group" aria-label="Form progress">
@@ -73,30 +53,12 @@ const onRemember = (event: Event) => setRemember((event.target as HTMLInputEleme
               </div>
             </div>
           </div>
-
-          <form ref="form" :data-kind="kind" method="dialog" novalidate @submit.prevent>
-            <div class="draft__save">
-              <label class="draft-check">
-                <input type="checkbox" :checked="remember" @change="onRemember">
-                <span>Save my answers in this browser on this device. Do not use this on a shared device.</span>
-              </label>
-              <p class="draft-help">
-                Without this choice, refreshing or leaving clears unsaved answers. Saved drafts stay until you clear them
-                or browser storage is removed. Download a copy for your own backup.
-              </p>
-            </div>
-
+          <form ref="form" :data-kind="kind" method="dialog" @submit.prevent>
             <slot :current="current" />
 
-            <section
-              ref="review"
-              class="draft__review"
-              :hidden="current !== 3"
-              tabindex="-1"
-              aria-labelledby="draft-review-title"
-            >
-              <h3 id="draft-review-title" class="draft__review-title">Review your introduction</h3>
-              <p class="draft-help">Your draft stays yours. Downloading it sends nothing to University of Jasper.</p>
+            <section ref="review" class="draft__review" :hidden="current !== 3" tabindex="-1" aria-labelledby="draft-review-title">
+              <h3 id="draft-review-title" class="draft__review-title">Review your answers</h3>
+              <p class="draft-help">Go back to revise, or download a copy to email.</p>
               <pre>{{ reviewText }}</pre>
             </section>
 
@@ -105,31 +67,18 @@ const onRemember = (event: Event) => setRemember((event.target as HTMLInputEleme
                 <span aria-hidden="true">←</span> Back
               </button>
               <button v-if="current < 3" type="button" class="cta cta--primary" @click="next">
-                {{ current === 2 ? 'Review my draft' : 'Continue' }}
-                <span class="cta__arrow" aria-hidden="true">→</span>
+                {{ current === 2 ? 'Review' : 'Continue' }} <span class="cta__arrow" aria-hidden="true">→</span>
               </button>
               <button v-else type="button" class="cta cta--primary" @click="download">
-                Download my draft <span aria-hidden="true">↓</span>
+                Download my answers <span aria-hidden="true">↓</span>
               </button>
             </div>
-
-            <div class="draft__tools">
-              <div class="draft__tools-buttons">
-                <button type="button" class="draft__tool" @click="saveNow">Save on this device</button>
-                <button type="button" class="draft__tool" @click="clearDraft">Clear this draft</button>
-              </div>
-              <label class="draft-check">
-                <input v-model="confirmClear" type="checkbox">
-                <span>I confirm I want to clear my answers and this browser’s saved copy.</span>
-              </label>
-            </div>
-
-            <p class="draft__message" role="status" aria-live="polite">{{ message }}</p>
+            <p class="draft__message" role="status">{{ message }}</p>
           </form>
         </div>
 
         <p class="draft__fineprint">
-          Prefer paper?
+          Required fields are marked *. Prefer paper?
           <a :href="worksheet" download>Download a blank worksheet <span aria-hidden="true">↓</span></a>
         </p>
       </div>

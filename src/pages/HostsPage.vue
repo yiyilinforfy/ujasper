@@ -1,260 +1,154 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, onUnmounted, ref, useTemplateRef, watch } from 'vue'
-import { useRoute } from 'vue-router'
-import AppLink from '../components/AppLink.vue'
-import DraftForm from '../components/DraftForm.vue'
+import { ref } from 'vue'
 import ResponsiveImage from '../components/ResponsiveImage.vue'
+import { jasperDownload } from '../composables/useExportDialog'
 import '../styles/pathway.css'
 
 const roles = [
-  {
-    title: 'Local host',
-    text: 'Help identify suitable space or local arrangements. Describe your Jasper connection and the particular dates or activity you could support.',
-  },
-  {
-    title: 'Activity lead',
-    text: 'Bring relevant qualifications for a defined programme. Six-week availability is only needed if the agreed role requires it.',
-  },
-  {
-    title: 'Learning contributor',
-    text: 'You may offer one session or a longer role. Tell us your subject and realistic availability.',
-  },
+  { title: 'Local host', text: 'Take responsibility for the venue, local permissions and a clear contact channel.' },
+  { title: 'Activity lead', text: 'Define a suitable programme, accessibility choices, weather decisions and emergency procedures.' },
+  { title: 'Learning contributor', text: 'Facilitate one thoughtful session or review a student project.' },
   {
     title: 'Supporter',
-    text: 'Supporters may live anywhere. A six-week stay in Jasper is not required. Tell us what interests you and what information you would need before a conversation.',
+    text: 'Offer space, printing or another specific resource. We are not collecting money or issuing charitable tax receipts.',
   },
   {
     title: 'Founding director',
-    text: 'Discuss a founding role in establishing the university. No partnership, venue booking, appointment or funding commitment is created by an introduction.',
+    text: 'Discuss a founding role in establishing the university. The legal structure and governing documents remain to be established.',
   },
 ]
 
-const pathways = [
-  {
-    to: '/join/students',
-    title: 'Bring a question',
-    text: 'Explore the Field Semester and prepare a thoughtful introduction.',
-  },
-  {
-    to: '/join/teachers',
-    title: 'Teach something that matters',
-    text: 'Help a learner see, test and explain what they could not before.',
-  },
-  {
-    to: '/join/hosts',
-    title: 'Make a place for learning',
-    text: 'Offer a local connection, a session, resources or a useful task.',
-  },
-  {
-    to: '/support',
-    title: 'Help establish the first chapter',
-    text: 'Start with people, a defined milestone and evidence.',
-  },
+const requirements = [
+  { title: '18 or over', text: 'Every role and introduction is for adults.' },
+  { title: 'Able to be in Jasper', text: 'You can take part in person, in Jasper, Alberta.' },
+  { title: 'Respectful with others', text: 'You can work alongside learners, staff and local partners with care.' },
+  { title: 'Time for the programme', text: 'You can make time for the proposed six-week programme.' },
 ]
 
 const process = [
   {
     title: 'Prepare your introduction',
-    text: 'Use the draft below as a thinking space. Required fields are marked. Keep the draft until formal instructions are published.',
+    text: 'Tell us what you want to explore, what you have tried and how you could contribute. A small unfinished project is welcome.',
   },
   {
-    title: 'Keep a clear scope',
-    text: 'Local hosts may help identify suitable space or local arrangements. Activity leads bring relevant qualifications. Learning contributors may offer one session.',
+    title: 'Meet the local host',
+    text: 'Once enrolment opens, a short conversation will establish interests, availability and participation needs.',
   },
   {
-    title: 'No commitment yet',
-    text: 'Supporters can be based anywhere; a six-week stay is not a condition of support. No partnership, venue booking, appointment or funding commitment is created by an introduction.',
+    title: 'Review the real arrangements',
+    text: 'Venue, dates, activity scope, named leaders, total costs and participation terms must be provided before you decide.',
   },
 ]
 
-const steps = ['Your introduction', 'Your work and questions', 'Your commitments'] as const
-const contributionOptions = roles.map(role => role.title)
+const contributions = roles.map(role => role.title)
+
 const pad = (n: number) => String(n).padStart(2, '0')
 
-const selectedRole = ref('Local host')
-const availabilityRequired = computed(
-  () => selectedRole.value === 'Local host' || selectedRole.value === 'Activity lead',
-)
+const status = ref('')
 
-const roleGuidance = computed(() => {
-  if (selectedRole.value === 'Local host' || selectedRole.value === 'Activity lead') {
-    return 'Describe your Jasper connection and the particular dates or activity you could support. Six-week availability is only needed if the agreed role requires it.'
-  }
-  if (selectedRole.value === 'Learning contributor') {
-    return 'You may offer one session or a longer role. Tell us your subject and realistic availability.'
-  }
-  return 'Supporters may live anywhere. A six-week stay in Jasper is not required. Tell us what interests you and what information you would need before a conversation.'
-})
-
-const draft = useTemplateRef<InstanceType<typeof DraftForm>>('draft')
-const route = useRoute()
-
-function onRoleChange(event: Event) {
-  selectedRole.value = (event.target as HTMLInputElement).value
+function onSubmit(event: Event) {
+  const form = event.currentTarget as HTMLFormElement
+  if (!form.reportValidity()) return
+  const data = new FormData(form)
+  const text =
+    'JASPER — PERSONAL INTRODUCTION DRAFT\nNOT SUBMITTED. NOT AN ENROLMENT RECEIPT, FUNDING COMMITMENT OR DIRECTOR APPOINTMENT.\n\n' +
+    'Name: ' +
+    data.get('name') +
+    '\nContact email: ' +
+    (data.get('email') || '—') +
+    '\nRole: ' +
+    data.get('role') +
+    '\n\nWhat I want to explore or offer:\n' +
+    data.get('idea') +
+    '\n\nSomething I have tried:\n' +
+    data.get('example') +
+    '\n\nConnection to Jasper and availability:\n' +
+    data.get('availability') +
+    '\n\nI confirm I am 18 or over.\n\nKeep this draft until the founder confirms an official contact address at ujasper.ca. No application has been sent.\n'
+  jasperDownload('jasper-introduction-draft.txt', text)
+  status.value = 'Your draft is ready in the export panel. Nothing has been submitted.'
 }
-
-function syncRoleFromForm() {
-  const checked = document.querySelector<HTMLInputElement>('#draft input[name="role"]:checked')
-  if (checked) selectedRole.value = checked.value
-}
-
-onMounted(async () => {
-  const requested = route.query.role
-  if (typeof requested === 'string' && contributionOptions.includes(requested)) {
-    selectedRole.value = requested
-  }
-  await nextTick()
-  syncRoleFromForm()
-  if (!document.querySelector('#draft input[name="role"]:checked')) {
-    draft.value?.chooseRole(selectedRole.value)
-  }
-  document.getElementById('draft')?.addEventListener('draft-cleared', syncRoleFromForm)
-})
-
-onUnmounted(() => {
-  document.getElementById('draft')?.removeEventListener('draft-cleared', syncRoleFromForm)
-})
-
-watch(
-  () => route.query.role,
-  requested => {
-    if (typeof requested === 'string' && contributionOptions.includes(requested)) {
-      selectedRole.value = requested
-      draft.value?.chooseRole(requested)
-    }
-  },
-)
 </script>
 
 <template>
   <div class="pw">
-    <DraftForm
-      ref="draft"
-      kind="host"
-      label="Hosts, contributors and supporters"
-      heading="Bring your place,<br><em>practice or possibility.</em>"
-      text="A local host, an occasional educator and an overseas supporter bring different things. Tell us what you could realistically offer."
-      image="join-hosts"
-      worksheet="/host-application-worksheet.txt"
-      preselect="role"
-    >
-      <template #default="{ current }">
-        <fieldset class="draft-step" data-step="0" :hidden="current !== 0">
-          <legend>{{ steps[0] }}</legend>
-          <div class="draft-field draft-field--c1">
-            <label class="draft-label" for="host-name">Your name <span aria-hidden="true">*</span></label>
-            <input
-              id="host-name"
-              class="draft-input"
-              name="name"
-              data-export="Your name"
-              type="text"
-              maxlength="250"
-              required
-              autocomplete="name"
-            >
-          </div>
-          <div class="draft-field draft-field--c1">
-            <label class="draft-label" for="host-email">
-              Email for your own draft <span class="draft-optional">Optional</span>
-            </label>
-            <p id="host-email-help" class="draft-help">No address is sent to us by this tool.</p>
-            <input
-              id="host-email"
-              class="draft-input"
-              name="email"
-              data-export="Email for your own draft"
-              type="email"
-              maxlength="250"
-              autocomplete="email"
-              aria-describedby="host-email-help"
-            >
-          </div>
-          <fieldset class="draft-field draft-field--full draft-choices">
-            <legend>How you would like to contribute <span aria-hidden="true">*</span></legend>
-            <label v-for="(role, i) in contributionOptions" :key="role" class="draft-choice">
-              <input
-                type="radio"
-                name="role"
-                :value="role"
-                data-export="How you would like to contribute"
-                :required="i === 0"
-                @change="onRoleChange"
-              >
-              <span>{{ role }}</span>
-            </label>
-            <p id="role-guidance" class="draft-help hosts-role-guidance" aria-live="polite">{{ roleGuidance }}</p>
-          </fieldset>
-        </fieldset>
+    <section class="draft-hero hero-media" aria-labelledby="hosts-heading">
+      <ResponsiveImage class="hero-media__image" name="join-hosts" priority />
+      <div class="container draft-hero__inner">
+        <h1 id="hosts-heading" class="draft-hero__title">We are looking for hosts and founding partners.</h1>
+        <p class="draft-hero__text">
+          Local hosts, activity leads, learning contributors, supporters and future founding directors who can help the
+          first gathering take shape in Jasper.
+        </p>
+      </div>
+    </section>
 
-        <fieldset class="draft-step" data-step="1" :hidden="current !== 1">
-          <legend>{{ steps[1] }}</legend>
-          <div class="draft-field draft-field--c1 draft-field--rows2">
-            <label class="draft-label" for="host-offer">
-              What could you offer or help us explore? <span aria-hidden="true">*</span>
-            </label>
-            <textarea
-              id="host-offer"
-              class="draft-input"
-              name="offer"
-              data-export="What could you offer or help us explore?"
-              rows="4"
-              maxlength="12000"
-              required
-            ></textarea>
+    <section id="introduction" class="draft-section" aria-labelledby="hosts-form-title">
+      <div class="container draft-section__inner">
+        <div class="draft__paper">
+          <div class="draft__intro">
+            <div>
+              <h2 id="hosts-form-title" class="draft__title">Introduction form</h2>
+              <p class="draft-help">Fill in the form and download your introduction as a text file.</p>
+            </div>
           </div>
-          <div class="draft-field draft-field--c1 draft-field--rows2">
-            <label class="draft-label" for="host-evidence">
-              Relevant experience, resources or questions <span class="draft-optional">Optional</span>
-            </label>
-            <textarea
-              id="host-evidence"
-              class="draft-input"
-              name="evidence"
-              data-export="Relevant experience, resources or questions"
-              rows="4"
-              maxlength="12000"
-            ></textarea>
-          </div>
-          <div class="draft-field draft-field--c2 draft-field--rows2">
-            <label class="draft-label" for="host-availability">
-              Connection and availability
-              <span v-if="availabilityRequired" aria-hidden="true">*</span>
-              <span v-else class="draft-optional">Optional</span>
-            </label>
-            <textarea
-              id="host-availability"
-              class="draft-input"
-              name="availability"
-              data-export="Connection and availability"
-              rows="4"
-              maxlength="12000"
-              :required="availabilityRequired"
-            ></textarea>
-          </div>
-        </fieldset>
 
-        <fieldset class="draft-step draft-step--three" data-step="2" :hidden="current !== 2">
-          <legend>{{ steps[2] }}</legend>
-          <label class="draft-check">
-            <input type="checkbox" name="adult" value="Yes" data-export="I am 18 or older" required>
-            <span>I am 18 or older (required)</span>
-          </label>
-          <label class="draft-check">
-            <input
-              type="checkbox"
-              name="status"
-              value="Yes"
-              data-export="I understand that this draft creates no appointment, financial commitment or agreement"
-              required
-            >
-            <span>
-              I understand that this draft creates no appointment, financial commitment or agreement (required)
-            </span>
-          </label>
-        </fieldset>
-      </template>
-    </DraftForm>
+          <form @submit.prevent="onSubmit">
+            <div class="draft-step">
+              <fieldset class="draft-field draft-field--full draft-choices">
+                <legend>How would you like to contribute? <span aria-hidden="true">*</span></legend>
+                <label v-for="(role, i) in contributions" :key="role" class="draft-choice">
+                  <input type="radio" name="role" :value="role" :required="i === 0">
+                  <span>{{ role }}</span>
+                </label>
+              </fieldset>
+
+              <div class="draft-field draft-field--c1">
+                <label class="draft-label" for="intro-name">Name or preferred name <span aria-hidden="true">*</span></label>
+                <input id="intro-name" class="draft-input" name="name" type="text" autocomplete="name" maxlength="100" required>
+              </div>
+              <div class="draft-field draft-field--c1">
+                <label class="draft-label" for="intro-email">Contact email <span class="draft-optional">Optional</span></label>
+                <input id="intro-email" class="draft-input" name="email" type="email" autocomplete="email" maxlength="200">
+              </div>
+              <div class="draft-field draft-field--c2 draft-field--rows2">
+                <label class="draft-label" for="intro-idea">What would you like to explore or offer? <span aria-hidden="true">*</span></label>
+                <textarea id="intro-idea" class="draft-input" name="idea" maxlength="3000" required placeholder="One question, project or practical offer is enough."></textarea>
+              </div>
+              <div class="draft-field draft-field--c1">
+                <label class="draft-label" for="intro-example">Something you have tried, made or helped with</label>
+                <textarea id="intro-example" class="draft-input" name="example" maxlength="3000"></textarea>
+              </div>
+              <div class="draft-field draft-field--c2">
+                <label class="draft-label" for="intro-time">Your connection to Jasper and availability</label>
+                <textarea id="intro-time" class="draft-input" name="availability" maxlength="1500" placeholder="General availability only. No home address or travel details."></textarea>
+              </div>
+
+              <label class="draft-check">
+                <input type="checkbox" name="adult" required>
+                <span>I am 18 or over and understand this is a draft, not enrolment, a funding commitment or a director appointment.</span>
+              </label>
+            </div>
+
+            <div class="draft__controls">
+              <p class="hosts-submit-note">
+                <strong>Email submission isn’t open yet.</strong> Download your draft and keep it until we open an
+                official channel.
+              </p>
+              <button class="cta cta--primary" type="submit">
+                Download my introduction <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+            <p class="draft__message" role="status">{{ status }}</p>
+          </form>
+        </div>
+
+        <p class="draft__fineprint">
+          Required fields are marked *. Leave out addresses, health information and identity documents. Questions:
+          <a href="mailto:vincent@ujasper.ca?subject=University%20of%20Jasper%20host%20inquiry">vincent@ujasper.ca</a>
+        </p>
+      </div>
+    </section>
 
     <figure class="pw-band hosts-band">
       <ResponsiveImage name="letter-peaks" alt="Mountain peaks in the Canadian Rockies" />
@@ -263,15 +157,24 @@ watch(
     <section class="pw-section" aria-labelledby="who-title">
       <div class="container">
         <div class="pw-head">
-          <p class="pw-label">Hosts, contributors and supporters</p>
-          <h2 id="who-title" class="pw-h2">A contribution<br><em>with a clear scope.</em></h2>
+          <p class="pw-label">Who we are looking for</p>
+          <h2 id="who-title" class="pw-h2">Who are we looking for?</h2>
           <p class="pw-text">
-            Local hosts may help identify suitable space or local arrangements. Activity leads bring relevant
-            qualifications. Learning contributors may offer one session. Supporters can be based anywhere; a six-week stay
-            is not a condition of support.
+            Two questions matter: whether you can take part, and what you could bring to the first gathering.
           </p>
-          <p class="pw-note">
-            No partnership, venue booking, appointment or funding commitment is created by an introduction.
+        </div>
+
+        <div class="hosts-block">
+          <h3 class="hosts-block__title">Who can take part?</h3>
+          <ul class="pw-columns pw-columns--4">
+            <li v-for="item in requirements" :key="item.title">
+              <span class="hosts-check" aria-hidden="true">✓</span>
+              <h4 class="pw-item-title">{{ item.title }}</h4>
+              <p class="pw-text">{{ item.text }}</p>
+            </li>
+          </ul>
+          <p class="pw-note hosts-block__note">
+            No degree, transcript, test score, polished portfolio or athletic benchmark is required.
           </p>
         </div>
 
@@ -284,18 +187,11 @@ watch(
               <p class="pw-text">{{ role.text }}</p>
             </li>
           </ol>
-        </div>
-
-        <div class="hosts-block">
-          <h3 class="hosts-block__title">Choose your way in</h3>
-          <ul class="pw-columns pw-columns--4">
-            <li v-for="item in pathways" :key="item.to">
-              <h4 class="pw-item-title">
-                <AppLink class="link" :to="item.to">{{ item.title }} <span aria-hidden="true">→</span></AppLink>
-              </h4>
-              <p class="pw-text">{{ item.text }}</p>
-            </li>
-          </ul>
+          <p class="pw-note hosts-block__note">
+            All roles and partnerships are currently unfilled or unconfirmed. An offer of help is not a staff appointment
+            or an endorsement, and no venue, partnership, funding commitment or director appointment is created by an
+            introduction.
+          </p>
         </div>
       </div>
     </section>
@@ -306,7 +202,7 @@ watch(
           <p class="pw-label">After your introduction</p>
           <h2 id="next-title" class="pw-h2">What happens next?</h2>
           <p class="pw-text">
-            Formal admissions and appointments are not open. Keep your draft until formal instructions are published.
+            Three steps, in order. Nothing is decided until the real arrangements are in front of you.
           </p>
         </div>
 
@@ -319,9 +215,7 @@ watch(
           <li class="hosts-flow__end">
             <span class="hosts-flow__marker hosts-flow__marker--end" aria-hidden="true">✓</span>
             <h3 class="pw-item-title">You decide</h3>
-            <p class="pw-text">
-              Take part only once the venue, dates, people and costs are confirmed and clear to you.
-            </p>
+            <p class="pw-text">Take part only once the venue, dates, people and costs are confirmed and clear to you.</p>
           </li>
         </ol>
       </div>
@@ -330,9 +224,15 @@ watch(
 </template>
 
 <style scoped>
-.hosts-role-guidance {
-  grid-column: 1 / -1;
-  margin-top: var(--space-3);
+.hosts-submit-note {
+  max-width: 34rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.hosts-submit-note strong {
+  color: var(--color-ink);
 }
 
 .hosts-band img {
@@ -352,6 +252,23 @@ watch(
   font-size: 1.5rem;
 }
 
+.hosts-block__note {
+  margin-top: var(--space-5);
+}
+
+.hosts-check {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--color-cobalt);
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-cobalt);
+}
+
+/* Process flowchart: numbered markers joined by a rule, ending in the learner's decision. */
 .hosts-flow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -441,6 +358,13 @@ watch(
 
   .hosts-flow > li:not(:last-child)::before {
     display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .draft__controls {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 </style>
