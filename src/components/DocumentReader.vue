@@ -32,7 +32,7 @@ const print = () => window.print()
 <template>
   <section class="reader-intro" aria-labelledby="reader-title">
     <div class="container">
-      <div class="reader-head">
+      <div class="reader-column reader-head">
         <p class="reader-label">{{ doc.eyebrow }}</p>
         <h1 id="reader-title" class="display">{{ doc.title }}</h1>
         <p class="reader-lead">{{ doc.lead }}</p>

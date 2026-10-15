@@ -1,0 +1,64 @@
+{
+  "edition": "15 October 2026",
+  "release": "2026-10-15",
+  "publications": [
+    {
+      "id": "founding-charter",
+      "title": "Founding charter",
+      "filename": "founding-charter.pdf",
+      "source_filename": "Jasper-Founding-Handbook.pdf",
+      "read": "/read/charter",
+      "pages": 12,
+      "bytes": 5114491,
+      "sha256": "82865dd84049012e726e49910205bdd04dc529962a864c27057d1878a43308fa"
+    },
+    {
+      "id": "field-semester",
+      "title": "Academic curriculum",
+      "filename": "field-semester.pdf",
+      "source_filename": "Jasper-Field-Semester-Curriculum.pdf",
+      "read": "/read/curriculum",
+      "pages": 43,
+      "bytes": 5197973,
+      "sha256": "15ebc9552d3757917406eca3dbbdd024393814413e46eb5616b21984405c304f"
+    },
+    {
+      "id": "operations-manual",
+      "title": "Operations and safety manual",
+      "filename": "operations-manual.pdf",
+      "source_filename": "Jasper-Operations-and-Safety-Manual.pdf",
+      "read": "/read/operations",
+      "pages": 15,
+      "bytes": 303880,
+      "sha256": "e024d05668d0278d3e176095e5a35f45cf108a9c7296bafa34474b7df244d07c"
+    },
+    {
+      "id": "offline-fieldbook",
+      "title": "Printable learner fieldbook",
+      "filename": "offline-fieldbook.pdf",
+      "source_filename": "Jasper-Offline-Fieldbook.pdf",
+      "read": "/read/fieldbook",
+      "pages": 15,
+      "bytes": 286158,
+      "sha256": "8a046846150ca584346b2c1b2188e617b726eb1b3418358b2bacf3baff0bea92"
+    },
+    {
+      "id": "founding-brief",
+      "title": "Founding supporter brief",
+      "filename": "founding-brief.pdf",
+      "source_filename": "Jasper-Founding-Supporter-Brief.pdf",
+      "read": "/read/supporter",
+      "pages": 2,
+      "bytes": 263160,
+      "sha256": "a411bf90724353d3871753176a6d3bde8422da8e3574943b007fce9eaf9c67b4"
+    }
+  ],
+  "editable_charter": {
+    "id": "editable-charter",
+    "title": "Editable founding charter",
+    "filename": "founding-charter.docx",
+    "source_filename": "Jasper-Founding-Charter.docx",
+    "bytes": 3920966,
+    "sha256": "2142e487c5b683faf11efc5c6104d529e7b3f8dd2acc46430cbf17da47cd69e8"
+  }
+}

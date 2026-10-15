@@ -39,9 +39,9 @@ function onClose() {
 
 <template>
   <dialog v-if="exportRequest" ref="dialog" class="xd" aria-labelledby="export-title" @close="onClose">
-    <h2 id="export-title" class="xd-title">Your export is ready.</h2>
-    <p class="xd-copy">A text-file download has been requested. If your browser does not save it, copy your text below. Nothing has been submitted.</p>
-    <label for="export-text" class="xd-label">Your export text</label>
+    <h2 id="export-title" class="xd-title">Keep your own copy</h2>
+    <p class="xd-copy">A download has been requested. You can also copy the text. Nothing has been submitted.</p>
+    <label for="export-text" class="xd-label">Export text</label>
     <textarea id="export-text" ref="area" class="xd-text" readonly rows="12" :value.prop="exportRequest.text"></textarea>
     <div class="xd-actions">
       <a ref="link" :href="url" :download="exportRequest.name" class="cta cta--primary">Download text file <span class="cta__arrow" aria-hidden="true">↓</span></a>

@@ -1,5 +1,16 @@
 <script setup lang="ts">
+import { nextTick, ref } from 'vue'
 import AppLink from '../components/AppLink.vue'
+import ResponsiveImage from '../components/ResponsiveImage.vue'
+
+const songPlaying = ref(false)
+const player = ref<HTMLIFrameElement | null>(null)
+
+async function playSong() {
+  songPlaying.value = true
+  await nextTick()
+  player.value?.focus()
+}
 </script>
 
 <template>
@@ -7,54 +18,86 @@ import AppLink from '../components/AppLink.vue'
     <section class="lt-section lt-section--paper lt-intro" aria-labelledby="lt-title">
       <div class="container">
         <div class="lt-head">
-          <p class="lt-label">THE FOUNDING LETTER / VINCENT ZHANG</p>
-          <h1 id="lt-title" class="lt-title lt-title--hero">A responsibility<br>to the <em>world.</em></h1>
-          <p class="lt-copy">A dream begun in 2015.<br>An invitation to the people who will give it life.</p>
+          <p class="lt-label">The founding letter · Vincent Zhang</p>
+          <h1 id="lt-title" class="lt-title">A responsibility<br><em>to the world.</em></h1>
+          <p class="lt-copy">Original welcome, identified by Vincent Zhang as written in 2015; spacing normalized.</p>
         </div>
       </div>
     </section>
 
-    <section class="lt-section lt-section--cloud" aria-label="The original conviction">
-      <div class="container">
-        <div class="lt-head">
-          <p class="lt-label">THE ORIGINAL CONVICTION</p>
-          <blockquote class="lt-quote">“We human beings have our special responsibilities to make our society and world better.”</blockquote>
-          <p class="lt-note">From the recovered founding letter, identified by the founder as written in 2015.</p>
-          <a class="link" href="/founding-charter.pdf">Read the founding charter ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="lt-section lt-section--paper" aria-labelledby="lt-welcome-title">
+    <section class="lt-section lt-section--cloud" aria-labelledby="lt-welcome-title">
       <div class="container">
         <article class="lt-letter">
-          <p class="lt-label">A WELCOME FROM VINCENT ZHANG</p>
-          <h2 id="lt-welcome-title" class="lt-title">Let us build<br><em>this together.</em></h2>
-          <p class="lt-note">A contemporary adaptation of the original letter’s ideas, prepared for the final English founding edition.</p>
+          <figure class="lt-crest">
+            <ResponsiveImage
+              name="founding-crest"
+              alt="Vincent Zhang’s original University of Jasper crest"
+              sizes="(max-width: 640px) 10rem, 14rem"
+            />
+            <figcaption class="lt-note">
+              The original crest brings the founder’s cross-cultural vision into a single institutional mark.
+            </figcaption>
+          </figure>
+          <h2 id="lt-welcome-title" class="lt-title">Welcome to<br>University of Jasper</h2>
           <div class="lt-body">
-            <p>Welcome to University of Jasper. My dream is to build a place where education reaches the whole person: our physical capacities, our understanding of the world and the responsibility we take for one another.</p>
-            <p>In my founding letter, I wrote that we have a responsibility to make our society and our world better. That conviction remains the starting point. Knowledge matters because of what we can understand, create and contribute through it.</p>
-            <p>I imagine people from different cultures coming to Jasper to learn together. We would train outdoors, investigate nature, read deeply, question inherited ideas and test our own. We would study the wisdom of ancient civilizations with the freedom to disagree and the courage to carry something valuable forward.</p>
-            <p>As technology becomes more powerful, I want us to become more capable: attentive, physically prepared, intellectually independent and responsible for what we create. Ambition should demand something of us. It should make us more honest in our work and more generous toward others.</p>
-            <p>One University → One Family expresses the community I hope we will build: a place of mutual care across borders and backgrounds, where belonging protects the freedom to think for yourself. Come with a difficult question, a willingness to practise and something you hope to give. Let us build this together.</p>
+            <p>
+              We human beings have our special responsibilities to make our society and world better. So we not only
+              focus on knowledge training, but also have a keen interest in the studies of our own minds and our history.
+              We chase ancient civilization and culture.
+            </p>
+            <p>
+              Welcome you to come here to grow up together and team work to realize our dreams. Hope U of Jasper is your
+              style of family. We share each other's value and passion to make our school great.
+            </p>
+            <p>Cheers!</p>
           </div>
-          <div class="lt-signature">
-            <strong>Vincent Zhang</strong>
-            <span>Founder · University of Jasper</span>
-          </div>
+          <p class="lt-signature">Vincent Zhang · Founder</p>
         </article>
       </div>
     </section>
 
-    <section class="lt-section lt-section--cloud" aria-labelledby="lt-close-title">
+    <section class="lt-section lt-section--paper" aria-labelledby="lt-purpose-title">
       <div class="container">
         <div class="lt-head">
-          <p class="lt-label">ONE UNIVERSITY → ONE FAMILY</p>
-          <h2 id="lt-close-title" class="lt-title">A place to belong.<br><em>The freedom to become.</em></h2>
-          <div class="lt-actions">
-            <AppLink class="cta cta--primary" to="/join/teachers">Help shape the teaching <span class="cta__arrow" aria-hidden="true">↗</span></AppLink>
-            <AppLink class="link" to="/join/students">Explore the student pathway ↗</AppLink>
+          <p class="lt-label">The purpose today</p>
+          <h2 id="lt-purpose-title" class="lt-title">Understanding, made<br><em>visible in action.</em></h2>
+          <p class="lt-copy">
+            The recovered welcome remains the starting point. Today’s plan gives it a teaching form: physical practice,
+            world humanities, scientific inquiry and useful work, first in a small in-person Jasper cohort.
+          </p>
+          <AppLink class="link" to="/vision">Read the vision and mission <span aria-hidden="true">→</span></AppLink>
+        </div>
+
+        <div id="song" class="lt-song">
+          <div class="lt-head">
+            <p class="lt-label">Jasper, in song</p>
+            <h3 class="lt-item-title">Jasper Dream Crying</h3>
+            <p class="lt-copy">
+              A song of place and memory, written by Vincent Zhang and presented through FarJasper Stories Canada.
+            </p>
           </div>
+          <div class="lt-video">
+            <iframe
+              v-if="songPlaying"
+              ref="player"
+              src="https://www.youtube-nocookie.com/embed/htp2z4i4XCI?autoplay=1"
+              title="Jasper Dream Crying by Vincent Zhang"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button
+              v-else
+              type="button"
+              class="lt-video__poster"
+              aria-label="Play Jasper Dream Crying on YouTube"
+              @click="playSong"
+            >
+              <ResponsiveImage name="jasper-song-poster" sizes="(max-width: 800px) 100vw, 46rem" />
+              <span class="lt-video__play" aria-hidden="true">▶ Play the song</span>
+            </button>
+          </div>
+          <p class="lt-note">Pressing Play connects to YouTube. No video is loaded before you choose it.</p>
+          <a class="link" href="https://www.youtube.com/watch?v=htp2z4i4XCI">Open the original recording on YouTube</a>
         </div>
       </div>
     </section>
@@ -72,12 +115,13 @@ import AppLink from '../components/AppLink.vue'
   background: var(--color-paper);
 }
 
-.lt :where(h1, h2, p, blockquote) {
+.lt :where(h1, h2, h3, p, figure) {
   margin: 0;
 }
 
 .lt-section {
   padding-block: var(--space-section);
+  scroll-margin-top: var(--header-height);
 }
 
 .lt-section--paper {
@@ -114,11 +158,7 @@ import AppLink from '../components/AppLink.vue'
   font-weight: 400;
   letter-spacing: -0.025em;
   line-height: 1.2;
-}
-
-.lt .lt-title--hero {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.1;
+  color: var(--color-ink);
 }
 
 .lt-title em {
@@ -126,17 +166,18 @@ import AppLink from '../components/AppLink.vue'
   color: var(--color-cobalt);
 }
 
+.lt .lt-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  color: var(--color-ink);
+}
+
 .lt-copy {
   max-width: 40rem;
   color: var(--color-muted);
-}
-
-.lt-quote {
-  max-width: 44rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 2.6vw, 2.125rem);
-  line-height: 1.35;
-  letter-spacing: -0.015em;
 }
 
 .lt-note {
@@ -148,47 +189,113 @@ import AppLink from '../components/AppLink.vue'
 /* ---------- The welcome: one centred reading column ---------- */
 .lt-letter {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
   max-width: 46rem;
   margin-inline: auto;
+}
+
+.lt-crest {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.lt-crest img {
+  display: block;
+  width: clamp(10rem, 22vw, 14rem);
+  height: auto;
+  mix-blend-mode: multiply;
 }
 
 .lt-body {
   display: grid;
   gap: var(--space-5);
-  margin-top: var(--space-4);
 }
 
 .lt-body p {
   font-family: var(--font-serif);
-  font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+  font-size: clamp(1.125rem, 1.6vw, 1.25rem);
   line-height: 1.8;
 }
 
 .lt-signature {
-  display: grid;
-  gap: var(--space-1);
-  margin-top: var(--space-6);
+  margin-top: var(--space-4);
   padding-top: var(--space-5);
   border-top: 1px solid var(--color-ink);
-}
-
-.lt-signature strong {
   font-family: var(--font-serif);
   font-size: 1.5rem;
-  font-weight: 400;
+  line-height: 1.3;
 }
 
-.lt-signature span {
-  font-size: var(--text-small);
-  color: var(--color-muted);
+/* ---------- The song ---------- */
+.lt-song {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  max-width: 48rem;
+  margin-top: var(--space-8);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-line);
+  scroll-margin-top: var(--header-height);
 }
 
-.lt-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-4) var(--space-6);
-  margin-top: var(--space-4);
+.lt-video {
+  width: 100%;
+  margin-top: var(--space-2);
+  aspect-ratio: 16 / 9;
+  background: var(--color-navy-deep);
+}
+
+.lt-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.lt-video__poster {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.lt-video__poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lt-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.875rem 1.375rem;
+  background: var(--color-ink);
+  color: var(--color-on-dark);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  transition: background-color var(--duration) var(--ease);
+}
+
+.lt-video__poster:hover .lt-video__play,
+.lt-video__poster:focus-visible .lt-video__play {
+  background: var(--color-cobalt);
+}
+
+.lt-video__poster:focus-visible,
+.lt-video iframe:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
 }
 </style>

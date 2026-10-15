@@ -1,26 +1,59 @@
 <script setup lang="ts">
+import AppLink from '../components/AppLink.vue'
 import ResponsiveImage from '../components/ResponsiveImage.vue'
 
-const gatheringChecks = [
-  'A named local host and responsible activity lead.',
-  'A confirmed venue and accessible participation options.',
-  'Written confirmation of applicable permissions and insurance.',
-  'Current conditions checked and an agreed cancellation procedure.',
-  'Participant briefing, emergency arrangements and clear boundaries.',
+const field = [
+  {
+    title: 'Outdoors',
+    paragraphs: [
+      'Qualified local staff must confirm route-specific permissions, guide requirements, current closures, weather, wildlife procedures, communications and an emergency plan. A free or small event is not automatically exempt from operating requirements.',
+      'Maintained routes and serviced camping keep the proposed scope modest. No technical climbing, glacier travel, backcountry survival test, wildlife approach or cold-water challenge is part of the first program.',
+    ],
+  },
+  {
+    title: 'Physical and martial practice',
+    paragraphs: [
+      'A qualified coach sets an adapted progression and contact boundaries. Beginner practice centres on controlled movement and restraint. No head contact, choking, joint locks, throws or competitive sparring is proposed.',
+      'Stop for pain, dizziness, distress or loss of control. Staff must have an agreed first-response and escalation plan; written materials do not substitute for trained responders.',
+    ],
+  },
 ]
 
-const community = [
+const privacy = [
   {
-    title: 'Conduct',
-    text: 'Speak honestly, disagree with ideas and respect the people expressing them. Harassment, coercion and discrimination have no place here. Photos, recordings and publication of another person’s work require their consent.',
+    question: 'What does this website collect?',
+    answer:
+      'The forms have no submission endpoint. Typing, reviewing or downloading a draft does not send your answers to the founder. The website has no advertising trackers or analytics scripts. Hosting providers may process ordinary connection and security logs.',
   },
   {
-    title: 'Raising a concern',
-    text: 'A participant can pause or leave an activity. Before enrolment, the host must provide a concern-reporting contact and a second responsible person for issues involving the host. No reporting channel is active on this preview.',
+    question: 'Where do application drafts stay?',
+    answer:
+      'By default, answers stay in page memory and disappear when you refresh or leave. You can explicitly choose Save on this device, which stores the draft in this browser’s local storage until you clear it or storage is removed. Avoid this on shared devices. Download a copy for your own backup; storage is not guaranteed.',
   },
   {
-    title: 'Local knowledge',
-    text: 'Learn about Jasper through verified local sources. Do not claim to represent Indigenous communities or teach their knowledge without the relevant relationships, permission and context.',
+    question: 'Where do fieldbook notes stay?',
+    answer:
+      'The personal fieldbook saves locally in the same browser and website origin. Export before changing devices or domains. Switching weeks saves the current note locally. A fieldbook is a private preparation and archive tool; the taught semester uses paper.',
+  },
+  {
+    question: 'What happens when I email?',
+    answer:
+      'Email opens your own mail application. You choose what to send; the message then travels through your and the recipient’s email providers. Keep general inquiries brief. Do not send medical records, identity documents, financial account details or private information about other people. Formal applicant data-handling arrangements will be published before admissions open.',
+  },
+  {
+    question: 'What happens when I play the song?',
+    answer:
+      'The YouTube player is loaded only after you press Play. It then connects to YouTube’s privacy-enhanced embed service and may process connection and playback data under its policies. You may instead follow the direct link to the original recording.',
+  },
+  {
+    question: 'How can I clear my data?',
+    answer:
+      'Use Clear this draft with its confirmation checkbox, or the fieldbook’s delete controls. You can also clear this website’s data in your browser. These actions cannot remove text files you downloaded or email you chose to send.',
+  },
+  {
+    question: 'Is AI processing my answers?',
+    answer:
+      'No. This website does not send draft answers or notebook entries to an AI service. The optional AI Return Lab is a separate, later learning activity with its own agreed tools and privacy arrangements.',
   },
 ]
 </script>
@@ -32,11 +65,11 @@ const community = [
       <div class="care-hero__shade" aria-hidden="true"></div>
       <div class="container care-hero__content">
         <div class="care-hero__copy">
-          <p class="care-hero__place">Care · Participation · Privacy</p>
-          <h1 id="care-title" class="care-hero__title">Take the challenge.<br><em>Take care of each other.</em></h1>
+          <p class="care-hero__place">Care and privacy</p>
+          <h1 id="care-title" class="care-hero__title">Challenge with judgment.<br><em>Belonging with freedom.</em></h1>
           <p class="care-hero__summary">
-            These are the proposed operating principles for the first field lab. Final activity arrangements and
-            participation terms must be reviewed with the named local host before any gathering.
+            A demanding education depends on consent, competent teaching and practical care. These principles guide the
+            proposed program; the operator must complete local arrangements before delivery.
           </p>
         </div>
       </div>
@@ -45,247 +78,98 @@ const community = [
     <nav class="care-toc" aria-label="On this page">
       <div class="container">
         <ol>
-          <li><a href="#care-movement">Movement</a></li>
-          <li><a href="#care-offline">Offline</a></li>
-          <li><a href="#care-activities">Camp &amp; train</a></li>
-          <li><a href="#care-community">Community</a></li>
-          <li><a href="#care-privacy">Your information</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#field">Field and coaching</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#concerns">Questions and concerns</a></li>
         </ol>
       </div>
     </nav>
 
-    <section id="care-movement" class="care-section care-section--white" aria-labelledby="movement-title">
+    <section id="participation" class="care-section care-section--paper" aria-labelledby="participation-title">
       <div class="container">
-        <div class="sec-head">
-          <div>
-            <p class="label">01 / Participation</p>
-            <h2 id="movement-title" class="display">Movement with choice.</h2>
-          </div>
-          <p>
-            The pilot is designed for adults. Walking, wheeling, seated observation, lower-intensity alternatives and
-            rest can all count as participation. No timed ranking, compulsory endurance test or public comparison of
-            bodies.
+        <div class="care-head">
+          <p class="care-label">Participation</p>
+          <h2 id="participation-title" class="care-title">Take part<br><em>with agency.</em></h2>
+          <p class="care-copy">
+            Personal phones, internet and live AI are off during teaching and camps, with agreed private medical,
+            accessibility and essential-contact exceptions. Staff emergency communications remain active. Storage is
+            voluntary and devices are returned on request.
+          </p>
+          <p class="care-copy">
+            The offline agreement covers teaching and camps. It does not authorize staff to withhold a device against
+            someone’s wishes or prevent necessary contact. Access exceptions are handled privately.
           </p>
         </div>
-
-        <div class="care-movement">
-          <dl class="care-rows">
-            <div>
-              <dt>Outside the scope</dt>
-              <dd>
-                The first programme excludes remote expeditions, climbing, open-water activity, fasting challenges and
-                sleep deprivation. Those activities are outside this proposal’s resources and operating scope.
-              </dd>
-            </div>
-            <div>
-              <dt>When a session goes ahead</dt>
-              <dd>
-                Local conditions, park restrictions and the activity lead determine whether an outdoor session proceeds.
-                The plan must include an indoor alternative, headcounts, communications and emergency procedures.
-              </dd>
-            </div>
-            <div>
-              <dt>Further guidance</dt>
-              <dd>
-                <a
-                  class="link"
-                  href="https://parks.canada.ca/pn-np/ab/jasper/securite-safety"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Read Parks Canada’s Jasper safety guidance<span class="visually-hidden"> (opens in a new tab)</span> ↗</a>
-              </dd>
-            </div>
-          </dl>
-
-          <aside class="care-checklist" aria-labelledby="gathering-title">
-            <h3 id="gathering-title" class="care-checklist__title">Before the first gathering</h3>
-            <ul>
-              <li v-for="item in gatheringChecks" :key="item">
-                <span class="care-checklist__mark" aria-hidden="true">
-                  <svg viewBox="0 0 16 16"><path d="M4 8.5l2.5 2.5L12 5.5" /></svg>
-                </span>
-                <span>{{ item }}</span>
-              </li>
-            </ul>
-            <p class="care-checklist__note">
-              The website and notebook are not route guidance, medical advice, a waiver or proof that an activity is
-              authorised.
-            </p>
-          </aside>
+        <div class="care-item care-item--ruled">
+          <h3 class="care-item__title">Adaptation and choice</h3>
+          <p>
+            Use appropriate physical variations and equivalent academic evidence. Meditation is voluntary and may be
+            replaced with quiet observation or another agreed reflective practice. An alternative sleeping arrangement
+            or supervised day-camp equivalent can meet the same learning purpose.
+          </p>
+          <p>
+            No public fitness ranking, forced disclosure, required religious belief or punishment for a reasoned
+            disagreement belongs here.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="care-offline" class="care-section care-section--cloud" aria-labelledby="offline-title">
+    <section id="field" class="care-section care-section--cloud" aria-labelledby="field-title">
       <div class="container">
-        <div class="sec-head">
-          <div>
-            <p class="label">02 / Devices</p>
-            <h2 id="offline-title" class="display">Offline, with care still connected.</h2>
-          </div>
+        <div class="care-head">
+          <p class="care-label">Field and coaching</p>
+          <h2 id="field-title" class="care-title">The plan follows<br><em>the people and conditions.</em></h2>
         </div>
-        <ul class="care-columns care-columns--two">
-          <li>
-            <h3 class="care-item__title">For learners</h3>
-            <p>
-              Personal phones and networked devices are switched off during teaching and camp immersion. Learners may
-              retain them in a sealed pouch or choose secure storage. Devices are returned on request. Agree private
-              exceptions for medical equipment, disability, caregiving and essential contact.
-            </p>
-          </li>
-          <li>
-            <h3 class="care-item__title">For staff</h3>
-            <p>
-              Staff retain a tested emergency phone and suitable satellite communications where coverage warrants them.
-              They check current conditions and closures before departures.
-            </p>
-            <p class="care-callout">
-              The phone-free learning agreement never prevents a warning, help-seeking or leaving the programme.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="care-activities" class="care-section care-section--white" aria-labelledby="activities-title">
-      <div class="container">
-        <div class="sec-head">
-          <div>
-            <p class="label">03 / Activities</p>
-            <h2 id="activities-title" class="display">Camp, train and reflect responsibly.</h2>
-          </div>
-        </div>
-        <ul class="care-columns care-columns--three">
-          <li>
-            <h3 class="care-item__title">Camping</h3>
-            <p>
-              The three proposed nights use reserved, serviced camping with appropriately qualified local staff,
-              equipment, food storage, transport and staff-rest arrangements. Exact locations require current checks.
-            </p>
-            <p>
-              A supervised day-camp equivalent carries the same educational standing; records state what was actually
-              completed.
-            </p>
-          </li>
-          <li>
-            <h3 class="care-item__title">Martial arts</h3>
-            <p>
-              Martial arts require a qualified, insured coach and suitable space. No head strikes, hard sparring, chokes,
-              joint submissions, weapons or uncoached takedowns. Agree touch and intensity, and stop on request.
-            </p>
-            <p>
-              Suspected concussion requires removal and appropriate assessment under the
-              <a
-                class="link"
-                href="https://parachute.ca/wp-content/uploads/2019/06/Concussion-Guideline-2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Canadian concussion guideline<span class="visually-hidden"> (opens in a new tab)</span></a>.
-            </p>
-          </li>
-          <li>
-            <h3 class="care-item__title">Attention practices</h3>
-            <p>
-              Attention practices are short and voluntary, with quiet reading, drawing or observation as alternatives.
-              No unusual breathing, pain endurance or compulsory personal disclosure.
-            </p>
-            <p>
-              Practices are educational; see
-              <a
-                class="link"
-                href="https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety"
-                target="_blank"
-                rel="noopener noreferrer"
-              >NCCIH’s discussion of evidence and safety<span class="visually-hidden"> (opens in a new tab)</span></a>.
-            </p>
-          </li>
-        </ul>
-        <a class="cta cta--primary care-section__cta" href="/field-semester.pdf" download>
-          Read the full curriculum and operating framework <span class="cta__arrow" aria-hidden="true">↓</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="care-community" class="care-section care-section--cloud" aria-labelledby="community-title">
-      <div class="container">
-        <div class="sec-head">
-          <div>
-            <p class="label">04 / Community</p>
-            <h2 id="community-title" class="display">A respectful community.</h2>
-          </div>
-        </div>
-        <ul class="care-columns care-columns--three">
-          <li v-for="item in community" :key="item.title">
+        <ul class="care-columns">
+          <li v-for="item in field" :key="item.title" class="care-item">
             <h3 class="care-item__title">{{ item.title }}</h3>
-            <p>{{ item.text }}</p>
+            <p v-for="paragraph in item.paragraphs" :key="paragraph">{{ paragraph }}</p>
           </li>
         </ul>
+        <p class="care-more">
+          <AppLink class="link" to="/read/operations">Read the full operations manual →</AppLink>
+        </p>
       </div>
     </section>
 
-    <section id="care-privacy" class="care-section care-section--white" aria-labelledby="privacy-title">
+    <section id="privacy" class="care-section care-section--paper" aria-labelledby="privacy-title">
       <div class="container">
-        <div class="sec-head">
-          <div>
-            <p class="label">05 / Privacy</p>
-            <h2 id="privacy-title" class="display">Your work. Your information.</h2>
-          </div>
+        <div class="care-head">
+          <p class="care-label">Privacy</p>
+          <h2 id="privacy-title" class="care-title">Your draft remains<br><em>under your control.</em></h2>
         </div>
-        <div class="care-faq">
-          <details open>
-            <summary>What does this website save?</summary>
-            <div class="care-faq__body">
-              <p>
-                The fieldbook stores notes and checkmarks in this browser’s local storage when you choose Save, switch
-                weeks, export or copy a reflection question. It does not send them to Jasper. Browser data can be lost;
-                export regularly.
-              </p>
-              <p>
-                The introduction and teacher/student application drafts are held only in page memory until you download
-                or close them. They are not submitted or saved in a database. Refreshing clears their answers.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Are applications being collected?</summary>
-            <div class="care-faq__body">
-              <p>
-                Applications are not yet open. For general inquiries, contact Vincent Zhang at
-                <a class="link" href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>. Website forms prepare local
-                drafts and do not send email or store answers in a database. Application submission instructions and a
-                privacy notice will be published before applications are accepted.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Does the website contact an AI model?</summary>
-            <div class="care-faq__body">
-              <p>
-                No. The offline core uses instructor-written illustrative claim cards on paper. The browser notebook is
-                for preparation or later archiving and does not call an AI service. An optional connected audit may
-                follow the semester, outside its teaching hours.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Who owns my work?</summary>
-            <div class="care-faq__body">
-              <p>
-                You retain ownership of your original work. Sharing with peers does not grant permission to publish.
-                Respect the rights and licences of others’ contributions.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>What about hosting and external links?</summary>
-            <div class="care-faq__body">
-              <p>
-                The site adds no analytics, advertising trackers or embedded third-party videos. The hosting service may
-                process ordinary connection and security information and, for private access, sign-in information under
-                its own terms. External links open services with their own policies.
-              </p>
-            </div>
-          </details>
+        <dl class="care-qa">
+          <div v-for="item in privacy" :key="item.question">
+            <dt>{{ item.question }}</dt>
+            <dd>{{ item.answer }}</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="concerns" class="care-section care-section--cloud" aria-labelledby="concerns-title">
+      <div class="container">
+        <div class="care-head">
+          <p class="care-label">Questions and concerns</p>
+          <h2 id="concerns-title" class="care-title">Speak up.<br><em>Be heard.</em></h2>
+          <p class="care-copy">
+            Before delivery, participants must receive named contacts for academic questions, activity concerns and
+            complaints, including a route independent of the person concerned. Consent for a photograph, testimonial or
+            public project is separate from participation.
+          </p>
+        </div>
+        <div class="care-item care-item--ruled">
+          <h3 class="care-item__title">During the founding stage</h3>
+          <p>
+            Questions about this proposal or this website can be directed to Vincent Zhang at
+            <a class="link" href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>. This is not an emergency reporting
+            service. No operating cohort or independent complaints officer is currently announced.
+          </p>
+          <div class="care-actions">
+            <a class="cta cta--primary" href="mailto:vincent@ujasper.ca?subject=Jasper%20care%20or%20privacy%20question">Contact the founder</a>
+          </div>
         </div>
       </div>
     </section>
@@ -297,8 +181,8 @@ const community = [
   font-family: var(--font-sans);
   font-variant-numeric: lining-nums;
   font-size: var(--text-body);
-  font-weight: 400;
-  line-height: 1.75;
+  font-weight: 300;
+  line-height: 1.625;
   color: var(--color-ink);
 }
 
@@ -311,15 +195,9 @@ const community = [
   list-style: none;
 }
 
-.care :where(h1, h2, h3) {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.025em;
-}
-
-.care .display em,
-.care-hero__title em {
-  font-style: italic;
+.care a:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
 }
 
 /* ---------- Hero ---------- */
@@ -364,7 +242,7 @@ const community = [
 
 .care-hero__place {
   margin-bottom: var(--space-4);
-  font-size: var(--text-label);
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
@@ -372,12 +250,16 @@ const community = [
 
 .care .care-hero__title {
   margin-bottom: var(--space-6);
+  font-family: var(--font-serif);
   font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
   line-height: 1.1;
   color: inherit;
 }
 
 .care-hero__title em {
+  font-style: italic;
   color: var(--color-ice);
 }
 
@@ -431,17 +313,16 @@ const community = [
 }
 
 .care-toc a:focus-visible {
-  outline: 2px solid var(--color-cobalt);
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 /* ---------- Sections ---------- */
 .care-section {
-  padding-block: clamp(4.5rem, 8vw, 6.5rem);
+  padding-block: var(--space-section);
   scroll-margin-top: calc(var(--header-height) + 3.25rem);
 }
 
-.care-section--white {
+.care-section--paper {
   background: var(--color-paper);
 }
 
@@ -449,127 +330,77 @@ const community = [
   background: var(--color-cloud);
 }
 
-.care .sec-head .label {
+.care-head {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  max-width: 48rem;
+  margin-bottom: var(--space-7);
+}
+
+.care-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.5;
+  text-transform: uppercase;
   color: var(--color-cobalt);
 }
 
-.care .sec-head > p {
-  max-width: 40rem;
-  font-size: 1.125rem;
+.care .care-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
   font-weight: 400;
-  line-height: 1.7;
-  color: var(--color-ink);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
-.care-section__cta {
-  margin-top: var(--space-7);
+.care-title em {
+  font-style: italic;
+  color: var(--color-cobalt);
 }
 
-/* Movement: rows + checklist */
-.care-movement {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: var(--space-8);
-  align-items: start;
-}
-
-.care-rows {
-  border-top: 1px solid var(--color-ink);
-}
-
-.care-rows > div {
-  display: grid;
-  grid-template-columns: 12rem minmax(0, 1fr);
-  gap: var(--space-5);
-  padding-block: var(--space-5);
-  border-bottom: 1px solid var(--color-line);
-}
-
-.care-rows dt {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  line-height: 1.6;
-  text-transform: uppercase;
-  color: var(--color-ink);
-}
-
-.care-rows dd {
-  max-width: 38rem;
+.care-copy {
+  max-width: 40rem;
   color: var(--color-muted);
 }
 
-.care-checklist {
-  padding: var(--space-6);
-  border: 1px solid var(--color-line);
-  border-top: 2px solid var(--color-cobalt);
-  background: var(--color-cloud);
-}
-
-.care .care-checklist__title {
-  margin-bottom: var(--space-4);
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-.care-checklist li {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-3);
-  padding-block: var(--space-3);
-  border-bottom: 1px solid var(--color-line);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.care-checklist__mark {
-  display: inline-grid;
-  flex: none;
-  place-items: center;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-top: 0.125rem;
-  border-radius: 50%;
-  background: var(--color-cobalt);
-}
-
-.care-checklist__mark svg {
-  width: 0.875rem;
-  height: 0.875rem;
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.care-checklist__note {
-  margin-top: var(--space-4);
-  font-size: 0.8125rem;
-  line-height: 1.6;
-  color: var(--color-muted);
-}
-
-/* Column groups: top rule, thin dividers between columns */
-.care-columns {
-  display: grid;
-  border-top: 1px solid var(--color-ink);
-}
-
-.care-columns--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.care-columns--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.care-columns > li {
+/* ---------- Items ---------- */
+.care-item {
   display: grid;
   align-content: start;
   gap: var(--space-3);
-  padding: var(--space-6) var(--space-6) var(--space-2) 0;
   color: var(--color-muted);
+}
+
+.care-item p {
+  max-width: 40rem;
+}
+
+.care-item--ruled {
+  max-width: 48rem;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-ink);
+}
+
+.care .care-item__title {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  color: var(--color-ink);
+}
+
+.care-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--color-ink);
+}
+
+.care-columns > li {
+  padding: var(--space-6) var(--space-6) var(--space-2) 0;
 }
 
 .care-columns > li + li {
@@ -577,108 +408,41 @@ const community = [
   border-left: 1px solid var(--color-line);
 }
 
-.care .care-item__title {
-  margin-bottom: var(--space-1);
-  font-size: 1.5rem;
-  line-height: 1.25;
-  color: var(--color-ink);
+.care-more {
+  margin-top: var(--space-7);
 }
 
-.care-callout {
-  padding-left: var(--space-4);
-  border-left: 2px solid var(--color-cobalt);
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--color-ink);
+.care-actions {
+  margin-top: var(--space-3);
 }
 
-/* Privacy FAQ */
-.care-faq {
+/* ---------- Privacy questions ---------- */
+.care-qa {
   max-width: 48rem;
   border-top: 1px solid var(--color-ink);
 }
 
-.care-faq details {
+.care-qa > div {
+  display: grid;
+  gap: var(--space-2);
+  padding-block: var(--space-5);
   border-bottom: 1px solid var(--color-line);
 }
 
-.care-faq summary {
-  position: relative;
-  display: block;
-  padding: var(--space-5) var(--space-8) var(--space-5) 0;
+.care-qa dt {
   font-family: var(--font-serif);
   font-size: 1.25rem;
+  font-weight: 400;
   line-height: 1.4;
   color: var(--color-ink);
-  list-style: none;
-  cursor: pointer;
-  transition: color 150ms ease;
 }
 
-.care-faq summary::-webkit-details-marker {
-  display: none;
-}
-
-.care-faq summary::after {
-  content: '+';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  font-family: var(--font-sans);
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 1;
-  color: var(--color-cobalt);
-  transform: translateY(-50%);
-  transition: transform 200ms var(--ease);
-}
-
-.care-faq details[open] summary::after {
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.care-faq summary:hover {
-  color: var(--color-cobalt);
-}
-
-.care-faq summary:focus-visible {
-  outline: 2px solid var(--color-cobalt);
-  outline-offset: 4px;
-}
-
-.care-faq__body {
-  display: grid;
-  gap: var(--space-4);
-  max-width: 42rem;
-  padding-bottom: var(--space-6);
+.care-qa dd {
+  max-width: 40rem;
   color: var(--color-muted);
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
-  .care-movement {
-    grid-template-columns: 1fr;
-    gap: var(--space-7);
-  }
-
-  .care-columns--three {
-    grid-template-columns: 1fr;
-  }
-
-  .care-columns--three > li + li {
-    padding-left: 0;
-    border-left: 0;
-    border-top: 1px solid var(--color-line);
-  }
-
-  .care-columns--three > li {
-    padding-block: var(--space-6);
-    padding-right: 0;
-  }
-}
-
 @media (max-width: 760px) {
   .care-hero {
     min-height: calc(100svh - 7.75rem);
@@ -697,31 +461,22 @@ const community = [
     font-size: clamp(2.5rem, 12vw, 3.5rem);
   }
 
-  .care-rows > div {
-    grid-template-columns: 1fr;
-    gap: var(--space-2);
-  }
-
-  .care-columns--two {
+  .care-columns {
     grid-template-columns: 1fr;
   }
 
-  .care-columns--two > li + li {
+  .care-columns > li {
+    padding-block: var(--space-6);
+    padding-right: 0;
+  }
+
+  .care-columns > li + li {
     padding-left: 0;
     border-left: 0;
     border-top: 1px solid var(--color-line);
   }
 
-  .care-columns--two > li {
-    padding-block: var(--space-6);
-    padding-right: 0;
-  }
-
-  .care-checklist {
-    padding: var(--space-5);
-  }
-
-  .care-section__cta {
+  .care-actions .cta {
     width: 100%;
     justify-content: center;
   }
@@ -730,10 +485,6 @@ const community = [
 @media (prefers-reduced-motion: reduce) {
   .care-hero__image {
     animation: none;
-  }
-
-  .care-faq summary::after {
-    transition: none;
   }
 }
 </style>

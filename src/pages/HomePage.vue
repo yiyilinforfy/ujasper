@@ -3,86 +3,159 @@ import { ref } from 'vue'
 import AppLink from '../components/AppLink.vue'
 import ResponsiveImage from '../components/ResponsiveImage.vue'
 
-const songPlaying = ref(false)
+const facts = [
+  { value: '6 weeks', detail: 'in person in Jasper' },
+  { value: '6–8 learners', detail: 'adults aged 18 and over' },
+  { value: '144 + 24 h', detail: 'facilitated + independent study' },
+  { value: 'One community', detail: 'many cultures and perspectives' },
+]
 
-const work = [
+const capabilities = [
   {
-    title: 'Hike and camp',
-    image: 'cards/hike',
-    details: ['Twelve field sessions, from map reading to camp planning'],
-  },
-  {
-    title: 'Train with a coach',
+    title: 'Train with purpose',
     image: 'cards/train',
-    details: ['Twelve coached martial-arts lessons on balance, footwork and control'],
+    text: 'Hiking, campcraft, progressive physical practice, coached martial restraint and reflective attention. Challenge includes recovery and adaptation.',
   },
   {
-    title: 'Read primary texts',
+    title: 'Read beyond yourself',
     image: 'cards/read',
-    details: [
-      'Plato, Laozi, Confucius, Hume, Mill, Wollstonecraft, Tagore, E. Pauline Johnson, Douglass',
-      'Restate the opposing argument before answering it',
-    ],
+    text: 'Meet primary texts across civilizations. Reconstruct an argument, face a serious objection and revise your own position.',
   },
   {
-    title: 'Conduct Experiments',
+    title: 'Make an explanation earn trust',
     image: 'cards/experiment',
-    details: [
-      'Carry out twelve investigations covering topics such as friction, pendulums, heat, sampling and energy.',
-      'Present and defend one of your conclusions in an individual oral examination.',
+    text: 'Observe, calculate, model and test. Keep the raw evidence, account for uncertainty and create something another person can use.',
+  },
+]
+
+const inquiries = [
+  {
+    tab: 'Warmth',
+    question: 'What does it take to keep someone warm?',
+    intro: 'Jasper’s mountain conditions make warmth a question about physical preparation, heat transfer and shared responsibility.',
+    rows: [
+      {
+        term: 'Experience',
+        text: 'Build a coached strength practice and explain the layers and shelter for an approved outing. Test materials indoors, with the person’s wellbeing protected.',
+      },
+      {
+        term: 'Test',
+        text: 'Compare cooling curves, repeat measurements and use a heat-transfer model. Explain what the experiment can and cannot say about clothing outdoors.',
+      },
+      {
+        term: 'Question',
+        text: 'Read arguments about habit, attention and care. Defend a distinction between productive effort and avoidable harm.',
+      },
+      {
+        term: 'Contribute',
+        text: 'Create a tested preparation resource for a consenting user. Show the evidence behind each recommendation and revise what the user misunderstands.',
+      },
+      {
+        term: 'Evidence you can inspect',
+        text: 'A graph, a reasoned argument, a tested guide and a decision you changed.',
+      },
     ],
   },
   {
-    title: 'Create Something Useful to Others',
-    image: 'cards/make',
-    details: ['Develop a practical resource that others can use.', 'The Jasper Commons Hearing in Week 6.'],
+    tab: 'Water',
+    question: 'Where does the water go?',
+    intro: 'Medicine Lake opens a question about hidden systems, chemical evidence and the limits of what we can know.',
+    rows: [
+      {
+        term: 'Experience',
+        text: 'Observe an approved setting, practise precise field notes and contribute to a shared camp. Explain what your observations leave unseen.',
+      },
+      {
+        term: 'Test',
+        text: 'Build a water-balance model, analyse published Miette mineral data and identify missing measurements. Separate sourced evidence from a teaching scenario.',
+      },
+      {
+        term: 'Question',
+        text: 'Ask who has the authority to describe a place and govern its use. Read primary arguments about knowledge, action and shared resources.',
+      },
+      {
+        term: 'Contribute',
+        text: 'Produce an annotated water-system model for a consenting reader. Make the uncertainty understandable rather than hiding it.',
+      },
+      {
+        term: 'Evidence you can inspect',
+        text: 'A water budget, a chemical calculation, a cited argument and an independently defended revision.',
+      },
+    ],
   },
   {
-    title: 'Minimise Phone and Internet Use',
-    image: 'cards/offline',
-    details: [
-      'Participants are encouraged to switch off their personal phones and avoid using the internet during teaching sessions and camps.',
+    tab: 'Judgment',
+    question: 'What would change your mind?',
+    intro: 'A difficult text, an uncertain measurement and a real responsibility test the same capacity: judgment.',
+    rows: [
+      {
+        term: 'Experience',
+        text: 'Take a bounded leadership role and demonstrate coached progression. Explain a decision to continue, adapt or stop.',
+      },
+      {
+        term: 'Test',
+        text: 'Compare competing explanations of glacier change or ecological recovery. Preserve the evidence that challenges your first account.',
+      },
+      {
+        term: 'Question',
+        text: 'Write, defend and revise an argument in a weekly two-person tutorial. Treat Wang Yangming, Hume and other thinkers as interlocutors, never compulsory beliefs.',
+      },
+      {
+        term: 'Contribute',
+        text: 'Complete useful work for a consenting peer or confirmed host. Defend your contribution; optionally audit AI against the preserved work after the semester.',
+      },
+      {
+        term: 'Evidence you can inspect',
+        text: 'A claim audit, a passage-based argument, an explicit revision and an individual oral defence.',
+      },
     ],
   },
 ]
 
-const publications = [
+const roles = [
   {
-    type: 'Founding document',
-    title: 'Vision & Founding Charter',
-    file: '/founding-charter.pdf',
-    download: 'Jasper-Founding-Handbook.pdf',
-    cover: 'founding-charter-cover',
-    meta: 'PDF · 12 pages · 5.1 MB',
-    summary: 'The founding letter, vision and mission, the educational method, the six-week programme and the staged path toward an operating institution.',
+    title: 'Bring a question',
+    text: 'Explore the Field Semester and prepare a thoughtful introduction.',
+    to: '/join/students',
   },
   {
-    type: 'Curriculum',
-    title: 'Field Semester Instructor Guide',
-    file: '/field-semester.pdf',
-    download: 'Jasper-Field-Semester-Curriculum.pdf',
-    cover: 'field-semester-cover',
-    meta: 'PDF · 39 pages · 5.2 MB',
-    summary: 'Timed lesson plans for all 144 hours, twelve laboratory cards, primary readings, camp arrangements and assessment criteria.',
+    title: 'Teach something that matters',
+    text: 'Help a learner see, test and explain what they could not before.',
+    to: '/join/teachers',
   },
   {
-    type: 'Learner workbook',
-    title: 'Offline Learner Fieldbook',
-    file: '/offline-fieldbook.pdf',
-    download: 'Jasper-Offline-Fieldbook.pdf',
-    cover: 'offline-fieldbook-cover',
-    meta: 'PDF · 12 printable sheets · 279 KB',
-    summary: 'Sheets for field decisions, experiments, close reading, debate and the final project. Made to be carried and written in.',
+    title: 'Make a place for learning',
+    text: 'Offer a local connection, a session, resources or a useful task.',
+    to: '/join/hosts',
+  },
+  {
+    title: 'Help establish the first chapter',
+    text: 'Start with people, a defined milestone and evidence.',
+    to: '/support',
   },
 ]
 
-const routes = [
-  { who: 'Teachers', title: 'Join our teaching team', to: '/join/teachers' },
-  { who: 'Students', title: 'Join the first semester', to: '/join/students' },
-  { who: 'Hosts', title: 'Share your place or skills', to: '/join/hosts' },
-  { who: 'Founding supporters', title: 'Help found the university', to: '/support' },
-]
+const pad = (n: number) => String(n).padStart(2, '0')
 
+const activeInquiry = ref(0)
+const tabButtons = ref<HTMLButtonElement[]>([])
+
+function selectInquiry(index: number, focus = false) {
+  activeInquiry.value = index
+  if (focus) tabButtons.value[index]?.focus()
+}
+
+function onTabKeydown(event: KeyboardEvent, index: number) {
+  const count = inquiries.length
+  let next: number | undefined
+  if (event.key === 'ArrowRight') next = (index + 1) % count
+  else if (event.key === 'ArrowLeft') next = (index + count - 1) % count
+  else if (event.key === 'Home') next = 0
+  else if (event.key === 'End') next = count - 1
+  if (next === undefined) return
+  event.preventDefault()
+  selectInquiry(next, true)
+}
 </script>
 
 <template>
@@ -99,180 +172,157 @@ const routes = [
         <p class="home-hero__place">Jasper, Alberta · Canada</p>
         <h1 id="hero-title" class="home-hero__title">Strong in body.<br><em>Free in mind.</em></h1>
         <p class="home-hero__summary">
-          University of Jasper is a proposed university in the Rocky Mountains of Canada. Its first programme is a
-          six-week Field Semester for a small group of adults, designed around hands-on learning, outdoor experiences
-          and time away from phones and the internet.
+          A university begins with a way of learning. Ours brings physical practice, world humanities and scientific
+          inquiry into one education.
+        </p>
+        <p class="home-hero__summary">
+          The first proposed chapter: six weeks in person in Jasper, learning through paper, people and direct
+          experience.
         </p>
         <div class="home-hero__actions">
           <AppLink class="cta cta--light" to="/program">
-            Explore the field semester <span class="cta__arrow" aria-hidden="true">→</span>
+            Explore the Field Semester <span class="cta__arrow" aria-hidden="true">→</span>
           </AppLink>
-          <AppLink class="cta home-hero__ghost" to="/vision">
-            Read the vision <span class="cta__arrow" aria-hidden="true">→</span>
-          </AppLink>
+          <AppLink class="cta home-hero__ghost" to="/learning">See the learning in action</AppLink>
         </div>
+        <p class="home-hero__note">A founding project · Admissions not open</p>
       </div>
-      <p class="home-hero__motto">Grounded in Nature. Open to the World.</p>
     </div>
   </section>
 
-  <section class="home-intro" aria-labelledby="intro-title">
+  <div class="home-facts">
+    <ul class="container home-facts__list" aria-label="The Field Semester at a glance">
+      <li v-for="fact in facts" :key="fact.value">
+        <strong>{{ fact.value }}</strong>
+        <span>{{ fact.detail }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <section class="hp-section hp-section--cloud" aria-labelledby="education-title">
     <div class="container">
-      <div class="home-intro__head">
-        <p class="label">About the university</p>
-        <h2 id="intro-title" class="display">A new university, starting in a small mountain town.</h2>
-      </div>
-      <div class="home-intro__grid">
-        <div class="home-intro__lead">
-          <p class="home-text">
-            University of Jasper is a university project founded by Vincent Zhang. Its long-term vision is to bring
-            together physical training, the humanities across different civilizations, and the fundamental principles of
-            mathematics, physics, chemistry and economics.
-          </p>
-          <p class="home-text">
-            The first step is a six-week Field Semester in Jasper for a small group of six to eight adults. Participants
-            will hike and camp, train with a coach, study original texts, conduct experiments and create practical work
-            that others can use. During teaching sessions, the use of phones and internet access will be restricted to
-            encourage focused learning and direct engagement with the world around them.
-          </p>
-          <AppLink class="cta cta--primary" to="/vision">
-            Read the vision and mission <span class="cta__arrow" aria-hidden="true">→</span>
-          </AppLink>
-        </div>
-        <ul class="home-work">
-          <li v-for="item in work" :key="item.title" class="home-card home-work__card">
-            <div class="home-work__media">
-              <ResponsiveImage :name="item.image" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 33vw, 16rem" />
-            </div>
-            <div class="home-work__body">
-              <h3 class="sec-label">{{ item.title }}</h3>
-              <p v-for="detail in item.details" :key="detail">{{ detail }}</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-place" aria-labelledby="place-title">
-    <div class="container home-place__grid">
-      <figure class="home-place__figure">
-        <ResponsiveImage
-          name="jasper"
-          alt="Spirit Island on Maligne Lake, Jasper National Park"
-          sizes="(max-width: 760px) 100vw, (max-width: 1100px) 55vw, 40rem"
-        />
-        <figcaption>
-          <AppLink class="home-place__credit" to="/sources">Maligne Lake, Jasper National Park · Photo credit</AppLink>
-        </figcaption>
-      </figure>
-      <div class="home-place__body">
-        <p class="label">Why Jasper</p>
-        <h2 id="place-title" class="home-place__title">A place to become.</h2>
-        <p class="home-text">
-          Jasper is a small mountain town in the Canadian Rockies, surrounded by a national park. The weather can change
-          quickly, distances can be challenging, and not every question can be answered from a screen.
-        </p>
-        <p class="home-text">
-          Here, routes must be planned before setting out, camps must be kept dry, and groups must work together before
-          moving forward. These everyday challenges give practical meaning to what participants read, discuss and
-          investigate.
+      <div class="hp-head">
+        <p class="hp-label">The Jasper education</p>
+        <h2 id="education-title" class="hp-title">Capability. Judgment.<br><em>Something worth contributing.</em></h2>
+        <p class="hp-lead">
+          As technology extends our reach, education must deepen our capacity to understand, act and take
+          responsibility.
         </p>
       </div>
-    </div>
-  </section>
-
-  <section id="jasper-song" class="home-interlude" aria-labelledby="song-title">
-    <div class="container home-interlude__grid">
-      <div class="home-interlude__page">
-        <h2 id="song-title" class="display">Jasper, in song.</h2>
-        <p class="home-text">
-          Vincent Zhang’s original song follows the glaciers, lakes and remembered journeys of Jasper. It gives a
-          personal voice to the place at the heart of the university’s founding vision.
-        </p>
-        <a class="cta cta--primary" href="https://www.youtube.com/watch?v=htp2z4i4XCI" target="_blank" rel="noopener noreferrer">
-          Listen on YouTube<span class="visually-hidden"> (opens in a new tab)</span>
-          <span class="cta__arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-      <figure class="home-interlude__media">
-        <!-- The YouTube player (about 1 MB) only loads once the visitor asks for it. -->
-        <div class="home-interlude__video">
-          <iframe
-            v-if="songPlaying"
-            src="https://www.youtube.com/embed/htp2z4i4XCI?autoplay=1"
-            title="Jasper Dream Crying | Original Song Inspired by Jasper National Park, Canada | FarJasper Stories"
-            width="749"
-            height="562"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <button v-else type="button" class="home-interlude__poster" @click="songPlaying = true">
-            <ResponsiveImage name="jasper-song-poster" sizes="(max-width: 1100px) 100vw, 42rem" />
-            <span class="home-interlude__play" aria-hidden="true"></span>
-            <span class="visually-hidden">Play “Jasper Dream Crying” on this page</span>
-          </button>
-        </div>
-        <figcaption class="home-interlude__credit">
-          <span>Written by Vincent Zhang</span>
-          <span>Produced by FarJasper Stories Canada</span>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="publications" class="home-library" aria-labelledby="library-title">
-    <div class="container">
-      <div class="sec-head">
-        <div>
-          <p class="label">Publications</p>
-          <h2 id="library-title" class="display">The proposal, in writing.</h2>
-        </div>
-        <p>
-          Three documents set out the programme in detail: lessons, readings, safety arrangements, assessment, and what
-          still has to be established. English edition, September 2026.
-        </p>
-      </div>
-      <ol class="home-library__list">
-        <li v-for="doc in publications" :key="doc.file" class="home-doc">
-          <a class="home-doc__cover" :href="doc.file" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-            <ResponsiveImage :name="doc.cover" sizes="11rem" />
-          </a>
-          <div class="home-doc__body">
-            <p class="sec-label">{{ doc.type }}</p>
-            <h3 class="home-doc__title">{{ doc.title }}</h3>
-            <p class="home-doc__meta">{{ doc.meta }}</p>
-            <p class="home-doc__summary">{{ doc.summary }}</p>
-            <div class="home-doc__actions">
-              <a class="cta cta--primary" :href="doc.file" target="_blank" rel="noopener noreferrer">
-                Read online<span class="visually-hidden">: {{ doc.title }} (opens in a new tab)</span>
-                <span class="cta__arrow" aria-hidden="true">↗</span>
-              </a>
-              <a class="cta cta--outline" :href="doc.file" :download="doc.download">
-                Download PDF<span class="visually-hidden">: {{ doc.title }}</span>
-                <span class="cta__arrow" aria-hidden="true">↓</span>
-              </a>
-            </div>
+      <ol class="hp-capabilities">
+        <li v-for="(item, i) in capabilities" :key="item.title" class="hp-capability">
+          <div class="hp-capability__media">
+            <ResponsiveImage :name="item.image" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 24rem" />
           </div>
+          <span class="hp-capability__index">{{ pad(i + 1) }}</span>
+          <h3 class="hp-item-title">{{ item.title }}</h3>
+          <p class="hp-text">{{ item.text }}</p>
         </li>
       </ol>
+      <p class="hp-after">
+        <AppLink class="link" to="/vision">Read the vision and mission <span aria-hidden="true">→</span></AppLink>
+      </p>
     </div>
   </section>
 
-  <section class="home-participate" aria-labelledby="participate-title">
+  <section class="hp-section" aria-labelledby="inquiry-title">
     <div class="container">
-      <div class="sec-head">
-        <div>
-          <p class="label">Take part</p>
-          <h2 id="participate-title" class="display">Find your way in.</h2>
+      <div class="hp-head">
+        <p class="hp-label">One question across the courses</p>
+        <h2 id="inquiry-title" class="hp-title">A whole education,<br><em>through a real question.</em></h2>
+      </div>
+      <div class="hp-tabs" role="tablist" aria-labelledby="inquiry-title">
+        <button
+          v-for="(inquiry, i) in inquiries"
+          :id="`inquiry-tab-${i}`"
+          :key="inquiry.tab"
+          :ref="el => { if (el) tabButtons[i] = el as HTMLButtonElement }"
+          type="button"
+          class="hp-tab"
+          role="tab"
+          :aria-controls="`inquiry-panel-${i}`"
+          :aria-selected="activeInquiry === i ? 'true' : 'false'"
+          :tabindex="activeInquiry === i ? 0 : -1"
+          @click="selectInquiry(i)"
+          @keydown="onTabKeydown($event, i)"
+        >
+          {{ inquiry.tab }}
+        </button>
+      </div>
+      <div
+        v-for="(inquiry, i) in inquiries"
+        :id="`inquiry-panel-${i}`"
+        :key="inquiry.tab"
+        class="hp-panel"
+        role="tabpanel"
+        :aria-labelledby="`inquiry-tab-${i}`"
+        tabindex="0"
+        :hidden="activeInquiry !== i"
+      >
+        <div class="hp-panel__question">
+          <p class="hp-label hp-label--small">The question</p>
+          <h3 class="hp-panel__title">{{ inquiry.question }}</h3>
+          <p class="hp-text">{{ inquiry.intro }}</p>
+        </div>
+        <dl class="hp-panel__rows">
+          <div v-for="row in inquiry.rows" :key="row.term" class="hp-panel__row">
+            <dt>{{ row.term }}</dt>
+            <dd>{{ row.text }}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-section hp-section--cloud" aria-labelledby="standard-title">
+    <div class="container">
+      <div class="hp-head">
+        <p class="hp-label">The standard becomes visible</p>
+        <h2 id="standard-title" class="hp-title">Look at the work.<br><em>Question the conclusion.</em></h2>
+        <p class="hp-lead">
+          Follow a cooling experiment from a tempting claim to a defensible conclusion. The example shows the reasoning
+          we want learners to develop; its data are explicitly synthetic.
+        </p>
+        <AppLink class="cta cta--primary" to="/learning">
+          Enter the learning example <span class="cta__arrow" aria-hidden="true">→</span>
+        </AppLink>
+      </div>
+      <div class="hp-example">
+        <div class="hp-example__claim">
+          <p class="hp-label hp-label--small">An educator-created example</p>
+          <h3 class="hp-example__title">Warmer does not yet<br>mean proven.</h3>
+        </div>
+        <ul class="hp-example__samples">
+          <li>
+            <p><span class="hp-example__name">Sample A:</span> <strong>40 → 28 °C</strong></p>
+          </li>
+          <li>
+            <p><span class="hp-example__name">Sample B:</span> <strong>40 → 33.5 °C</strong></p>
+          </li>
+        </ul>
+        <div class="hp-example__question">
+          <p class="hp-text">Same 20 minutes. One run each. What can these numbers establish?</p>
+          <p class="hp-example__steps">Prediction → evidence → objection → revision</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="hp-section" aria-labelledby="community-title">
+    <div class="container">
+      <div class="hp-head">
+        <p class="hp-label">The founding community</p>
+        <h2 id="community-title" class="hp-title">A school begins<br><em>with people.</em></h2>
+        <p class="hp-lead">
+          There are meaningful roles before there is a campus. Start with the work you can offer or the question you
+          want to pursue.
+        </p>
+      </div>
       <ul class="home-routes">
-        <li v-for="route in routes" :key="route.to">
-          <AppLink class="home-routes__card" :to="route.to">
-            <span class="sec-label">{{ route.who }}</span>
-            <span class="home-routes__title">{{ route.title }}</span>
+        <li v-for="role in roles" :key="role.to">
+          <AppLink class="home-routes__card" :to="role.to">
+            <h3 class="home-routes__title">{{ role.title }}</h3>
+            <p class="home-routes__text">{{ role.text }}</p>
             <span class="home-routes__arrow" aria-hidden="true">→</span>
           </AppLink>
         </li>
@@ -280,23 +330,35 @@ const routes = [
     </div>
   </section>
 
-  <section class="home-letter" aria-label="From the founding letter">
-    <ResponsiveImage class="home-letter__image" name="letter-peaks" />
-    <div class="home-letter__shade" aria-hidden="true"></div>
-    <div class="container home-letter__grid">
-      <div class="home-letter__crest">
-        <ResponsiveImage name="founding-crest" alt="University of Jasper crest" sizes="(max-width: 760px) 12rem, 20rem" />
+  <section class="hp-section hp-section--cloud" aria-labelledby="letter-label">
+    <div class="container">
+      <div class="hp-letter">
+        <div class="hp-letter__crest">
+          <ResponsiveImage name="founding-crest" alt="University of Jasper crest" sizes="6rem" />
+        </div>
+        <p id="letter-label" class="hp-label">The founding letter</p>
+        <blockquote class="hp-letter__quote">
+          We human beings have our special responsibilities to make our society and world better.
+        </blockquote>
+        <p class="hp-letter__origin">
+          Vincent Zhang · Original welcome, identified by the founder as written in 2015.
+        </p>
+        <AppLink class="cta cta--outline" to="/letter">Read the letter and hear the song</AppLink>
       </div>
-      <figure class="home-letter__quote">
-        <blockquote>“We human beings have our special responsibilities to make our society and world better.”</blockquote>
-        <figcaption>
-          <span class="home-letter__name">Vincent Zhang</span>
-          <span class="home-letter__source">founding letter, 2015</span>
-        </figcaption>
-        <AppLink class="cta cta--light" to="/letter">
-          Read the letter <span class="cta__arrow" aria-hidden="true">→</span>
-        </AppLink>
-      </figure>
+    </div>
+  </section>
+
+  <section class="hp-section" aria-labelledby="beginning-title">
+    <div class="container">
+      <div class="hp-head hp-head--last">
+        <p class="hp-label">A clear beginning</p>
+        <h2 id="beginning-title" class="hp-title">The ambition is large.<br><em>The next step is specific.</em></h2>
+        <p class="hp-lead">
+          Establish a capable local host and teaching team, cost the first in-person event, and confirm the arrangements
+          required to deliver it. A six-week cohort follows only when its own conditions are met.
+        </p>
+        <AppLink class="link" to="/founding">Explore the founding progress <span aria-hidden="true">→</span></AppLink>
+      </div>
     </div>
   </section>
 </template>
@@ -321,12 +383,8 @@ ul {
   list-style: none;
 }
 
-h3 {
-  font-family: var(--font-sans);
-  letter-spacing: normal;
-}
-
-section {
+section,
+.home-facts {
   font-family: var(--font-sans);
   font-variant-numeric: lining-nums;
   font-size: var(--text-body);
@@ -334,24 +392,78 @@ section {
   line-height: 1.625;
 }
 
-strong,
-dt,
-h3 {
-  font-weight: 500;
-}
-
-.home-intro__head .label {
-  margin-bottom: var(--space-3);
-}
-
-.home-card {
+.hp-section {
+  padding-block: var(--space-section);
   background: var(--color-paper);
-  box-shadow: var(--shadow-card);
-  transition: box-shadow 300ms var(--ease);
+  color: var(--color-ink);
 }
 
-.home-card:hover {
-  box-shadow: var(--shadow-card-hover);
+.hp-section--cloud {
+  background: var(--color-cloud);
+}
+
+/* Section head: label, title, description, then content below. */
+.hp-head {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-5);
+  max-width: 48rem;
+  margin-bottom: var(--space-7);
+}
+
+.hp-head--last {
+  margin-bottom: 0;
+}
+
+.hp-head .cta {
+  margin-top: var(--space-2);
+}
+
+.hp-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-cobalt);
+}
+
+.hp-label--small {
+  font-size: var(--text-label);
+}
+
+.hp-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.hp-title em {
+  font-style: italic;
+  color: var(--color-cobalt);
+}
+
+.hp-lead,
+.hp-text {
+  max-width: 40rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.625;
+  color: var(--color-muted);
+}
+
+.hp-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+.hp-after {
+  margin-top: var(--space-7);
 }
 
 /* ---------- Hero ---------- */
@@ -423,6 +535,10 @@ h3 {
   color: #e5e7eb;
 }
 
+.home-hero__summary + .home-hero__summary {
+  margin-top: var(--space-4);
+}
+
 @media (min-width: 640px) {
   .home-hero__summary {
     font-size: 1.125rem;
@@ -449,12 +565,13 @@ h3 {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.home-hero__motto {
-  margin-top: var(--space-7);
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-style: italic;
-  color: rgba(243, 244, 246, 0.9);
+.home-hero__note {
+  margin-top: var(--space-6);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: rgba(243, 244, 246, 0.85);
 }
 
 @keyframes hero-fade {
@@ -463,320 +580,235 @@ h3 {
   }
 }
 
-/* ---------- Intro: heading, then sticky text + six cards ---------- */
-.home-intro {
-  padding-block: clamp(5rem, 7vw, 7rem);
-  background: var(--color-cloud);
+/* ---------- Facts strip ---------- */
+.home-facts {
+  padding-block: var(--space-7);
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
 
-.home-intro__head {
-  max-width: 48rem;
-  margin-bottom: var(--space-8);
-}
-
-.home-intro__grid {
+.home-facts__list {
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
-  align-items: start;
-  gap: var(--space-8);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--color-ink);
 }
 
-.home-intro__lead {
-  position: sticky;
-  top: calc(var(--header-height) + var(--space-6));
+.home-facts__list li {
   display: grid;
-  justify-items: start;
-  gap: var(--space-5);
-}
-
-.home-text {
-  font-size: 1rem;
-  line-height: 1.625;
-  color: var(--color-muted);
-}
-
-.home-intro__lead .cta {
-  margin-top: var(--space-3);
-}
-
-.home-work {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-6);
-}
-
-.home-work__card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.home-work__media {
-  height: 12rem;
-  overflow: hidden;
-  background: #e5e7eb;
-}
-
-.home-work__media img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 500ms var(--ease);
-}
-
-.home-work__card:hover .home-work__media img {
-  transform: scale(1.05);
-}
-
-.home-work__body {
-  display: grid;
-  flex: 1;
   align-content: start;
-  gap: var(--space-2);
-  padding: var(--space-5);
+  gap: var(--space-1);
+  padding: var(--space-5) var(--space-5) 0;
 }
 
-.home-work__body p {
-  font-size: 0.875rem;
-  line-height: 1.625;
-  color: var(--color-muted);
+.home-facts__list li:first-child {
+  padding-left: 0;
 }
 
-/* ---------- Place ---------- */
-.home-place {
-  padding-block: var(--space-section);
+.home-facts__list li + li {
+  border-left: 1px solid var(--color-line);
 }
 
-.home-place__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-  align-items: center;
-  gap: var(--space-8);
-}
-
-.home-place__figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: 58% 50%;
-}
-
-.home-place__figure figcaption {
-  margin-top: var(--space-3);
-}
-
-.home-place__credit {
-  font-size: 0.8125rem;
-  color: var(--color-muted);
-  text-decoration: none;
-}
-
-.home-place__credit:hover {
-  color: var(--color-cobalt);
-}
-
-.home-place__body {
-  display: grid;
-  gap: var(--space-5);
-}
-
-.home-place__body .label {
-  margin-bottom: 0;
-  color: var(--color-muted);
-}
-
-.home-place__title {
+.home-facts__list strong {
   font-family: var(--font-serif);
-  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
   font-weight: 400;
-  letter-spacing: -0.03em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
-/* ---------- Interlude ---------- */
-.home-interlude {
-  padding-block: var(--space-section);
-  background: var(--color-cloud);
-}
-
-.home-interlude__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  align-items: center;
-  gap: var(--space-8);
-}
-
-.home-interlude__page {
-  display: grid;
-  justify-items: start;
-  gap: var(--space-5);
-}
-
-.home-interlude__video {
-  aspect-ratio: 749 / 562;
-  background: var(--color-navy-deep);
-}
-
-.home-interlude__video iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.home-interlude__poster {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.home-interlude__poster img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.home-interlude__play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  background: var(--color-ink);
-  transform: translate(-50%, -50%);
-  transition: background-color 0.2s ease;
-}
-
-.home-interlude__play::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 54%;
-  border-style: solid;
-  border-width: 0.75rem 0 0.75rem 1.25rem;
-  border-color: transparent transparent transparent var(--color-paper);
-  transform: translate(-50%, -50%);
-}
-
-.home-interlude__poster:hover .home-interlude__play,
-.home-interlude__poster:focus-visible .home-interlude__play {
-  background: var(--color-cobalt);
-}
-
-.home-interlude__poster:focus-visible {
-  outline: 2px solid var(--color-cobalt);
-  outline-offset: 3px;
-}
-
-.home-interlude .cta {
-  margin-top: var(--space-2);
-}
-
-.home-interlude__credit {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--space-2) var(--space-5);
-  margin-top: var(--space-4);
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--color-line);
-  font-size: var(--text-label);
-  font-weight: 500;
-  letter-spacing: var(--tracking-label);
-  text-transform: uppercase;
+.home-facts__list span {
+  font-size: var(--text-small);
   color: var(--color-muted);
 }
 
-/* ---------- Library ---------- */
-.home-library {
-  padding-block: var(--space-section);
-}
-
-.home-library__list {
+/* ---------- The Jasper education ---------- */
+.hp-capabilities {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-7) var(--space-6);
 }
 
-.home-doc {
-  display: flex;
-  flex-direction: column;
+.hp-capability {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
 }
 
-.home-doc__cover {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-6);
-  border: 1px solid var(--color-line);
-  background: var(--color-cloud);
+.hp-capability__media {
+  aspect-ratio: 4 / 3;
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+  background: #e5e7eb;
 }
 
-.home-doc__cover img {
+.hp-capability__media img {
   display: block;
-  width: auto;
-  height: 15rem;
-  box-shadow: var(--shadow-paper);
-  transition: transform 400ms var(--ease);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.home-doc:hover .home-doc__cover img {
-  transform: translateY(-4px);
-}
-
-.home-doc__body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: var(--space-2);
-  padding-top: var(--space-5);
-}
-
-.home-doc__body .sec-label {
+.hp-capability__index {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-ink);
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
   color: var(--color-cobalt);
 }
 
-.home-doc__title {
+/* ---------- One question: tabs ---------- */
+.hp-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-bottom: var(--space-7);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.hp-tab {
+  margin-bottom: -1px;
+  padding: var(--space-3) 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: none;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: color var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+
+.hp-tab:hover {
+  color: var(--color-ink);
+}
+
+.hp-tab[aria-selected='true'] {
+  border-bottom-color: var(--color-cobalt);
+  color: var(--color-ink);
+}
+
+.hp-tab:focus-visible,
+.hp-panel:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
+}
+
+.hp-panel__question {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 48rem;
+  margin-bottom: var(--space-7);
+}
+
+.hp-panel__title {
   font-family: var(--font-serif);
   font-size: var(--text-title);
   font-weight: 400;
-  line-height: 1.2;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 
-.home-doc__meta {
-  font-size: 0.875rem;
+.hp-panel__rows {
+  border-top: 1px solid var(--color-ink);
+}
+
+.hp-panel__row {
+  display: grid;
+  grid-template-columns: minmax(0, 14rem) minmax(0, 40rem);
+  gap: var(--space-2) var(--space-6);
+  padding-block: var(--space-5);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.hp-panel__row dt {
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: var(--color-cobalt);
+}
+
+.hp-panel__row dd {
+  font-size: 1rem;
+  line-height: 1.625;
   color: var(--color-muted);
 }
 
-.home-doc__summary {
-  margin-top: var(--space-2);
-  font-size: var(--text-small);
-  line-height: 1.6;
+/* ---------- The standard becomes visible ---------- */
+.hp-example {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);
+  gap: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-ink);
 }
 
-.home-doc__actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--space-3);
-  margin-top: auto;
-  padding-top: var(--space-5);
+.hp-example__claim {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
 }
 
-/* ---------- Participate ---------- */
-.home-participate {
-  padding-block: var(--space-section);
-  background: var(--color-cloud);
+.hp-example__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
+.hp-example__samples {
+  display: grid;
+  align-content: start;
+}
+
+.hp-example__samples li + li {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-line);
+}
+
+.hp-example__samples p {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.hp-example__name {
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.hp-example__samples strong {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.hp-example__question {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+}
+
+.hp-example__steps {
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-cobalt);
+}
+
+/* ---------- Founding community: thin-rule route list ---------- */
 .home-routes {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -806,16 +838,19 @@ h3 {
   padding-left: var(--space-5);
 }
 
-.home-routes__card .sec-label {
-  color: var(--color-cobalt);
-}
-
 .home-routes__title {
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 400;
+  letter-spacing: normal;
   line-height: 1.2;
   transition: color var(--duration) var(--ease);
+}
+
+.home-routes__text {
+  font-size: var(--text-small);
+  line-height: 1.6;
+  color: var(--color-muted);
 }
 
 .home-routes__arrow {
@@ -833,132 +868,85 @@ h3 {
   transform: translateX(4px);
 }
 
-/* ---------- Founding letter (closing band) ---------- */
-.home-letter {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  padding-block: clamp(6rem, 10vw, 8rem);
-  background: var(--color-navy-deep);
-  color: var(--color-on-dark);
+.home-routes__card:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
 }
 
-.home-letter__image {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.home-letter__shade {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(to top, rgba(11, 27, 42, 0.95), rgba(14, 36, 57, 0.8));
-}
-
-.home-letter__grid {
+/* ---------- Founding letter ---------- */
+.hp-letter {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  align-items: center;
-  gap: clamp(3rem, 5vw, 4rem);
-  max-width: 72rem;
+  justify-items: center;
+  gap: var(--space-5);
+  max-width: 46rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
-.home-letter__crest {
-  position: relative;
-  justify-self: start;
-  width: min(100%, 20rem);
+.hp-letter__crest {
+  width: 6rem;
 }
 
-.home-letter__crest::before {
-  content: '';
-  position: absolute;
-  inset: -0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  filter: blur(4px);
-}
-
-.home-letter__crest img {
-  position: relative;
+.hp-letter__crest img {
   display: block;
   width: 100%;
   height: auto;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.home-letter__quote {
-  display: grid;
-  justify-items: start;
-}
-
-.home-letter__quote blockquote {
-  margin-bottom: var(--space-6);
+.hp-letter__quote {
   font-family: var(--font-serif);
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-style: italic;
   font-weight: 400;
-  line-height: 1.625;
-  color: #f3f4f6;
+  line-height: 1.5;
+  color: var(--color-ink);
 }
 
-.home-letter__quote figcaption {
-  display: grid;
-  gap: 0.25rem;
-  text-transform: uppercase;
+.hp-letter__origin {
+  max-width: 40rem;
+  font-size: var(--text-small);
+  color: var(--color-muted);
 }
 
-.home-letter__name {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: rgba(253, 230, 138, 0.9);
-}
-
-.home-letter__source {
-  font-size: 0.75rem;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  color: #9ca3af;
-}
-
-.home-letter .cta {
-  margin-top: var(--space-7);
+.hp-letter .cta {
+  margin-top: var(--space-3);
 }
 
 /* ---------- Tablet ---------- */
 @media (max-width: 1100px) {
-  .home-intro__grid,
-  .home-interlude__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .home-intro__lead {
-    position: static;
-    grid-template-columns: 1fr;
-    max-width: 44rem;
-  }
-
+  .home-facts__list,
   .home-routes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .home-facts__list li:nth-child(odd),
   .home-routes > li:nth-child(odd) {
     border-left: 0;
   }
 
+  .home-facts__list li:nth-child(odd),
   .home-routes > li:nth-child(odd) .home-routes__card {
     padding-left: 0;
+  }
+
+  .home-facts__list li:nth-child(n + 3) {
+    margin-top: var(--space-5);
   }
 
   .home-routes > li:nth-child(n + 3) {
     border-top: 1px solid var(--color-line);
   }
 
-  .home-library__list {
+  .hp-capabilities {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hp-example {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hp-example__question {
+    grid-column: 1 / -1;
   }
 }
 
@@ -990,15 +978,21 @@ h3 {
     justify-content: center;
   }
 
-  .home-place__grid,
-  .home-letter__grid {
+  .hp-capabilities,
+  .hp-example,
+  .home-routes {
     grid-template-columns: 1fr;
+  }
+
+  .hp-tabs {
     gap: var(--space-5);
   }
 
-  .home-work,
-  .home-routes,
-  .home-library__list {
+  .hp-tab {
+    font-size: 1.25rem;
+  }
+
+  .hp-panel__row {
     grid-template-columns: 1fr;
   }
 
@@ -1012,42 +1006,7 @@ h3 {
   }
 
   .home-routes__card {
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-    column-gap: var(--space-4);
     padding-right: 0;
-  }
-
-  .home-routes__card .sec-label {
-    flex-basis: 100%;
-  }
-
-  .home-routes__arrow {
-    margin-left: auto;
-    padding-top: 0;
-  }
-
-  .home-work__media {
-    height: 12rem;
-  }
-
-  .home-place__figure img {
-    aspect-ratio: 4 / 3;
-  }
-
-  .home-letter__grid {
-    gap: var(--space-7);
-  }
-
-  .home-letter__crest {
-    justify-self: center;
-    width: 12rem;
-  }
-
-  .home-letter__quote {
-    justify-items: center;
-    text-align: center;
   }
 }
 
@@ -1056,9 +1015,9 @@ h3 {
     animation: none;
   }
 
-  .home-card,
-  .home-work__media img,
-  .home-doc__cover img {
+  .hp-tab,
+  .home-routes__title,
+  .home-routes__arrow {
     transition: none;
   }
 }

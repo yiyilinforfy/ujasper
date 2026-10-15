@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import AppLink from '../components/AppLink.vue'
 import { jasperDownload } from '../composables/useExportDialog'
 
 interface Week {
@@ -54,7 +53,7 @@ const completed = computed(
 )
 const progressText = computed(() => {
   if (failed.value) return 'Notebook content could not load.'
-  if (!week.value) return 'Loading the notebook…'
+  if (!week.value) return 'Loading the fieldbook…'
   return `${completed.value} of 6 weeks marked complete · self-recorded`
 })
 
@@ -228,27 +227,25 @@ function registerModelTool() {
     <section class="fb-section fb-section--paper fb-intro" aria-labelledby="fb-title">
       <div class="container">
         <div class="fb-head">
-          <p class="fb-label">PREPARATION & ARCHIVE / OUTSIDE THE OFFLINE SEMESTER</p>
-          <h1 id="fb-title" class="fb-title">Your fieldbook.</h1>
-          <p class="fb-copy">Use the paper fieldbook during the proposed Jasper Field Semester. This optional browser notebook is for preparation or later archiving; the core learning takes place without personal phones or internet. Using this page does not enrol you.</p>
-        </div>
-        <div class="fb-paper">
-          <div>
-            <h2 class="fb-paper__title">Print it. Carry it. Make it yours.</h2>
-            <p class="fb-copy">Twelve reusable sheets for field decisions, camping, martial practice, attention, science, close reading, debate and your final project.</p>
-          </div>
-          <div class="fb-paper__actions">
-            <a class="cta cta--primary" href="/offline-fieldbook.pdf" download="Jasper-Offline-Fieldbook.pdf">Download the paper fieldbook <span class="cta__arrow" aria-hidden="true">↓</span></a>
-            <AppLink class="link" to="/publications">The charter, instructor guide and fieldbook ↗</AppLink>
-          </div>
+          <p class="fb-label">Your personal fieldbook</p>
+          <h1 id="fb-title" class="fb-title">Keep the evidence.<br><em>Keep asking.</em></h1>
+          <p class="fb-copy">A private browser notebook for preparation and later reflection. During the taught semester, use the paper fieldbook. No account, enrolment or credential is created here.</p>
         </div>
       </div>
     </section>
 
     <section class="fb-section fb-section--cloud" aria-label="Fieldbook">
-      <div class="container fb-book">
-        <aside class="fb-side">
-          <div class="fb-weeks" aria-label="Choose a week">
+      <div class="container">
+        <p class="fb-callout">Notes stay in this browser and website origin. Choose Save or switch weeks to save locally; export a copy before changing devices or domains. This website never receives your notes.</p>
+        <noscript>
+          <p class="fb-copy fb-noscript">The notebook needs JavaScript. <a class="link" href="/offline-fieldbook.pdf">Download the paper fieldbook</a> instead.</p>
+        </noscript>
+        <p id="book-progress" class="fb-progress-text" role="status">{{ progressText }}</p>
+        <div class="fb-progress" aria-hidden="true">
+          <div class="fb-progress__fill" id="progress-fill" :style="week ? { width: `${(completed / 6) * 100}%` } : undefined"></div>
+        </div>
+        <div class="fb-book">
+          <nav class="fb-weeks" aria-label="Choose a week">
             <button
               v-for="(label, i) in WEEK_LABELS"
               :key="label"
@@ -258,20 +255,9 @@ function registerModelTool() {
               :aria-pressed="!!week && current === i + 1"
               @click="weeks.length && selectWeek(i + 1)"
             >
-              <small>WEEK {{ pad(i + 1) }}</small>{{ label }}</button>
-          </div>
-          <p class="fb-progress-text" id="book-progress">{{ progressText }}</p>
-          <div class="fb-progress" aria-hidden="true">
-            <div class="fb-progress__fill" id="progress-fill" :style="week ? { width: `${(completed / 6) * 100}%` } : undefined"></div>
-          </div>
-          <p class="fb-small">Notes stay in this browser. They are not sent to Jasper or to an AI service. Export a backup before clearing browser data or changing devices.</p>
-        </aside>
-        <div class="fb-content">
-          <noscript>
-            <p>This interactive notebook needs JavaScript. <a class="link" href="/syllabus.txt">Read and download the full syllabus instead.</a>
-            </p>
-          </noscript>
-          <div id="week-content">
+              <span class="fb-week__num">{{ pad(i + 1) }} ·</span> {{ label }}</button>
+          </nav>
+          <div id="week-content" class="fb-content">
             <template v-if="week">
               <p class="fb-label">WEEK {{ pad(current) }} / {{ week.theme }}</p>
               <h2 class="fb-title fb-week-title">{{ week.title }}</h2>
@@ -306,16 +292,17 @@ function registerModelTool() {
               <p class="fb-copy">Your saved notes have not been changed. Please reload this page or use the <a class="link" href="/syllabus.txt">downloadable syllabus</a>.</p>
             </template>
           </div>
+        </div>
+        <div class="fb-after">
           <div class="fb-actions">
-            <button type="button" class="cta cta--primary" id="save-book" :disabled="failed" @click="persist">Save notes on this device</button>
-            <button type="button" class="cta cta--outline" id="export-book" :disabled="failed" @click="download">Export all notes <span class="cta__arrow" aria-hidden="true">↓</span></button>
+            <button type="button" class="cta cta--primary" id="save-book" :disabled="failed" @click="persist">Save notes</button>
+            <button type="button" class="cta cta--outline" id="export-book" :disabled="failed" @click="download">Export fieldbook</button>
           </div>
           <p id="save-status" class="fb-small fb-status" role="status">{{ saveStatus }}</p>
           <details class="fb-details fb-details--danger">
-            <summary>Remove notes from this device</summary>
-            <p class="fb-small">This clears only this site’s saved fieldbook and cannot be undone. Export a copy first.</p>
+            <summary>Delete notes from this browser</summary>
             <label class="fb-check">
-              <input id="confirm-clear" v-model="confirmClear" type="checkbox">I want to delete my saved fieldbook.</label>
+              <input id="confirm-clear" v-model="confirmClear" type="checkbox"><span>I confirm I want to delete the saved fieldbook from this browser.</span></label>
             <button type="button" class="cta cta--outline" id="clear-book" :disabled="failed" @click="clearBook">Delete saved fieldbook</button>
           </details>
         </div>
@@ -387,6 +374,11 @@ function registerModelTool() {
   line-height: 1.2;
 }
 
+.fb-title em {
+  font-style: italic;
+  color: var(--color-cobalt);
+}
+
 .fb-copy {
   max-width: 40rem;
   color: var(--color-muted);
@@ -398,50 +390,36 @@ function registerModelTool() {
   color: var(--color-muted);
 }
 
-/* ---------- Paper fieldbook ---------- */
-.fb-paper {
-  display: grid;
-  gap: var(--space-5);
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-ink);
-}
-
-.fb .fb-paper__title {
-  margin-bottom: var(--space-3);
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: -0.015em;
-  line-height: 1.25;
-}
-
-.fb-paper__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-4) var(--space-6);
-}
-
 /* ---------- Notebook ---------- */
+.fb .fb-callout {
+  max-width: 46rem;
+  margin-bottom: var(--space-7);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-cobalt);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+
+.fb-noscript {
+  margin-bottom: var(--space-5);
+}
+
 .fb-book {
   display: grid;
   gap: var(--space-7);
-}
-
-.fb-side {
-  display: grid;
-  align-content: start;
-  gap: var(--space-4);
+  margin-top: var(--space-6);
 }
 
 .fb-weeks {
+  align-self: start;
   display: grid;
   border-top: 1px solid var(--color-ink);
 }
 
 .fb-week {
-  display: grid;
-  gap: var(--space-1);
+  display: block;
   padding: var(--space-3) var(--space-4);
   border: 0;
   border-bottom: 1px solid var(--color-line);
@@ -457,7 +435,7 @@ function registerModelTool() {
     background-color var(--duration) var(--ease);
 }
 
-.fb-week small {
+.fb-week__num {
   font-family: var(--font-sans);
   font-size: var(--text-label);
   font-weight: 600;
@@ -475,17 +453,18 @@ function registerModelTool() {
   color: var(--color-cobalt);
 }
 
-.fb-week[aria-pressed='true'] small {
+.fb-week[aria-pressed='true'] .fb-week__num {
   color: var(--color-cobalt);
 }
 
 .fb-progress-text {
-  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
   font-size: var(--text-small);
   color: var(--color-muted);
 }
 
 .fb-progress {
+  max-width: 46rem;
   height: 2px;
   background: var(--color-line);
 }
@@ -657,22 +636,23 @@ function registerModelTool() {
   border-top: 1px solid var(--color-line);
 }
 
-@media (min-width: 900px) {
-  .fb-paper {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: end;
-    gap: var(--space-7);
-  }
+.fb-check span {
+  min-width: 0;
+}
 
+@media (min-width: 900px) {
   .fb-book {
     grid-template-columns: 16rem minmax(0, 1fr);
     gap: var(--space-8);
   }
 
-  .fb-side {
+  .fb-weeks {
     position: sticky;
     top: calc(var(--header-height) + var(--space-5));
-    align-self: start;
+  }
+
+  .fb-after {
+    margin-left: calc(16rem + var(--space-8));
   }
 }
 

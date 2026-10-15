@@ -2,1045 +2,496 @@
 import AppLink from '../components/AppLink.vue'
 import ResponsiveImage from '../components/ResponsiveImage.vue'
 
+const inspectItems = [
+  'The specific event or semester being funded and its accountable operator.',
+  'Actual quotations, staffing commitments and the funding recipient.',
+  'Deliverables, reporting dates and the evidence for a further cohort.',
+  'Conditions for postponement, unused funds and cancellation.',
+  'Independent governance, conflicts and academic freedom.',
+]
+
 const routes = [
   {
-    no: 'Route 01',
-    tag: 'Proposed',
+    index: '01',
     title: 'The Founding Five',
-    metric: 'C$2 million',
-    metricNote: 'per proposed position',
-    paragraphs: [
-      'The Founding Five remains the founder’s proposal: five founding positions at C$2 million each, seeking C$10 million in total. Vincent Zhang’s intended model includes lifetime board voting rights. Those rights are not established and cannot be promised in exchange for a contribution. The legal structure, election and removal rules, director duties, total board composition and the founder’s role must be resolved before any appointment or agreement.',
-    ],
+    text: 'Five proposed founding positions at C$2 million each. The aim is enduring stewardship of an educational mission. No commitments or appointments are confirmed.',
   },
   {
-    no: 'Route 02',
-    tag: 'Alternative for discussion',
+    index: '02',
     title: 'An anchor family or foundation',
-    metric: 'Anchor support',
-    metricNote: 'scope not yet defined',
-    paragraphs: [
-      'One family or foundation could also help establish the institution through a substantial anchor commitment. This is an alternative route for discussion, with no confirmed relationship or funding.',
-      'A lasting founding legacy must support independent thought, clear oversight and the educational mission.',
-    ],
+    text: 'A substantial anchor commitment is an alternative route for discussion. A supporter may live anywhere. The same clarity about purpose, staged funding and independent oversight would be required.',
   },
 ]
 
-const stages = [
-  {
-    label: 'Establish',
-    title: 'A credible first step',
-    text: 'Identify a local host, capable educators, actual costs and the arrangements needed for an in-person Jasper programme.',
-  },
-  {
-    label: 'Support',
-    title: 'A funded pilot',
-    text: 'Secure sufficient support and written responsibilities before committing to delivery. A short introductory event has its own scope.',
-  },
-  {
-    label: 'Examine',
-    title: 'Work you can inspect',
-    text: 'Review learner portfolios, feedback, access barriers and actual costs. Examine the evidence before deciding whether to expand.',
-  },
-  {
-    label: 'Build',
-    title: 'Lasting capacity',
-    text: 'Use proven delivery and a multiyear plan to seek major support. Premises follow demonstrated need and secure funding.',
-  },
-]
-
-const supportItems = [
-  'Qualified people and capable educators',
-  'Appropriate teaching spaces and programme arrangements',
-  'Access and participation for learners',
-  'Equipment and the practical resources needed for delivery',
-  'Insurance, evaluation and the reserves needed for reliable delivery',
+const governance = [
+  'The Founding Five is Vincent Zhang’s proposal for five founding positions at C$2 million each, toward a C$10 million ambition. His intended model includes lifetime board voting rights. These rights are not established. The legal structure, governing documents, appointment, election, removal and voting rules require independent legal review. No contribution currently purchases or guarantees a directorship or vote.',
+  'A permanent founding honour and a governing appointment serve different purposes. Academic independence, conflicts, succession, appointment and removal rules must be resolved through the chosen structure, not inferred from a contribution.',
 ]
 
 const pad = (n: number) => String(n).padStart(2, '0')
 </script>
 
 <template>
-  <div class="fd">
-    <!-- 01 Hero -->
-    <section class="fd-hero hero-media" aria-labelledby="fd-hero-title">
+  <div class="sp">
+    <section class="sp-hero hero-media" aria-labelledby="sp-hero-title">
       <ResponsiveImage class="hero-media__image" name="founding-chairs" priority />
+      <div class="container sp-hero__content">
+        <div class="sp-hero__copy">
+          <p class="sp-hero__label">The founding invitation</p>
+          <h1 id="sp-hero-title" class="sp-hero__title">Help establish<br><em>something worth continuing.</em></h1>
+          <p class="sp-hero__lead">
+            Support should make a real educational milestone possible. Begin with accountable people, an agreed purpose
+            and evidence of what the work achieves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="first-decision" class="sp-section sp-section--paper" aria-labelledby="sp-decision-title">
       <div class="container">
-        <div class="fd-hero__grid">
-          <div class="fd-hero__main">
-            <span class="fd-kicker fd-kicker--on-dark">A founding proposal · University of Jasper</span>
-            <h1 id="fd-hero-title" class="fd-hero__title">
-              Build something<br>worth <em>passing on.</em>
-            </h1>
-            <p class="fd-hero__deck">
-              Help establish a university where physical courage, independent thought and useful creation grow together.
-            </p>
-            <div class="fd-hero__actions">
-              <a class="fd-button fd-button--light" href="/founding-brief.pdf" target="_blank" rel="noopener noreferrer">
-                <span>Read the two-page founding brief</span>
-                <span aria-hidden="true">↗</span>
-              </a>
-              <AppLink class="fd-button fd-button--ghost" to="/join/hosts">
-                <span>Prepare your founding introduction</span>
-                <span aria-hidden="true">→</span>
-              </AppLink>
-            </div>
+        <div class="sp-head">
+          <h2 id="sp-decision-title" class="sp-title">The first decision<br><em>before the larger ambition.</em></h2>
+          <p class="sp-text">
+            Help establish a capable Jasper host, qualified educators and a fully costed first in-person milestone. Use
+            appropriate existing space. Property follows demonstrated need and a sustainable operating case.
+          </p>
+          <div class="sp-actions">
+            <a class="cta cta--primary" href="mailto:vincent@ujasper.ca?subject=Jasper%20founding%20support%20conversation">
+              Start a founding conversation
+            </a>
+            <AppLink class="link" to="/founding">
+              Inspect the founding conditions <span aria-hidden="true">→</span>
+            </AppLink>
           </div>
-
-          <aside class="fd-hero__aside" aria-label="Proposed founding capital ambition">
-            <p class="fd-hero__capital-label">Proposed founding capital ambition</p>
-            <p class="fd-hero__figure">C$10m</p>
-            <p class="fd-hero__aside-text">
-              No commitments confirmed.
-            </p>
-          </aside>
         </div>
-      </div>
-    </section>
 
-    <!-- 02 The model -->
-    <section id="model" class="fd-section fd-section--white" aria-labelledby="fd-model-title">
-      <div class="container">
-        <div class="fd-intro">
-          <span class="fd-kicker">01 — The model</span>
-          <h2 id="fd-model-title" class="fd-h2">
-            Two possible routes.<br><em>One founding purpose.</em>
-          </h2>
-          <p class="fd-deck">
-            The proposal describes two ways substantial support might help establish the institution. Both are proposed
-            funding approaches only, not completed agreements, confirmed appointments or established governance rights.
-            Their scope, boundaries and relationship to each other remain open for discussion.
+        <div class="sp-inspect">
+          <h3 class="sp-item-title">What a supporter should be able to inspect</h3>
+          <ol class="sp-list" role="list">
+            <li v-for="(item, i) in inspectItems" :key="item">
+              <span class="sp-list__num" aria-hidden="true">{{ pad(i + 1) }}</span>
+              <span>{{ item }}</span>
+            </li>
+          </ol>
+          <p class="sp-note">
+            No priced pilot request is published yet. The planning worksheet identifies the costs that must be quoted.
           </p>
-        </div>
-
-        <div class="fd-routes">
-          <article v-for="route in routes" :key="route.no" class="fd-route">
-            <div class="fd-route__top">
-              <span class="fd-route__no">{{ route.no }}</span>
-              <span class="fd-route__tag">{{ route.tag }}</span>
-            </div>
-            <h3 class="fd-route__title">{{ route.title }}</h3>
-            <p class="fd-route__metric">
-              <strong>{{ route.metric }}</strong>
-              <span>{{ route.metricNote }}</span>
-            </p>
-            <div class="fd-route__body">
-              <p v-for="(text, i) in route.paragraphs" :key="i" class="fd-text">{{ text }}</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 03 The sequence -->
-    <section id="sequence" class="fd-section fd-section--cloud" aria-labelledby="fd-sequence-title">
-      <div class="container">
-        <div class="fd-intro">
-          <span class="fd-kicker">02 — The sequence</span>
-          <h2 id="fd-sequence-title" class="fd-h2">
-            People. Evidence.<br><em>Then a larger institution.</em>
-          </h2>
-          <p class="fd-deck">
-            A staged approach: establish what can responsibly be delivered, fund a pilot, learn from evidence, and only
-            then consider building lasting capacity.
-          </p>
-        </div>
-
-        <ol class="fd-stages" aria-label="Four stages of institutional growth">
-          <li v-for="(stage, i) in stages" :key="stage.label" class="fd-stages__item">
-            <span class="fd-stages__num">{{ pad(i + 1) }}</span>
-            <span class="fd-stages__label">{{ stage.label }}</span>
-            <h3 class="fd-stages__title">{{ stage.title }}</h3>
-            <p class="fd-stages__text">{{ stage.text }}</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- 04 Use of support -->
-    <section id="support" class="fd-section fd-section--white" aria-labelledby="fd-support-title">
-      <div class="container">
-        <div class="fd-intro">
-          <span class="fd-kicker">03 — Use of support</span>
-          <h2 id="fd-support-title" class="fd-h2">
-            Give the idea<br><em>the means to live.</em>
-          </h2>
-          <p class="fd-deck">
-            Support could help make a credible learning programme possible. The actual scope and allocation must be
-            determined through a detailed budget and staged agreements.
-          </p>
-        </div>
-
-        <ol class="fd-means" aria-label="Possible uses of founding support">
-          <li v-for="(item, i) in supportItems" :key="item">
-            <span class="fd-means__num">{{ pad(i + 1) }}</span>
-            <span>{{ item }}</span>
-          </li>
-        </ol>
-
-        <div class="fd-budget">
-          <strong>What is not yet approved</strong>
-          <p>
-            A detailed budget and staged agreements must define the actual use of funds. No specific allocation, site
-            purchase or construction programme has been approved.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 Governance & trust -->
-    <section id="trust" class="fd-section fd-section--cloud" aria-labelledby="fd-trust-title">
-      <div class="container">
-        <div class="fd-intro fd-intro--last">
-          <span class="fd-kicker">04 — Governance &amp; trust</span>
-          <h2 id="fd-trust-title" class="fd-h2">Good intentions need <em>clear terms.</em></h2>
-          <p class="fd-deck">
-            Lifetime voting rights are the founder’s intended model, not established legal rights. For a federal
-            nonprofit corporation, directors’ terms cannot exceed four years, although re-election is possible.
-            Jasper’s appropriate structure and governing documents remain to be determined.
-          </p>
-          <p class="fd-deck">
-            No contribution automatically creates an appointment. No investment return or tax receipt is promised.
-            Charitable status and university authorisation have not been established.
-          </p>
-          <AppLink class="fd-arrowlink fd-trust__link" to="/sources#governance">
-            <span>Governance and operating references</span>
-            <span aria-hidden="true">↗</span>
-          </AppLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 Begin a conversation -->
-    <section id="conversation" class="fd-close" aria-labelledby="fd-close-title">
-      <div class="container">
-        <span class="fd-kicker">05 — The next conversation</span>
-        <h2 id="fd-close-title" class="fd-close__title">
-          Start with the questions<br>that <em>matter.</em>
-        </h2>
-        <p class="fd-close__deck">
-          The next step is a clear conversation about the founding brief, the proposed funding model, the evidence needed
-          for a first programme and the governance work still to be done.
-        </p>
-        <div class="fd-close__actions">
-          <a class="fd-button fd-button--dark" href="#model">
-            <span>Review the founding model</span>
-            <span aria-hidden="true">↓</span>
+          <a class="link sp-inspect__download" href="/funding-planning-worksheet.txt">
+            Download the funding planning worksheet <span aria-hidden="true">↓</span>
           </a>
-          <a class="fd-button fd-button--outline" href="#trust">
-            <span>Review governance questions</span>
-            <span aria-hidden="true">↓</span>
-          </a>
-          <AppLink class="fd-button fd-button--outline" to="/join/hosts">
-            <span>Prepare your founding introduction</span>
-            <span aria-hidden="true">→</span>
-          </AppLink>
         </div>
-        <p class="fd-close__note">
-          For a founding-support conversation, email Vincent Zhang at
-          <a href="mailto:vincent@ujasper.ca?subject=University%20of%20Jasper%20%E2%80%94%20founding%20support">vincent@ujasper.ca</a>.
-          Introduction drafts stay on your device. This website does not accept money, appoint directors or receive
-          applications.
+      </div>
+    </section>
+
+    <section id="ambition" class="sp-section sp-section--cloud" aria-labelledby="sp-ambition-title">
+      <div class="container">
+        <div class="sp-head">
+          <p class="sp-label">The long-term founding ambition</p>
+          <h2 id="sp-ambition-title" class="sp-title">C$10 million.<br><em>A proposal to build toward.</em></h2>
+        </div>
+
+        <ul class="sp-routes" role="list">
+          <li v-for="route in routes" :key="route.index" class="sp-routes__item">
+            <span class="sp-routes__index">{{ route.index }}</span>
+            <h3 class="sp-item-title">{{ route.title }}</h3>
+            <p class="sp-text">{{ route.text }}</p>
+          </li>
+        </ul>
+
+        <details class="sp-disclosure">
+          <summary class="sp-disclosure__summary">
+            <span>The founder’s governance proposal and decisions still required</span>
+            <span class="sp-disclosure__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="sp-disclosure__body">
+            <p v-for="paragraph in governance" :key="paragraph" class="sp-text">{{ paragraph }}</p>
+            <AppLink class="link" to="/sources#governance-sources">Relevant governance sources</AppLink>
+          </div>
+        </details>
+
+        <p class="sp-note">
+          No payment is accepted here. No investment return, charitable tax receipt, accreditation or lifetime appointment
+          is promised.
         </p>
       </div>
     </section>
 
-    <!-- 07 Founding motto -->
-    <section class="fd-motto" aria-label="Founding motto">
-      <ResponsiveImage class="fd-motto__image" name="letter-peaks" />
-      <div class="fd-motto__shade" aria-hidden="true"></div>
-      <div class="container fd-motto__grid">
-        <div class="fd-motto__crest">
-          <ResponsiveImage name="founding-crest" alt="University of Jasper crest" sizes="9rem" />
+    <section id="contribution" class="sp-section sp-section--paper" aria-labelledby="sp-contribution-title">
+      <div class="container">
+        <div class="sp-head sp-head--last">
+          <h2 id="sp-contribution-title" class="sp-title">A contribution<br><em>with a clear next step.</em></h2>
+          <p class="sp-text">
+            Describe what you would like to help make possible, why Jasper matters to you and what evidence you would
+            need before considering a commitment. You can begin with a short email or a private draft.
+          </p>
+          <div class="sp-actions">
+            <AppLink class="cta cta--primary" to="/join/hosts?role=Supporter#draft">
+              Prepare a supporter introduction <span class="cta__arrow" aria-hidden="true">→</span>
+            </AppLink>
+            <a class="link" href="/founding-brief.pdf">Read the supporter brief</a>
+          </div>
         </div>
-        <figure class="fd-motto__quote">
-          <blockquote>“Fearless in learning. Lead by example.”</blockquote>
-          <figcaption>
-            <span class="fd-motto__name">Founding motto</span>
-            <span class="fd-motto__source">One University <span aria-hidden="true">→</span><span class="visually-hidden">,</span> One Family</span>
-          </figcaption>
-        </figure>
       </div>
     </section>
   </div>
 </template>
 
-<style>
-/* Founding page — visual language aligned with the Field Semester page. */
-.fd {
-  --fd-navy: #0c2033;
-  --fd-dark: #081726;
-  --fd-ink: #102f4a;
-  --fd-light: #f4f5f7;
-  --fd-cloud: #edf4f8;
-  --fd-muted: #5a6b7c;
-  --fd-border: #d9e0e8;
-  --fd-accent: #b45309;
-
-  background: var(--fd-light);
-  color: #111827;
+<style scoped>
+.sp {
+  background: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-sans);
+  font-variant-numeric: lining-nums;
   font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  line-height: 1.625;
 }
 
-.fd ::selection {
-  background: #fef3c7;
-  color: var(--fd-navy);
-}
-
-.fd :where(h1, h2, h3, p, ul, ol, li, figure) {
+.sp :where(h1, h2, h3, p, ol, ul, li) {
   margin: 0;
 }
 
-.fd :where(ul, ol) {
+.sp :where(ol, ul) {
   padding: 0;
   list-style: none;
 }
 
-.fd :where(h1, h2, h3) {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.25;
-  color: var(--fd-navy);
-}
-
-.fd :where(a) {
-  text-decoration: none;
-}
-
-.fd :where(a, button):focus-visible {
-  outline: 2px solid var(--fd-accent);
-  outline-offset: 3px;
-}
-
-.fd-section {
-  padding-block: 5rem;
-  border-bottom: 1px solid var(--fd-border);
-  scroll-margin-top: var(--header-height);
-}
-
-.fd-section--white {
-  background: #fff;
-}
-
-.fd-section--cloud {
-  background: var(--fd-cloud);
-}
-
-.fd-kicker {
-  display: block;
-  margin-bottom: 0.75rem;
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  line-height: 1.33;
-  text-transform: uppercase;
-  color: var(--fd-muted);
-}
-
-.fd-kicker--on-dark {
-  color: #d1d5db;
-}
-
-.fd-minilabel {
-  display: block;
-  margin-bottom: 0.75rem;
-  font-family: var(--font-sans);
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--fd-muted);
-}
-
-.fd-h2 {
-  font-size: 1.875rem;
-  line-height: 1.25;
-}
-
-.fd-h2 em {
-  font-style: italic;
-  color: var(--fd-ink);
-}
-
-.fd-intro {
-  max-width: 40rem;
-  margin-bottom: 2.5rem;
-}
-
-.fd-deck,
-.fd-text {
-  font-size: 0.9375rem;
-  font-weight: 300;
-  line-height: 1.625;
-  color: var(--fd-muted);
-}
-
-.fd-intro .fd-h2 {
-  margin-bottom: 1.25rem;
-}
-
-
-
-.fd-arrowlink {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--fd-navy);
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: color 150ms ease;
-}
-
-.fd-arrowlink:hover {
-  color: var(--fd-accent);
-}
-
-.fd-mid-cta {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--fd-border);
-}
-
-.fd-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-height: 3rem;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
-  color: #fff;
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.025em;
-  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
-}
-
-.fd-button--light {
-  background: #fff;
-  color: var(--fd-navy);
-}
-
-.fd-button--light:hover {
-  background: var(--fd-light);
-}
-
-.fd-button--ghost {
-  border-color: rgba(255, 255, 255, 0.35);
-  background: transparent;
-  color: #fff;
-}
-
-.fd-button--ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.fd-button--dark {
-  background: var(--fd-navy);
-  color: #fff;
-}
-
-.fd-button--dark:hover {
-  background: var(--fd-dark);
-}
-
-.fd-button--outline {
-  border-color: var(--fd-border);
-  background: transparent;
-  color: var(--fd-navy);
-}
-
-.fd-button--outline:hover {
-  border-color: var(--fd-navy);
-}
-
 /* ---------- Hero ---------- */
-.fd-hero {
+.sp-hero {
   display: flex;
   align-items: flex-end;
-  min-height: min(calc(100svh - 5.5rem), 46rem);
-  padding-block: var(--space-9) var(--space-8);
-  --hero-shade: rgba(8, 23, 38, 0.66);
+  min-height: min(calc(100svh - 5.5rem), 42rem);
+  --hero-shade:
+    linear-gradient(to bottom, rgba(14, 36, 57, 0.25) 0%, rgba(11, 27, 42, 0.78) 100%),
+    linear-gradient(90deg, rgba(11, 27, 42, 0.55) 0%, rgba(11, 27, 42, 0) 65%);
   --hero-position: center 45%;
-  background: var(--fd-navy);
-  color: #fff;
-}
-
-@media (max-width: 760px) {
-  .fd-hero {
-    min-height: calc(100svh - 7.75rem);
-    padding-block: var(--space-9) var(--space-5);
-  }
-}
-
-.fd-hero__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.55fr);
-  gap: var(--space-8);
-  align-items: end;
-}
-
-.fd .fd-hero__title {
-  max-width: 56rem;
-  margin-bottom: 1.5rem;
-  font-size: 2.25rem;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  color: #fff;
-}
-
-.fd-hero__title em {
-  font-style: italic;
-  color: #c1e4fa;
-}
-
-.fd-hero__deck {
-  max-width: 36rem;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.625;
-  color: #e5e7eb;
-}
-
-.fd-hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.fd-hero__aside {
-  padding-left: 1.5rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.24);
-}
-
-.fd-hero__capital-label {
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #d1d5db;
-}
-
-.fd-hero__figure {
-  margin-bottom: 0.75rem;
-  font-family: var(--font-serif);
-  font-size: clamp(2.25rem, 5vw, 3.375rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-  color: #fff;
-}
-
-.fd-hero__aside-text {
-  max-width: 18rem;
-  font-size: 0.8125rem;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #c5d1d5;
-}
-
-
-
-
-
-
-
-/* ---------- Model / routes ---------- */
-.fd-routes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--fd-ink);
-  border-bottom: 1px solid var(--fd-ink);
-}
-
-.fd-route {
-  padding: 1.75rem 2rem 2rem 0;
-}
-
-.fd-route + .fd-route {
-  padding-left: 2rem;
-  padding-right: 0;
-  border-left: 1px solid var(--fd-border);
-}
-
-.fd-route__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.fd-route__no {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fd-accent);
-}
-
-.fd-route__tag {
-  padding: 0.4rem 0.55rem;
-  border: 1px solid var(--fd-border);
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fd-muted);
-}
-
-.fd .fd-route__title {
-  margin-bottom: 0.85rem;
-  font-size: 1.75rem;
-  line-height: 1.2;
-  letter-spacing: -0.025em;
-}
-
-.fd-route__metric {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 0.75rem;
-  margin-bottom: 1.25rem;
-}
-
-.fd-route__body {
-  display: grid;
-  gap: 0.75rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--fd-border);
-}
-
-.fd-route__metric strong {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--fd-navy);
-}
-
-.fd-route__metric span {
-  font-size: 0.75rem;
-  color: var(--fd-muted);
-}
-
-
-
-/* ---------- Sequence ---------- */
-.fd-stages {
-  display: grid;
-  border-top: 1px solid var(--fd-ink);
-  border-left: 1px solid var(--fd-border);
-}
-
-.fd-stages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1.75rem;
-  border-right: 1px solid var(--fd-border);
-  border-bottom: 1px solid var(--fd-border);
-  background: #fff;
-  text-align: center;
-}
-
-.fd-stages__num {
-  margin-bottom: 0.75rem;
-  font-family: var(--font-serif);
-  font-size: 1.75rem;
-  line-height: 1;
-  color: var(--fd-navy);
-}
-
-.fd-stages__label {
-  margin-bottom: 0.75rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--fd-accent);
-}
-
-.fd .fd-stages__title {
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1.3;
-}
-
-.fd-stages__text {
-  max-width: 20rem;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.625;
-  color: var(--fd-muted);
-}
-
-@media (min-width: 640px) {
-  .fd-stages {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1024px) {
-  .fd-stages {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ---------- Use of support ---------- */
-.fd-means {
-  border-top: 1px solid var(--fd-border);
-  max-width: 42rem;
-}
-
-.fd-means li {
-  display: grid;
-  grid-template-columns: 2.5rem minmax(0, 1fr);
-  gap: 0.85rem;
-  padding-block: 1rem;
-  border-bottom: 1px solid var(--fd-border);
-  font-size: 0.9375rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--fd-ink);
-}
-
-.fd-means__num {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--fd-accent);
-}
-
-.fd-budget {
-  max-width: 42rem;
-  margin-top: 1.5rem;
-  padding: 1.15rem 1.25rem;
-  background: var(--fd-light);
-  font-size: 0.8125rem;
-  line-height: 1.75;
-  color: var(--fd-muted);
-}
-
-.fd-budget strong {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fd-ink);
-}
-
-/* ---------- Governance ---------- */
-.fd-intro--last {
-  margin-bottom: 0;
-}
-
-.fd-intro--last .fd-deck + .fd-deck {
-  margin-top: 1rem;
-}
-
-.fd-trust__link {
-  margin-top: 1.5rem;
-}
-
-/* ---------- Close ---------- */
-.fd-close {
-  padding-block: 5rem;
-  background: #fff;
-  color: var(--fd-ink);
-  scroll-margin-top: var(--header-height);
-}
-
-.fd .fd-close__title {
-  max-width: 40rem;
-  margin-bottom: 1.25rem;
-  font-size: 1.875rem;
-  line-height: 1.2;
-  color: var(--fd-navy);
-}
-
-.fd-close__title em {
-  font-style: italic;
-  color: var(--color-cobalt);
-}
-
-.fd-close__deck {
-  max-width: 36rem;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.625;
-  color: var(--fd-muted);
-}
-
-.fd-close__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-
-.fd-close__note {
-  max-width: 40rem;
-  font-size: 0.8125rem;
-  font-weight: 300;
-  line-height: 1.65;
-  color: var(--fd-muted);
-}
-
-.fd-close__note a {
-  color: var(--color-cobalt);
-  font-weight: 500;
-}
-
-.fd-close__note a:hover {
-  color: var(--fd-navy);
-}
-
-/* ---------- Founding motto ---------- */
-.fd-motto {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  padding-block: clamp(6rem, 10vw, 8rem);
   background: var(--color-navy-deep);
   color: var(--color-on-dark);
 }
 
-.fd-motto__image {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.sp-hero__content {
+  padding-block: var(--space-9) var(--space-8);
 }
 
-.fd-motto__shade {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(to right, rgba(8, 23, 38, 0.72), rgba(8, 23, 38, 0.35));
+.sp-hero__copy {
+  max-width: 44rem;
 }
 
-.fd-motto__grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: var(--space-8);
+.sp-hero__label {
+  margin-bottom: var(--space-4);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-ice);
 }
 
-.fd-motto__crest {
-  position: relative;
-  width: 7.5rem;
-  height: 7.5rem;
-}
-
-.fd-motto__crest::before {
-  content: '';
-  position: absolute;
-  inset: -0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-
-.fd-motto__crest img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.fd-motto__quote {
-  max-width: 36rem;
-}
-
-.fd-motto__quote blockquote {
-  margin-bottom: 1rem;
+.sp-hero__title {
+  margin-bottom: var(--space-6);
   font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--color-on-dark);
+}
+
+.sp-hero__title em {
   font-style: italic;
-  line-height: 1.3;
-  color: #fff;
+  color: var(--color-ice);
 }
 
-.fd-motto__quote figcaption {
+.sp-hero__lead {
+  max-width: 36rem;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: #e5e7eb;
+}
+
+/* ---------- Sections ---------- */
+.sp-section {
+  padding-block: var(--space-section);
+  scroll-margin-top: var(--header-height);
+}
+
+.sp-section--paper {
+  background: var(--color-paper);
+}
+
+.sp-section--cloud {
+  background: var(--color-cloud);
+}
+
+.sp-head {
   display: grid;
-  gap: 0.25rem;
+  justify-items: start;
+  gap: var(--space-5);
+  max-width: 48rem;
+  margin-bottom: var(--space-7);
 }
 
-.fd-motto__name {
+.sp-head--last {
+  margin-bottom: 0;
+}
+
+.sp-label {
+  margin-bottom: calc(var(--space-2) * -1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-cobalt);
+}
+
+.sp-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.sp-title em {
+  font-style: italic;
+  color: var(--color-cobalt);
+}
+
+.sp-text {
+  max-width: 40rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.625;
+  color: var(--color-muted);
+}
+
+.sp-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: var(--color-ink);
+}
+
+.sp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4) var(--space-6);
+  margin-top: var(--space-2);
+}
+
+.sp-note {
+  max-width: 40rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-small);
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+/* ---------- What a supporter should be able to inspect ---------- */
+.sp-inspect {
+  max-width: 48rem;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-ink);
+}
+
+.sp-list {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--color-line);
+}
+
+.sp-list li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: var(--space-3);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-line);
+  font-weight: 400;
+  color: var(--color-ink);
+}
+
+.sp-list__num {
+  padding-top: 0.2rem;
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-cobalt);
 }
 
-.fd-motto__source {
+.sp-inspect .sp-note {
+  margin-top: var(--space-5);
+}
+
+.sp-inspect__download {
+  display: inline-block;
+  margin-top: var(--space-4);
+}
+
+/* ---------- Founding ambition ---------- */
+.sp-routes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--color-ink);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.sp-routes__item {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-6) var(--space-6) 0;
+}
+
+.sp-routes__item + .sp-routes__item {
+  padding-right: 0;
+  padding-left: var(--space-6);
+  border-left: 1px solid var(--color-line);
+}
+
+.sp-routes__index {
   font-size: 0.875rem;
-  color: rgba(243, 244, 246, 0.85);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  color: var(--color-cobalt);
 }
 
-@media (min-width: 900px) {
-  .fd-motto__grid {
-    gap: var(--space-9);
-  }
-
-  .fd-motto__crest {
-    width: 9rem;
-    height: 9rem;
-  }
-
-  .fd-motto__quote {
-    padding-left: var(--space-6);
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-  }
+.sp-disclosure {
+  max-width: 48rem;
+  margin-top: var(--space-7);
+  padding: 0;
+  border-top: 1px solid var(--color-ink);
+  border-bottom: 1px solid var(--color-line);
 }
 
+.sp-disclosure__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-block: var(--space-5);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--color-ink);
+  list-style: none;
+  cursor: pointer;
+}
+
+.sp-disclosure__summary::-webkit-details-marker {
+  display: none;
+}
+
+.sp-disclosure__summary:hover {
+  color: var(--color-cobalt);
+}
+
+.sp-disclosure__summary:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 3px;
+}
+
+.sp-disclosure__icon {
+  position: relative;
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  color: var(--color-cobalt);
+}
+
+.sp-disclosure__icon::before,
+.sp-disclosure__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  transition: transform var(--duration) var(--ease);
+}
+
+.sp-disclosure__icon::after {
+  transform: rotate(90deg);
+}
+
+.sp-disclosure[open] .sp-disclosure__icon::after {
+  transform: rotate(0deg);
+}
+
+.sp-disclosure__body {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  padding-bottom: var(--space-6);
+}
+
+.sp-disclosure__body p {
+  margin: 0;
+  max-width: 40rem;
+}
+
+/* ---------- Responsive ---------- */
 @media (min-width: 640px) {
-  .fd-h2 {
-    font-size: 2.25rem;
-  }
-
-  .fd .fd-hero__title {
-    font-size: 3.75rem;
-  }
-
-  .fd-hero__deck {
+  .sp-hero__lead {
     font-size: 1.125rem;
   }
-
-  .fd-button {
-    font-size: 0.875rem;
-  }
-
-
-
-
-
-
-  .fd .fd-close__title {
-    font-size: 2.5rem;
-  }
 }
 
-@media (min-width: 1024px) {
-  .fd-section,
-  .fd-close {
-    padding-block: 6rem;
+@media (max-width: 760px) {
+  .sp-hero {
+    min-height: calc(100svh - 7.75rem);
   }
 
-  .fd .fd-hero__title {
-    font-size: 4.5rem;
+  .sp-hero__content {
+    padding-block: var(--space-9) var(--space-6);
   }
 
-
-
-
-
-}
-
-@media (max-width: 900px) {
-  .fd-hero__grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .fd-hero__aside {
-    max-width: 22rem;
-    padding-left: 0;
-    border-left: 0;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.24);
-  }
-
-
-
-
-  .fd-routes {
+  .sp-routes {
     grid-template-columns: 1fr;
   }
 
-  .fd-route,
-  .fd-route + .fd-route {
-    padding: 1.5rem 0;
+  .sp-routes__item,
+  .sp-routes__item + .sp-routes__item {
+    padding: var(--space-5) 0;
   }
 
-  .fd-route + .fd-route {
+  .sp-routes__item + .sp-routes__item {
     border-left: 0;
-    border-top: 1px solid var(--fd-border);
+    border-top: 1px solid var(--color-line);
   }
 
-
-
-}
-
-@media (max-width: 640px) {
-  .fd-close__actions .fd-button,
-  .fd-hero__actions .fd-button {
+  .sp-actions .cta {
     width: 100%;
-  }
-
-
-
-
-  .fd-motto__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
+    justify-content: center;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fd-button,
-  .fd-arrowlink {
+  .sp-disclosure__icon::before,
+  .sp-disclosure__icon::after {
     transition: none;
   }
 }
 
 @media print {
-  .fd-hero,
-  .fd-close {
-    background: #fff !important;
-    color: var(--fd-ink) !important;
+  .sp-hero {
+    min-height: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
   }
 
-  .fd .fd-hero__title,
-  .fd .fd-close__title,
-  .fd-hero__figure,
-  .fd-close__deck,
-  .fd-close__note,
-  .fd-hero__deck,
-  .fd-hero__capital-label,
-  .fd-hero__aside-text,
-  .fd-kicker--on-dark,
+  .sp-hero__title,
+  .sp-hero__lead {
+    color: var(--color-ink);
+  }
 
-  .fd-button--light,
-  .fd-button--ghost {
-    border: 1px solid var(--fd-border);
-    background: #fff;
-    color: var(--fd-ink);
+  .sp-hero__label,
+  .sp-hero__title em {
+    color: var(--color-cobalt);
   }
 }
 </style>
