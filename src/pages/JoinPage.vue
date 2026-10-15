@@ -18,11 +18,8 @@ const pathways = [
         <h1 id="join-title" class="join__title">We are recruiting <em>teachers, students and hosts.</em></h1>
         <p class="join__text">
           Choose the entry that fits you. Each one opens an application form: fill it in, download your answers and
-          email them to us.
-        </p>
-        <p class="join__note">
-          Formal admissions and appointments are not open yet. Forms prepare a draft on your device and never submit
-          automatically; a draft is not an application, reservation or offer. General inquiries:
+          email them to us. Formal admissions and appointments are not open yet. Forms prepare a draft on your device and
+          never submit automatically; a draft is not an application, reservation or offer. General inquiries:
           <a href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>.
         </p>
       </div>
@@ -91,17 +88,7 @@ const pathways = [
   color: var(--color-muted);
 }
 
-.join__note {
-  max-width: 34rem;
-  margin-top: var(--space-5);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-line);
-  font-size: 0.8125rem;
-  line-height: 1.6;
-  color: var(--color-muted);
-}
-
-.join__note a {
+.join__text a {
   color: inherit;
 }
 

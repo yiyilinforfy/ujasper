@@ -19,6 +19,7 @@ onMounted(() => {
 })
 
 const links = [
+  { to: '/', label: 'Discover' },
   { to: '/program', label: 'Field Semester' },
   { to: '/vision', label: 'Vision' },
   { to: '/publications', label: 'Publications' },
