@@ -549,6 +549,7 @@ h3 {
 .home-facts__list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-inline: auto;
   border-top: 1px solid var(--color-ink);
 }
 
