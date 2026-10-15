@@ -86,91 +86,109 @@ const privacy = [
       </div>
     </nav>
 
-    <section id="participation" class="care-section care-section--paper" aria-labelledby="participation-title">
+    <section id="participation" class="care-section care-section--white" aria-labelledby="participation-title">
       <div class="container">
-        <div class="care-head">
-          <p class="care-label">Participation</p>
-          <h2 id="participation-title" class="care-title">Take part<br><em>with agency.</em></h2>
-          <p class="care-copy">
+        <div class="sec-head">
+          <div>
+            <p class="label">01 / Participation</p>
+            <h2 id="participation-title" class="display">Take part<br><em>with agency.</em></h2>
+          </div>
+          <p>
             Personal phones, internet and live AI are off during teaching and camps, with agreed private medical,
             accessibility and essential-contact exceptions. Staff emergency communications remain active. Storage is
             voluntary and devices are returned on request.
           </p>
-          <p class="care-copy">
+          <p>
             The offline agreement covers teaching and camps. It does not authorize staff to withhold a device against
             someone’s wishes or prevent necessary contact. Access exceptions are handled privately.
           </p>
         </div>
-        <div class="care-item care-item--ruled">
-          <h3 class="care-item__title">Adaptation and choice</h3>
-          <p>
-            Use appropriate physical variations and equivalent academic evidence. Meditation is voluntary and may be
-            replaced with quiet observation or another agreed reflective practice. An alternative sleeping arrangement
-            or supervised day-camp equivalent can meet the same learning purpose.
-          </p>
-          <p>
-            No public fitness ranking, forced disclosure, required religious belief or punishment for a reasoned
-            disagreement belongs here.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <section id="field" class="care-section care-section--cloud" aria-labelledby="field-title">
-      <div class="container">
-        <div class="care-head">
-          <p class="care-label">Field and coaching</p>
-          <h2 id="field-title" class="care-title">The plan follows<br><em>the people and conditions.</em></h2>
-        </div>
-        <ul class="care-columns">
-          <li v-for="item in field" :key="item.title" class="care-item">
-            <h3 class="care-item__title">{{ item.title }}</h3>
-            <p v-for="paragraph in item.paragraphs" :key="paragraph">{{ paragraph }}</p>
-          </li>
-        </ul>
-        <p class="care-more">
-          <AppLink class="link" to="/read/operations">Read the full operations manual →</AppLink>
-        </p>
-      </div>
-    </section>
-
-    <section id="privacy" class="care-section care-section--paper" aria-labelledby="privacy-title">
-      <div class="container">
-        <div class="care-head">
-          <p class="care-label">Privacy</p>
-          <h2 id="privacy-title" class="care-title">Your draft remains<br><em>under your control.</em></h2>
-        </div>
-        <dl class="care-qa">
-          <div v-for="item in privacy" :key="item.question">
-            <dt>{{ item.question }}</dt>
-            <dd>{{ item.answer }}</dd>
+        <dl class="care-rows">
+          <div>
+            <dt>Adaptation and choice</dt>
+            <dd>
+              <p>
+                Use appropriate physical variations and equivalent academic evidence. Meditation is voluntary and may be
+                replaced with quiet observation or another agreed reflective practice. An alternative sleeping
+                arrangement or supervised day-camp equivalent can meet the same learning purpose.
+              </p>
+              <p class="care-callout">
+                No public fitness ranking, forced disclosure, required religious belief or punishment for a reasoned
+                disagreement belongs here.
+              </p>
+            </dd>
           </div>
         </dl>
       </div>
     </section>
 
+    <section id="field" class="care-section care-section--cloud" aria-labelledby="field-title">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="label">02 / Field and coaching</p>
+            <h2 id="field-title" class="display">The plan follows<br><em>the people and conditions.</em></h2>
+          </div>
+        </div>
+        <ul class="care-columns care-columns--two">
+          <li v-for="item in field" :key="item.title">
+            <h3 class="care-item__title">{{ item.title }}</h3>
+            <p v-for="paragraph in item.paragraphs" :key="paragraph">{{ paragraph }}</p>
+          </li>
+        </ul>
+        <AppLink class="cta cta--primary care-section__cta" to="/read/operations">
+          Read the full operations manual <span class="cta__arrow" aria-hidden="true">→</span>
+        </AppLink>
+      </div>
+    </section>
+
+    <section id="privacy" class="care-section care-section--white" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="label">03 / Privacy</p>
+            <h2 id="privacy-title" class="display">Your draft remains<br><em>under your control.</em></h2>
+          </div>
+        </div>
+        <div class="care-faq">
+          <details v-for="(item, i) in privacy" :key="item.question" :open="i === 0">
+            <summary>{{ item.question }}</summary>
+            <div class="care-faq__body">
+              <p>{{ item.answer }}</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section id="concerns" class="care-section care-section--cloud" aria-labelledby="concerns-title">
       <div class="container">
-        <div class="care-head">
-          <p class="care-label">Questions and concerns</p>
-          <h2 id="concerns-title" class="care-title">Speak up.<br><em>Be heard.</em></h2>
-          <p class="care-copy">
+        <div class="sec-head">
+          <div>
+            <p class="label">04 / Questions and concerns</p>
+            <h2 id="concerns-title" class="display">Speak up.<br><em>Be heard.</em></h2>
+          </div>
+          <p>
             Before delivery, participants must receive named contacts for academic questions, activity concerns and
             complaints, including a route independent of the person concerned. Consent for a photograph, testimonial or
             public project is separate from participation.
           </p>
         </div>
-        <div class="care-item care-item--ruled">
-          <h3 class="care-item__title">During the founding stage</h3>
-          <p>
-            Questions about this proposal or this website can be directed to Vincent Zhang at
-            <a class="link" href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>. This is not an emergency reporting
-            service. No operating cohort or independent complaints officer is currently announced.
-          </p>
-          <div class="care-actions">
-            <a class="cta cta--primary" href="mailto:vincent@ujasper.ca?subject=Jasper%20care%20or%20privacy%20question">Contact the founder</a>
+
+        <dl class="care-rows">
+          <div>
+            <dt>During the founding stage</dt>
+            <dd>
+              <p>
+                Questions about this proposal or this website can be directed to Vincent Zhang at
+                <a class="link" href="mailto:vincent@ujasper.ca">vincent@ujasper.ca</a>. This is not an emergency
+                reporting service. No operating cohort or independent complaints officer is currently announced.
+              </p>
+              <a class="cta cta--primary" href="mailto:vincent@ujasper.ca?subject=Jasper%20care%20or%20privacy%20question">Contact the founder</a>
+            </dd>
           </div>
-        </div>
+        </dl>
       </div>
     </section>
   </div>
@@ -181,8 +199,8 @@ const privacy = [
   font-family: var(--font-sans);
   font-variant-numeric: lining-nums;
   font-size: var(--text-body);
-  font-weight: 300;
-  line-height: 1.625;
+  font-weight: 400;
+  line-height: 1.75;
   color: var(--color-ink);
 }
 
@@ -195,9 +213,15 @@ const privacy = [
   list-style: none;
 }
 
-.care a:focus-visible {
-  outline: 2px solid var(--color-cobalt);
-  outline-offset: 3px;
+.care :where(h1, h2, h3) {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.care .display em,
+.care-hero__title em {
+  font-style: italic;
 }
 
 /* ---------- Hero ---------- */
@@ -242,7 +266,7 @@ const privacy = [
 
 .care-hero__place {
   margin-bottom: var(--space-4);
-  font-size: 0.875rem;
+  font-size: var(--text-label);
   font-weight: 600;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
@@ -250,16 +274,12 @@ const privacy = [
 
 .care .care-hero__title {
   margin-bottom: var(--space-6);
-  font-family: var(--font-serif);
   font-size: clamp(2.25rem, 6vw, 4.5rem);
-  font-weight: 400;
-  letter-spacing: -0.025em;
   line-height: 1.1;
   color: inherit;
 }
 
 .care-hero__title em {
-  font-style: italic;
   color: var(--color-ice);
 }
 
@@ -313,16 +333,17 @@ const privacy = [
 }
 
 .care-toc a:focus-visible {
-  outline-offset: -2px;
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 2px;
 }
 
 /* ---------- Sections ---------- */
 .care-section {
-  padding-block: var(--space-section);
+  padding-block: clamp(4.5rem, 8vw, 6.5rem);
   scroll-margin-top: calc(var(--header-height) + 3.25rem);
 }
 
-.care-section--paper {
+.care-section--white {
   background: var(--color-paper);
 }
 
@@ -330,77 +351,68 @@ const privacy = [
   background: var(--color-cloud);
 }
 
-.care-head {
-  display: grid;
-  justify-items: start;
-  gap: var(--space-4);
-  max-width: 48rem;
-  margin-bottom: var(--space-7);
-}
-
-.care-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: var(--tracking-label);
-  line-height: 1.5;
-  text-transform: uppercase;
+.care .sec-head .label {
   color: var(--color-cobalt);
 }
 
-.care .care-title {
-  font-family: var(--font-serif);
-  font-size: var(--text-display);
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-}
-
-.care-title em {
-  font-style: italic;
-  color: var(--color-cobalt);
-}
-
-.care-copy {
+.care .sec-head > p {
   max-width: 40rem;
-  color: var(--color-muted);
-}
-
-/* ---------- Items ---------- */
-.care-item {
-  display: grid;
-  align-content: start;
-  gap: var(--space-3);
-  color: var(--color-muted);
-}
-
-.care-item p {
-  max-width: 40rem;
-}
-
-.care-item--ruled {
-  max-width: 48rem;
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-ink);
-}
-
-.care .care-item__title {
-  margin-bottom: var(--space-1);
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 400;
-  letter-spacing: -0.015em;
-  line-height: 1.25;
+  line-height: 1.7;
   color: var(--color-ink);
 }
 
-.care-columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.care-section__cta {
+  margin-top: var(--space-7);
+}
+
+/* Labelled rows */
+.care-rows {
   border-top: 1px solid var(--color-ink);
 }
 
+.care-rows > div {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: var(--space-5);
+  padding-block: var(--space-5);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.care-rows dt {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.care-rows dd {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  max-width: 38rem;
+  color: var(--color-muted);
+}
+
+/* Column groups: top rule, thin dividers between columns */
+.care-columns {
+  display: grid;
+  border-top: 1px solid var(--color-ink);
+}
+
+.care-columns--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .care-columns > li {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
   padding: var(--space-6) var(--space-6) var(--space-2) 0;
+  color: var(--color-muted);
 }
 
 .care-columns > li + li {
@@ -408,37 +420,82 @@ const privacy = [
   border-left: 1px solid var(--color-line);
 }
 
-.care-more {
-  margin-top: var(--space-7);
+.care .care-item__title {
+  margin-bottom: var(--space-1);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: var(--color-ink);
 }
 
-.care-actions {
-  margin-top: var(--space-3);
+.care-callout {
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-cobalt);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-ink);
 }
 
-/* ---------- Privacy questions ---------- */
-.care-qa {
+/* Privacy FAQ */
+.care-faq {
   max-width: 48rem;
   border-top: 1px solid var(--color-ink);
 }
 
-.care-qa > div {
-  display: grid;
-  gap: var(--space-2);
-  padding-block: var(--space-5);
+.care-faq details {
   border-bottom: 1px solid var(--color-line);
 }
 
-.care-qa dt {
+.care-faq summary {
+  position: relative;
+  display: block;
+  padding: var(--space-5) var(--space-8) var(--space-5) 0;
   font-family: var(--font-serif);
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 1.4;
   color: var(--color-ink);
+  list-style: none;
+  cursor: pointer;
+  transition: color 150ms ease;
 }
 
-.care-qa dd {
-  max-width: 40rem;
+.care-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.care-faq summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--color-cobalt);
+  transform: translateY(-50%);
+  transition: transform 200ms var(--ease);
+}
+
+.care-faq details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.care-faq summary:hover {
+  color: var(--color-cobalt);
+}
+
+.care-faq summary:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 4px;
+}
+
+.care-faq__body {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 42rem;
+  padding-bottom: var(--space-6);
   color: var(--color-muted);
 }
 
@@ -461,22 +518,27 @@ const privacy = [
     font-size: clamp(2.5rem, 12vw, 3.5rem);
   }
 
-  .care-columns {
+  .care-rows > div {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .care-columns--two {
     grid-template-columns: 1fr;
   }
 
-  .care-columns > li {
-    padding-block: var(--space-6);
-    padding-right: 0;
-  }
-
-  .care-columns > li + li {
+  .care-columns--two > li + li {
     padding-left: 0;
     border-left: 0;
     border-top: 1px solid var(--color-line);
   }
 
-  .care-actions .cta {
+  .care-columns--two > li {
+    padding-block: var(--space-6);
+    padding-right: 0;
+  }
+
+  .care-section__cta {
     width: 100%;
     justify-content: center;
   }
@@ -485,6 +547,10 @@ const privacy = [
 @media (prefers-reduced-motion: reduce) {
   .care-hero__image {
     animation: none;
+  }
+
+  .care-faq summary::after {
+    transition: none;
   }
 }
 </style>

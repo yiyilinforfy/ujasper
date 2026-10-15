@@ -1,18 +1,74 @@
 <script setup lang="ts">
 import AppLink from '../components/AppLink.vue'
 
-const foundations = [
+interface VisionSection {
+  id: string
+  label: string
+  title: string
+  emphasis: string
+  paragraphs: string[]
+  items?: { title: string; text: string }[]
+}
+
+const sections: VisionSection[] = [
   {
-    title: 'Physical capability',
-    text: 'Train with purpose, practise restraint and learn to judge changing conditions. Recovery, consent and adaptation are part of demanding work.',
+    id: 'vision',
+    label: 'Vision and mission',
+    title: 'A university for the world.',
+    emphasis: 'Rooted in Jasper.',
+    paragraphs: [
+      'To establish in Jasper a university for the world, where people across cultures and backgrounds develop physical strength, depth of knowledge, independent minds and integrity. We envision a lifelong community that defends freedom, pursues truth, creates with courage and accepts public responsibility, whose members advance human flourishing through their own growth, their example and their contribution to others.',
+    ],
   },
   {
-    title: 'Humanistic depth',
-    text: 'Read named texts in context, question inherited assumptions and understand an opposing case before answering it.',
+    id: 'mission',
+    label: 'Our mission',
+    title: 'Body, humanities',
+    emphasis: 'and inquiry.',
+    paragraphs: [
+      'We unite sustained physical training, humanistic learning across civilizations, and original inquiry in mathematics, physics, chemistry and economics. Through nature, lectures, dialogue, debate, experiments and shared work, we develop courage, independent judgment, initiative, self-discipline and a commitment to justice.',
+      'This is the long-term educational purpose. The first Field Semester offers introductory work toward it; it is not a degree curriculum or a claim of disciplinary mastery.',
+    ],
   },
   {
-    title: 'Fundamental inquiry',
-    text: 'Move from a worthwhile question through mathematics, observation, modelling and experiment to an explanation others can examine.',
+    id: 'foundations',
+    label: 'Foundations',
+    title: 'The three foundations',
+    emphasis: 'belong together.',
+    paragraphs: [],
+    items: [
+      {
+        title: 'Physical capability',
+        text: 'Train with purpose, practise restraint and learn to judge changing conditions. Recovery, consent and adaptation are part of demanding work.',
+      },
+      {
+        title: 'Humanistic depth',
+        text: 'Read named texts in context, question inherited assumptions and understand an opposing case before answering it.',
+      },
+      {
+        title: 'Fundamental inquiry',
+        text: 'Move from a worthwhile question through mathematics, observation, modelling and experiment to an explanation others can examine.',
+      },
+    ],
+  },
+  {
+    id: 'ai',
+    label: 'AI & agency',
+    title: 'Independent first.',
+    emphasis: 'Connected with judgment.',
+    paragraphs: [
+      'AI may extend the university’s future inquiry. In the first semester, learners build and preserve original work offline. A separately arranged optional AI Return Lab asks what a model adds, gets wrong or leaves unexplained.',
+    ],
+  },
+  {
+    id: 'community',
+    label: 'Community',
+    title: 'One University.',
+    emphasis: 'One Family.',
+    paragraphs: [
+      'One University → One Family is a lifelong commitment to mutual care across ancestry, nationality, ethnicity and race. We build trust through honesty, generosity and keeping our word. Belonging includes the freedom to disagree, think independently and choose one\'s own path.',
+      'A strong community protects dissent. No learner is assessed on private beliefs, obedience to the founder or willingness to disclose personal reflection.',
+    ],
   },
 ]
 
@@ -30,108 +86,53 @@ const pad = (n: number) => String(n).padStart(2, '0')
 
 <template>
   <div class="vp">
-    <section id="vision" class="vp-section vp-section--paper vp-intro" aria-labelledby="vision-title">
+    <section
+      v-for="(section, i) in sections"
+      :id="section.id"
+      :key="section.id"
+      class="vp-section"
+      :class="i % 2 ? 'vp-section--cloud' : 'vp-section--paper'"
+      :aria-labelledby="`${section.id}-title`"
+    >
       <div class="container">
         <div class="vp-column">
-          <p class="vp-label">Vision and mission</p>
-          <h1 id="vision-title" class="vp-title">A university for the world.<br><em>Rooted in Jasper.</em></h1>
-          <div class="vp-body">
-            <p>
-              To establish in Jasper a university for the world, where people across cultures and backgrounds develop
-              physical strength, depth of knowledge, independent minds and integrity. We envision a lifelong community
-              that defends freedom, pursues truth, creates with courage and accepts public responsibility, whose members
-              advance human flourishing through their own growth, their example and their contribution to others.
-            </p>
+          <p class="vp-label">{{ pad(i + 1) }} — {{ section.label }}</p>
+          <component :is="i === 0 ? 'h1' : 'h2'" :id="`${section.id}-title`" class="vp-title">
+            {{ section.title }}<br><em>{{ section.emphasis }}</em>
+          </component>
+          <div v-if="section.paragraphs.length" class="vp-body">
+            <p v-for="paragraph in section.paragraphs" :key="paragraph">{{ paragraph }}</p>
           </div>
+          <ol v-if="section.items" class="vp-items">
+            <li v-for="(item, j) in section.items" :key="item.title" class="vp-item">
+              <h3 class="vp-item__title">
+                <span class="vp-item__index">{{ pad(j + 1) }}</span>
+                {{ item.title }}
+              </h3>
+              <p class="vp-item__text">{{ item.text }}</p>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section id="mission" class="vp-section vp-section--cloud" aria-labelledby="mission-title">
+    <section id="declaration" class="vp-section vp-section--cloud" aria-labelledby="declaration-title">
       <div class="container">
         <div class="vp-column">
-          <p class="vp-label">Our mission</p>
-          <h2 id="mission-title" class="vp-title">Body, humanities<br><em>and inquiry.</em></h2>
+          <p class="vp-label">{{ pad(sections.length + 1) }} — Declaration</p>
+          <h2 id="declaration-title" class="vp-title">Vincent Zhang’s complete<br><em>founding educational declaration.</em></h2>
           <div class="vp-body">
-            <p>
-              We unite sustained physical training, humanistic learning across civilizations, and original inquiry in
-              mathematics, physics, chemistry and economics. Through nature, lectures, dialogue, debate, experiments and
-              shared work, we develop courage, independent judgment, initiative, self-discipline and a commitment to
-              justice.
-            </p>
+            <p v-for="paragraph in declaration" :key="paragraph">{{ paragraph }}</p>
           </div>
           <p class="vp-note">
-            This is the long-term educational purpose. The first Field Semester offers introductory work toward it; it is
-            not a degree curriculum or a claim of disciplinary mastery.
+            Historical traditions are inspirations, not affiliations or endorsements.
+            <AppLink class="link" to="/sources#educational-traditions">Historical notes and sources</AppLink>
           </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="foundations" class="vp-section vp-section--paper" aria-label="Three foundations">
-      <div class="container">
-        <ol class="vp-column vp-foundations">
-          <li v-for="(item, i) in foundations" :key="item.title" class="vp-foundation">
-            <span class="vp-foundation__index">{{ pad(i + 1) }}</span>
-            <h3 class="vp-foundation__title">{{ item.title }}</h3>
-            <p class="vp-foundation__text">{{ item.text }}</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="community" class="vp-section vp-section--cloud" aria-label="Independence and community">
-      <div class="container">
-        <div class="vp-column">
-          <div class="vp-block">
-            <h2 class="vp-title">Independent first.<br><em>Connected with judgment.</em></h2>
-            <div class="vp-body">
-              <p>
-                AI may extend the university’s future inquiry. In the first semester, learners build and preserve
-                original work offline. A separately arranged optional AI Return Lab asks what a model adds, gets wrong or
-                leaves unexplained.
-              </p>
-            </div>
-          </div>
-          <div class="vp-block">
-            <h2 class="vp-title">One University.<br><em>One Family.</em></h2>
-            <div class="vp-body">
-              <p>
-                One University → One Family is a lifelong commitment to mutual care across ancestry, nationality,
-                ethnicity and race. We build trust through honesty, generosity and keeping our word. Belonging includes the
-                freedom to disagree, think independently and choose one's own path.
-              </p>
-              <p>
-                A strong community protects dissent. No learner is assessed on private beliefs, obedience to the founder
-                or willingness to disclose personal reflection.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="declaration" class="vp-section vp-section--paper" aria-label="The founding educational declaration">
-      <div class="container">
-        <div class="vp-column">
-          <details class="vp-declaration">
-            <summary class="vp-declaration__summary">
-              <span>Read Vincent Zhang’s complete founding educational declaration</span>
-              <span class="vp-declaration__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="vp-body vp-declaration__body">
-              <p v-for="paragraph in declaration" :key="paragraph">{{ paragraph }}</p>
-            </div>
-            <p class="vp-note">Historical traditions are inspirations, not affiliations or endorsements.</p>
-            <p class="vp-note">
-              <AppLink class="link" to="/sources">Historical notes and sources</AppLink>
-            </p>
-          </details>
-          <div class="vp-actions">
+          <p class="vp-next">
             <AppLink class="cta cta--primary" to="/program">
               Explore the first program <span class="cta__arrow" aria-hidden="true">→</span>
             </AppLink>
-          </div>
+          </p>
         </div>
       </div>
     </section>
@@ -151,7 +152,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
   line-height: 1.625;
 }
 
-.vp :where(h1, h2, h3, p, ol, details) {
+.vp :where(h1, h2, h3, p, ol) {
   margin: 0;
 }
 
@@ -169,10 +170,6 @@ const pad = (n: number) => String(n).padStart(2, '0')
   background: var(--color-cloud);
 }
 
-.vp-intro {
-  padding-top: var(--space-8);
-}
-
 .vp-column {
   max-width: 46rem;
   margin-inline: auto;
@@ -187,14 +184,13 @@ const pad = (n: number) => String(n).padStart(2, '0')
   color: var(--color-cobalt);
 }
 
-.vp .vp-title {
+.vp-title {
   margin-bottom: var(--space-6);
   font-family: var(--font-serif);
   font-size: var(--text-display);
   font-weight: 400;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  color: var(--color-ink);
 }
 
 .vp-title em {
@@ -202,7 +198,8 @@ const pad = (n: number) => String(n).padStart(2, '0')
   color: var(--color-cobalt);
 }
 
-.vp-body p {
+.vp-body p,
+.vp-item__text {
   font-family: var(--font-serif);
   font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
   line-height: 1.8;
@@ -213,158 +210,64 @@ const pad = (n: number) => String(n).padStart(2, '0')
   margin-top: var(--space-5);
 }
 
-.vp-note {
-  max-width: 40rem;
-  margin-top: var(--space-6);
-  font-size: 1rem;
-  line-height: 1.625;
-  color: var(--color-muted);
-}
-
-.vp-note + .vp-note {
-  margin-top: var(--space-3);
-}
-
-/* ---------- Three foundations: numbered items on thin rules ---------- */
-.vp-foundations {
+/* ---------- Foundations: numbered items divided by thin rules ---------- */
+.vp-items {
   padding: 0;
-  border-top: 1px solid var(--color-ink);
   list-style: none;
 }
 
-.vp-foundation {
-  display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr);
-  column-gap: var(--space-5);
-  padding-block: var(--space-6);
-  border-bottom: 1px solid var(--vp-rule);
+.vp-item {
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--vp-rule);
 }
 
-.vp-foundation__index {
-  grid-row: span 2;
-  padding-top: 0.45rem;
+.vp-item:first-child {
+  border-top-color: var(--color-ink);
+}
+
+.vp-item + .vp-item {
+  margin-top: var(--space-6);
+}
+
+.vp-item__title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.vp-item__index {
+  font-family: var(--font-sans);
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: var(--tracking-label);
   color: var(--color-cobalt);
 }
 
-.vp .vp-foundation__title {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: -0.015em;
-  line-height: 1.3;
-  color: var(--color-ink);
-}
-
-.vp-foundation__text {
-  max-width: 40rem;
-  margin-top: var(--space-3);
+.vp-note {
+  margin-top: var(--space-6);
+  font-size: var(--text-small);
+  line-height: 1.6;
   color: var(--color-muted);
 }
 
-/* ---------- Two stacked statements separated by a rule ---------- */
-.vp-block + .vp-block {
-  margin-top: var(--space-8);
-  padding-top: var(--space-8);
+.vp-note .link {
+  font-size: inherit;
+}
+
+.vp-next {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
   border-top: 1px solid var(--vp-rule);
-}
-
-/* ---------- Declaration ---------- */
-.vp .vp-declaration {
-  padding: 0;
-  border-top: 1px solid var(--color-ink);
-  border-bottom: 1px solid var(--vp-rule);
-}
-
-.vp-declaration__summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-5);
-  padding-block: var(--space-6);
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  color: var(--color-ink);
-  list-style: none;
-  cursor: pointer;
-}
-
-.vp-declaration__summary::-webkit-details-marker {
-  display: none;
-}
-
-.vp-declaration__summary:hover {
-  color: var(--color-cobalt);
-}
-
-.vp-declaration__summary:focus-visible {
-  outline: 2px solid var(--color-cobalt);
-  outline-offset: 3px;
-}
-
-.vp-declaration__icon {
-  position: relative;
-  flex: none;
-  width: 1rem;
-  height: 1rem;
-}
-
-.vp-declaration__icon::before,
-.vp-declaration__icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-  transition: transform var(--duration) var(--ease);
-}
-
-.vp-declaration__icon::after {
-  transform: rotate(90deg);
-}
-
-.vp-declaration[open] .vp-declaration__icon::after {
-  transform: rotate(0deg);
-}
-
-.vp-declaration__body {
-  padding-top: var(--space-2);
-}
-
-.vp-declaration > .vp-note:last-child {
-  padding-bottom: var(--space-6);
-}
-
-.vp-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-4) var(--space-6);
-  margin-top: var(--space-7);
 }
 
 /* ---------- Focus ---------- */
 .vp a:focus-visible {
   outline: 2px solid var(--color-cobalt);
   outline-offset: 3px;
-}
-
-@media (max-width: 640px) {
-  .vp-foundation {
-    grid-template-columns: 1fr;
-  }
-
-  .vp-foundation__index {
-    grid-row: auto;
-    padding-top: 0;
-    margin-bottom: var(--space-2);
-  }
 }
 </style>

@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import AppLink from '../components/AppLink.vue'
+
+const destinations = [
+  { to: '/', label: 'Return home' },
+  { to: '/publications', label: 'Find a publication' },
+  { to: '/program', label: 'Explore the Field Semester' },
+]
 </script>
 
 <template>
@@ -8,11 +14,11 @@ import AppLink from '../components/AppLink.vue'
       <p class="nf__label">404 · Page not found</p>
       <h1 id="nf-title" class="nf__title">A different path<br><em>starts here.</em></h1>
       <p class="nf__text">The page may have moved or the address may contain a typo.</p>
-      <div class="nf__actions">
-        <AppLink class="cta cta--primary" to="/">Return home</AppLink>
-        <AppLink class="cta cta--outline" to="/publications">Find a publication</AppLink>
-        <AppLink class="link" to="/program">Explore the Field Semester</AppLink>
-      </div>
+      <ul class="nf__links">
+        <li v-for="item in destinations" :key="item.to">
+          <AppLink class="link" :to="item.to">{{ item.label }}</AppLink>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -25,7 +31,7 @@ import AppLink from '../components/AppLink.vue'
   font-family: var(--font-sans);
 }
 
-.nf :where(h1, p) {
+.nf :where(h1, p, ul) {
   margin: 0;
 }
 
@@ -61,14 +67,13 @@ import AppLink from '../components/AppLink.vue'
   color: var(--color-muted);
 }
 
-.nf__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-4) var(--space-6);
-  max-width: 48rem;
+.nf__links {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 40rem;
   margin-top: var(--space-7);
-  padding-top: var(--space-6);
+  padding: var(--space-5) 0 0;
   border-top: 1px solid var(--color-ink);
+  list-style: none;
 }
 </style>

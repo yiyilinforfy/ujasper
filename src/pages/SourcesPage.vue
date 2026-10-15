@@ -1,5 +1,55 @@
 <script setup lang="ts">
-const influences = [
+const contents = [
+  { id: 'governance-sources', label: 'Governance sources' },
+  { id: 'operating-sources', label: 'Operating references' },
+  { id: 'educational-traditions', label: 'Authorship and provenance' },
+  { id: 'readings', label: 'Primary readings' },
+  { id: 'credits', label: 'Photography and type' },
+]
+
+const governanceLinks = [
+  {
+    href: 'https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-128.html',
+    title: 'Canada Not-for-profit Corporations Act section 128',
+  },
+  {
+    href: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html',
+    title: 'Canada Not-for-profit Corporations Regulations section 28',
+  },
+]
+
+const operatingGroups = [
+  {
+    title: 'Name and program status',
+    text: 'Current written advice and any required authorization are still needed for the name, structure, advertising and planned activities. The founding-project description does not itself grant permission.',
+    links: [
+      {
+        href: 'https://open.alberta.ca/publications/p19p5',
+        title: 'Alberta King’s Printer — Post-secondary Learning Act',
+      },
+      {
+        href: 'https://www.alberta.ca/post-secondary-program-standards-oversight',
+        title: 'Alberta program standards and oversight',
+      },
+    ],
+  },
+  {
+    title: 'Field activity permissions',
+    text: 'Confirm the exact operator, activity and route with Parks Canada. A listed-trail exemption from a Guided Business Licence does not remove the Basic Business Licence requirement. Confirm any required guide qualifications and identification cards.',
+    links: [
+      {
+        href: 'https://parks.canada.ca/pn-np/ab/jasper/gestion-management/permis-permits/licence/guides',
+        title: 'Jasper guided business requirements',
+      },
+      {
+        href: 'https://parks.canada.ca/pn-np/ab/jasper/securite-safety',
+        title: 'Jasper visitor safety',
+      },
+    ],
+  },
+]
+
+const traditions = [
   { href: 'https://www.britannica.com/topic/Academy-ancient-school-Athens-Greece', title: 'Ancient Greek inquiry' },
   { href: 'https://www.unibo.it/en/university/who-we-are/our-history', title: 'Bologna and scholarly autonomy' },
   { href: 'https://www.univie.ac.at/en/about-us/', title: 'Vienna and research' },
@@ -54,127 +104,95 @@ const readings = [
     selection: 'Chapters VI–VII; bounded passages to be selected',
   },
   { week: '6', reading: 'Epictetus · Enchiridion', selection: 'Sections 1, 5 and 30' },
-  { week: 'Optional', reading: 'E. Pauline Johnson · Legends of Vancouver', selection: 'Author’s foreword and The Siwash Rock' },
+  {
+    week: 'Optional',
+    reading: 'E. Pauline Johnson · Legends of Vancouver',
+    selection: 'Author’s foreword and The Siwash Rock',
+  },
 ]
 
-const editions = [
-  { href: 'https://classics.mit.edu/Plato/apology.html', title: 'Plato — Apology', edition: 'Benjamin Jowett' },
-  { href: 'https://www.gutenberg.org/ebooks/216', title: 'Laozi — Tao Te Ching', edition: 'James Legge' },
+const sourceEditions = [
+  { href: 'https://classics.mit.edu/Plato/apology.html', title: 'Plato — Apology', note: 'Benjamin Jowett' },
+  { href: 'https://www.gutenberg.org/ebooks/216', title: 'Laozi — Tao Te Ching', note: 'James Legge' },
   {
     href: 'https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html',
     title: 'Aristotle — Nicomachean Ethics',
-    edition: 'W. D. Ross',
+    note: 'W. D. Ross',
   },
-  { href: 'https://www.gutenberg.org/ebooks/3330', title: 'Confucius — Analects', edition: 'James Legge' },
+  { href: 'https://www.gutenberg.org/ebooks/3330', title: 'Confucius — Analects', note: 'James Legge' },
   {
     href: 'https://accesstoinsight.org/tipitaka/kn/dhp/dhp.02.than',
     title: 'Dhammapada — Heedfulness',
-    edition: 'Thanissaro Bhikkhu',
+    note: 'Thanissaro Bhikkhu',
   },
   {
     href: 'https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-yangming-knowing-acting.htm',
     title: 'Wang Yangming — Unity of Knowing and Acting',
-    edition: 'Columbia Asia for Educators excerpt',
+    note: 'Columbia Asia for Educators excerpt',
   },
   {
     href: 'https://www.gutenberg.org/ebooks/9662',
     title: 'David Hume — Enquiry Concerning Human Understanding',
-    edition: 'Specified Gutenberg source',
+    note: 'Specified Gutenberg source',
   },
-  { href: 'https://www.gutenberg.org/ebooks/34901', title: 'John Stuart Mill — On Liberty', edition: 'Specified Gutenberg source' },
+  { href: 'https://www.gutenberg.org/ebooks/34901', title: 'John Stuart Mill — On Liberty', note: 'Specified Gutenberg source' },
   {
     href: 'https://www.gutenberg.org/ebooks/3420',
     title: 'Mary Wollstonecraft — A Vindication of the Rights of Woman',
-    edition: 'Specified Gutenberg source',
+    note: 'Specified Gutenberg source',
   },
   {
     href: 'https://doi.org/10.1017/CBO9780511807763.005',
     title: 'Elinor Ostrom — Governing the Commons',
-    edition: 'Cambridge University Press, licensed or library copy',
+    note: 'Cambridge University Press, licensed or library copy',
   },
-  { href: 'https://www.gutenberg.org/ebooks/7164', title: 'Rabindranath Tagore — Gitanjali', edition: 'Author’s English rendering' },
+  {
+    href: 'https://www.gutenberg.org/ebooks/7164',
+    title: 'Rabindranath Tagore — Gitanjali',
+    note: 'Author’s English rendering',
+  },
   {
     href: 'https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/maligne',
     title: 'Parks Canada — Maligne Lake area and Mary Schäffer Loop',
-    edition: 'Official site account',
+    note: 'Official site account',
   },
   {
     href: 'https://www.gutenberg.org/ebooks/23',
     title: 'Frederick Douglass — Narrative of the Life of Frederick Douglass',
-    edition: 'Specified Gutenberg source',
+    note: 'Specified Gutenberg source',
   },
-  { href: 'https://classics.mit.edu/Epictetus/epicench.html', title: 'Epictetus — Enchiridion', edition: 'Elizabeth Carter' },
+  { href: 'https://classics.mit.edu/Epictetus/epicench.html', title: 'Epictetus — Enchiridion', note: 'Elizabeth Carter' },
   {
     href: 'https://www.gutenberg.org/ebooks/3478',
     title: 'E. Pauline Johnson — Legends of Vancouver',
-    edition: 'Specified Gutenberg source',
+    note: 'Specified Gutenberg source',
   },
 ]
 
-const laboratory = [
+const laboratoryLinks = [
   {
     href: 'https://parks.canada.ca/~/~/~/link.aspx?_id=03038F177E7044559197C51732328A87&_z=z',
-    code: 'D1',
-    title: 'Dark-sky preserve',
+    title: 'D1 / Dark-sky preserve',
   },
   {
     href: 'https://www.parks.canada.ca/pn-np/ab/jasper/nature/environment/ecosys/glaciers',
-    code: 'D2',
-    title: 'Glaciers and icefields',
+    title: 'D2 / Glaciers and icefields',
   },
   {
     href: 'https://parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/medicine',
-    code: 'D3',
-    title: 'Medicine Lake',
+    title: 'D3 / Medicine Lake',
   },
-  { href: 'https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs', code: 'D4', title: 'Miette mineral values' },
+  { href: 'https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs', title: 'D4 / Miette mineral values' },
   {
     href: 'https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/maligne',
-    code: 'D5',
-    title: 'Maligne mapping history',
-  },
-]
-
-const operating = [
-  {
-    title: 'Name and program status',
-    text: 'Current written advice and any required authorization are still needed for the name, structure, advertising and planned activities. The founding-project description does not itself grant permission.',
-    links: [
-      { href: 'https://open.alberta.ca/publications/p19p5', title: 'Alberta King’s Printer — Post-secondary Learning Act' },
-      {
-        href: 'https://www.alberta.ca/post-secondary-program-standards-oversight',
-        title: 'Alberta program standards and oversight',
-      },
-    ],
-  },
-  {
-    title: 'Field activity permissions',
-    text: 'Confirm the exact operator, activity and route with Parks Canada. A listed-trail exemption from a Guided Business Licence does not remove the Basic Business Licence requirement. Confirm any required guide qualifications and identification cards.',
-    links: [
-      {
-        href: 'https://parks.canada.ca/pn-np/ab/jasper/gestion-management/permis-permits/licence/guides',
-        title: 'Jasper guided business requirements',
-      },
-      { href: 'https://parks.canada.ca/pn-np/ab/jasper/securite-safety', title: 'Jasper visitor safety' },
-    ],
-  },
-]
-
-const governance = [
-  {
-    href: 'https://laws-lois.justice.gc.ca/eng/acts/C-7.75/section-128.html',
-    title: 'Canada Not-for-profit Corporations Act section 128',
-  },
-  {
-    href: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html',
-    title: 'Canada Not-for-profit Corporations Regulations section 28',
+    title: 'D5 / Maligne mapping history',
   },
 ]
 </script>
 
 <template>
   <div class="src">
-    <!-- 01 Sources and credits · Authorship and provenance -->
+    <!-- Intro -->
     <section class="src-section src-section--paper src-intro" aria-labelledby="src-title">
       <div class="container">
         <div class="src-head">
@@ -186,39 +204,94 @@ const governance = [
           </p>
         </div>
 
-        <div class="src-block">
-          <h2 id="src-authorship-title" class="src-title">Authorship<br><em>and provenance.</em></h2>
-          <div class="src-body">
-            <p>
-              Founding vision, original crest, recovered welcome and Jasper Dream Crying: Vincent Zhang. The original
-              welcome is identified by the founder as written in 2015; spacing is normalized. Contemporary program
-              writing is presented separately.
-            </p>
-            <p>
-              Release edition: <time datetime="2026-10-15">15 October 2026</time>. Shared content produces the public
-              program, weekly reading plan, syllabus and publications. Reading sources are not a bundled anthology or
-              permission to reproduce modern translations.
-            </p>
-          </div>
-        </div>
-
-        <div id="educational-traditions" class="src-sub">
-          <h3 class="src-item-title">Historical influences</h3>
-          <ul class="src-list">
-            <li v-for="link in influences" :key="link.href" class="src-list__row">
-              <a class="src-list__link" :href="link.href">{{ link.title }} <span aria-hidden="true">↗</span></a>
-            </li>
-          </ul>
-          <p class="src-note">
-            These traditions have different histories. The declaration draws on particular educational ideas rather than
-            claiming a single uninterrupted institutional model.
-          </p>
+        <div class="src-contents" role="navigation" aria-label="On this page">
+          <a v-for="(item, i) in contents" :key="item.id" :href="`#${item.id}`" class="src-contents__item">
+            <span class="src-contents__num">{{ String(i + 1).padStart(2, '0') }}</span>
+            <span>{{ item.label }}</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- 02 Primary readings -->
-    <section id="readings" class="src-section src-section--cloud" aria-labelledby="src-readings-title">
+    <!-- Governance sources -->
+    <section id="governance-sources" class="src-section src-section--cloud" aria-labelledby="src-governance-title">
+      <div class="container">
+        <div id="governance" class="src-head">
+          <h2 id="src-governance-title" class="src-title">Governance sources</h2>
+          <p class="src-copy">
+            For a federal not-for-profit corporation, Act section 128(3) and Regulations section 28(1) govern elected
+            director terms, with the Regulations specifying four years. Re-election and other governance rules require
+            attention. This does not determine Jasper’s eventual structure or establish lifetime voting rights.
+          </p>
+        </div>
+
+        <ul class="src-list">
+          <li v-for="link in governanceLinks" :key="link.href" class="src-list__row">
+            <a class="src-list__link" :href="link.href" target="_blank" rel="noopener noreferrer">
+              {{ link.title }} <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Operating references -->
+    <section id="operating-sources" class="src-section src-section--paper" aria-labelledby="src-operating-title">
+      <div class="container">
+        <div class="src-head">
+          <p class="src-label">Operating references</p>
+          <h2 id="src-operating-title" class="src-title">Confirm the actual<br><em>requirements.</em></h2>
+        </div>
+
+        <template v-for="(group, i) in operatingGroups" :key="group.title">
+          <h3 class="src-subhead" :class="{ 'src-subhead--spaced': i > 0 }">{{ group.title }}</h3>
+          <p class="src-copy src-subcopy">{{ group.text }}</p>
+          <ul class="src-list">
+            <li v-for="link in group.links" :key="link.href" class="src-list__row">
+              <a class="src-list__link" :href="link.href" target="_blank" rel="noopener noreferrer">
+                {{ link.title }} <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </template>
+      </div>
+    </section>
+
+    <!-- Authorship and provenance -->
+    <section id="educational-traditions" class="src-section src-section--cloud" aria-labelledby="src-traditions-title">
+      <div class="container">
+        <div class="src-head">
+          <h2 id="src-traditions-title" class="src-title">Authorship<br><em>and provenance.</em></h2>
+          <p class="src-copy">
+            Founding vision, original crest, recovered welcome and Jasper Dream Crying: Vincent Zhang. The original
+            welcome is identified by the founder as written in 2015; spacing is normalized. Contemporary program writing
+            is presented separately.
+          </p>
+          <p class="src-copy">
+            Release edition: 15 October 2026. Shared content produces the public program, weekly reading plan, syllabus
+            and publications. Reading sources are not a bundled anthology or permission to reproduce modern
+            translations.
+          </p>
+        </div>
+
+        <h3 class="src-subhead">Historical influences</h3>
+        <ul class="src-list">
+          <li v-for="link in traditions" :key="link.href" class="src-list__row">
+            <a class="src-list__link" :href="link.href" target="_blank" rel="noopener noreferrer">
+              {{ link.title }} <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="src-copy src-after">
+          These traditions have different histories. The declaration draws on particular educational ideas rather than
+          claiming a single uninterrupted institutional model.
+        </p>
+      </div>
+    </section>
+
+    <!-- Primary readings and Jasper as Laboratory -->
+    <section id="readings" class="src-section src-section--paper" aria-labelledby="src-readings-title">
       <div class="container">
         <div class="src-head">
           <p class="src-label">Primary readings</p>
@@ -236,8 +309,8 @@ const governance = [
             </thead>
             <tbody>
               <tr v-for="row in readings" :key="row.reading">
-                <td class="src-table__week">{{ row.week }}</td>
-                <td class="src-table__reading">{{ row.reading }}</td>
+                <td>{{ row.week }}</td>
+                <td>{{ row.reading }}</td>
                 <td>{{ row.selection }}</td>
               </tr>
             </tbody>
@@ -245,36 +318,30 @@ const governance = [
         </div>
 
         <details class="src-details">
-          <summary class="src-details__summary">Open the source editions</summary>
-          <ul class="src-list src-details__list">
-            <li v-for="link in editions" :key="link.href" class="src-list__row">
-              <p>
-                <a class="src-list__link" :href="link.href">{{ link.title }} <span aria-hidden="true">↗</span></a>
-                <span class="src-list__meta"> · {{ link.edition }}</span>
-              </p>
+          <summary>Open the source editions</summary>
+          <ul class="src-list">
+            <li v-for="link in sourceEditions" :key="link.title" class="src-list__row">
+              <a class="src-list__link" :href="link.href" target="_blank" rel="noopener noreferrer">
+                {{ link.title }} <span aria-hidden="true">↗</span>
+              </a>
+              <p class="src-list__note">{{ link.note }}</p>
             </li>
           </ul>
         </details>
 
-        <p class="src-note">
+        <p class="src-copy src-after">
           Teachers select bounded passages, prepare accessible formats and verify reproduction rights before delivery.
           The primary reading plan includes philosophy, poetry, memoir and local accounts.
         </p>
-      </div>
-    </section>
 
-    <!-- 03 Jasper as Laboratory -->
-    <section class="src-section src-section--paper" aria-labelledby="src-laboratory-title">
-      <div class="container">
-        <div class="src-head">
+        <div class="src-head src-head--spaced">
           <p class="src-label">Jasper as Laboratory</p>
-          <h2 id="src-laboratory-title" class="src-title">A real place.<br><em>A traceable question.</em></h2>
+          <h2 class="src-title">A real place.<br><em>A traceable question.</em></h2>
         </div>
-
         <ul class="src-list">
-          <li v-for="link in laboratory" :key="link.code" class="src-list__row">
-            <a class="src-list__link" :href="link.href">
-              <span class="src-list__code">{{ link.code }} /</span> {{ link.title }} <span aria-hidden="true">↗</span>
+          <li v-for="link in laboratoryLinks" :key="link.href" class="src-list__row">
+            <a class="src-list__link" :href="link.href" target="_blank" rel="noopener noreferrer">
+              {{ link.title }} <span aria-hidden="true">↗</span>
             </a>
           </li>
         </ul>
@@ -286,87 +353,50 @@ const governance = [
       </div>
     </section>
 
-    <!-- 04 Operating references -->
-    <section id="operating-sources" class="src-section src-section--cloud" aria-labelledby="src-operating-title">
-      <div class="container">
-        <div class="src-head">
-          <p class="src-label">Operating references</p>
-          <h2 id="src-operating-title" class="src-title">Confirm the actual<br><em>requirements.</em></h2>
-        </div>
-
-        <div class="src-grid">
-          <div v-for="group in operating" :key="group.title" class="src-grid__item">
-            <h3 class="src-item-title">{{ group.title }}</h3>
-            <p class="src-copy">{{ group.text }}</p>
-            <ul class="src-list">
-              <li v-for="link in group.links" :key="link.href" class="src-list__row">
-                <a class="src-list__link" :href="link.href">{{ link.title }} <span aria-hidden="true">↗</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 Governance sources -->
-    <section id="governance-sources" class="src-section src-section--paper" aria-labelledby="src-governance-title">
-      <div id="governance" class="container src-anchor">
-        <div class="src-head">
-          <h2 id="src-governance-title" class="src-title">Governance sources</h2>
-          <p class="src-copy">
-            For a federal not-for-profit corporation, Act section 128(3) and Regulations section 28(1) govern elected
-            director terms, with the Regulations specifying four years. Re-election and other governance rules require
-            attention. This does not determine Jasper’s eventual structure or establish lifetime voting rights.
-          </p>
-        </div>
-
-        <ul class="src-list">
-          <li v-for="link in governance" :key="link.href" class="src-list__row">
-            <a class="src-list__link" :href="link.href">{{ link.title }} <span aria-hidden="true">↗</span></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 06 Photography and type -->
+    <!-- Photography and type -->
     <section id="credits" class="src-section src-section--cloud" aria-labelledby="src-credits-title">
       <div class="container">
         <div class="src-head">
           <h2 id="src-credits-title" class="src-title">Photography<br><em>and type.</em></h2>
-          <p class="src-copy">
-            Morning at Spirit Island — © Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0. Resized, compressed and
-            cropped for responsive presentation; adapted photo versions retain that licence. Landscape context only: no
-            campus, class location or access permission is implied.
-          </p>
-          <div class="src-links">
-            <a class="link" href="https://commons.wikimedia.org/wiki/File:Morning_at_Spirit_Island.jpg">
-              Photograph source <span aria-hidden="true">↗</span>
-            </a>
-            <a class="link" href="https://creativecommons.org/licenses/by-sa/4.0/">
-              CC BY-SA 4.0 <span aria-hidden="true">↗</span>
-            </a>
-          </div>
         </div>
 
         <div class="src-credits">
-          <div class="src-credit">
-            <h3 class="src-item-title">The original crest</h3>
-            <p class="src-copy">
+          <article class="src-credit">
+            <h3 class="src-credit__title">Photography</h3>
+            <div class="src-credit__body">
+              <p class="src-credit__text">
+                Morning at Spirit Island — © Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0. Resized, compressed and
+                cropped for responsive presentation; adapted photo versions retain that licence. Landscape context only:
+                no campus, class location or access permission is implied.
+              </p>
+              <p class="src-credit__links">
+                <a class="src-inline" href="https://commons.wikimedia.org/wiki/File:Morning_at_Spirit_Island.jpg" target="_blank" rel="noopener noreferrer">Photograph source</a>
+                <a class="src-inline" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="src-credit">
+            <h3 class="src-credit__title">The original crest</h3>
+            <p class="src-credit__text">
               Vincent Zhang’s supplied artwork is retained. Responsive versions change file size and display dimensions
               without adding a personal name or date to the institutional mark.
             </p>
-          </div>
-          <div class="src-credit">
-            <h3 class="src-item-title">Self-hosted fonts</h3>
-            <p class="src-copy">
-              Inter and Playfair Display are distributed under the SIL Open Font License. Copyright and licence notices
-              accompany the assets.
-            </p>
-            <div class="src-links">
-              <a class="link" href="/assets/licences/Inter-OFL.txt">Inter licence</a>
-              <a class="link" href="/assets/licences/Playfair-Display-OFL.txt">Playfair Display licence</a>
+          </article>
+
+          <article class="src-credit">
+            <h3 class="src-credit__title">Self-hosted fonts</h3>
+            <div class="src-credit__body">
+              <p class="src-credit__text">
+                Inter and Playfair Display are distributed under the SIL Open Font License. Copyright and licence notices
+                accompany the assets.
+              </p>
+              <p class="src-credit__links">
+                <a class="src-inline" href="/assets/licences/Inter-OFL.txt">Inter licence</a>
+                <a class="src-inline" href="/assets/licences/Playfair-Display-OFL.txt">Playfair Display licence</a>
+              </p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -384,7 +414,7 @@ const governance = [
   background: var(--color-paper);
 }
 
-.src :where(h1, h2, h3, p, ul, li, table) {
+.src :where(h1, h2, h3, p, ul, li) {
   margin: 0;
 }
 
@@ -401,7 +431,7 @@ const governance = [
 
 .src a:focus-visible,
 .src-table-wrap:focus-visible,
-.src-details__summary:focus-visible {
+.src-details summary:focus-visible {
   outline: 2px solid var(--color-cobalt);
   outline-offset: 3px;
 }
@@ -423,18 +453,17 @@ const governance = [
   padding-top: var(--space-8);
 }
 
-.src-anchor,
-.src-sub {
-  scroll-margin-top: calc(var(--header-height) + var(--space-6));
-}
-
-/* ---------- Section head: label → title → description ---------- */
 .src-head {
   display: grid;
   justify-items: start;
   gap: var(--space-4);
   max-width: 48rem;
   margin-bottom: var(--space-7);
+  scroll-margin-top: var(--header-height);
+}
+
+.src-head--spaced {
+  margin-top: var(--space-8);
 }
 
 .src-label {
@@ -461,68 +490,74 @@ const governance = [
   color: var(--color-muted);
 }
 
-.src-note {
-  max-width: 40rem;
-  margin-top: var(--space-5);
-  font-size: var(--text-small);
-  color: var(--color-muted);
+.src-inline {
+  font-weight: 500;
+  color: var(--color-cobalt);
+  transition: color var(--duration) var(--ease);
 }
 
-.src-after {
-  margin-top: var(--space-6);
+.src-inline:hover {
+  color: var(--color-ink);
 }
 
-.src-links {
+/* ---------- On this page ---------- */
+.src-contents {
+  display: grid;
+  border-top: 1px solid var(--color-ink);
+}
+
+.src-contents__item {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2) var(--space-6);
+  align-items: baseline;
+  gap: var(--space-4);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-line);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--color-ink);
+  transition: color var(--duration) var(--ease);
 }
 
-.src .src-item-title {
+.src-contents__item:hover {
+  color: var(--color-cobalt);
+}
+
+.src-contents__num {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  color: var(--color-cobalt);
+}
+
+/* ---------- Reference lists ---------- */
+.src-subhead {
+  margin-bottom: var(--space-4);
   font-size: 1.5rem;
   line-height: 1.25;
 }
 
-/* ---------- Authorship and provenance ---------- */
-.src-block {
-  display: grid;
-  gap: var(--space-5);
-  max-width: 48rem;
-  padding-top: var(--space-7);
-  border-top: 1px solid var(--color-ink);
-}
-
-.src-body {
-  display: grid;
-  gap: var(--space-5);
-  max-width: 46rem;
-}
-
-.src-body p {
-  font-family: var(--font-serif);
-  font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
-  line-height: 1.8;
-  color: var(--color-ink);
-}
-
-.src-sub {
-  display: grid;
-  gap: var(--space-4);
-  max-width: 48rem;
+.src-subhead--spaced {
   margin-top: var(--space-8);
 }
 
-/* ---------- Reference lists ---------- */
+.src-subcopy {
+  margin-bottom: var(--space-5);
+}
+
 .src-list {
   border-top: 1px solid var(--color-ink);
 }
 
 .src-list__row {
+  display: grid;
+  gap: var(--space-2);
   padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-line);
 }
 
 .src-list__link {
+  justify-self: start;
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-cobalt);
@@ -533,17 +568,17 @@ const governance = [
   color: var(--color-ink);
 }
 
-.src-list__meta {
+.src-list__note {
+  max-width: 44rem;
   font-size: 0.9375rem;
   color: var(--color-muted);
 }
 
-.src-list__code {
-  font-weight: 600;
-  letter-spacing: var(--tracking-label);
+.src-after {
+  margin-top: var(--space-6);
 }
 
-/* ---------- Primary readings table ---------- */
+/* ---------- Primary readings ---------- */
 .src-table-wrap {
   overflow-x: auto;
   border-top: 1px solid var(--color-ink);
@@ -551,101 +586,57 @@ const governance = [
 
 .src-table {
   width: 100%;
-  min-width: 40rem;
+  min-width: 36rem;
   border-collapse: collapse;
-  font-size: 0.9375rem;
   text-align: left;
 }
 
-.src-table th {
-  padding: var(--space-3) var(--space-4) var(--space-3) 0;
-  border-bottom: 1px solid var(--color-line);
-  font-size: var(--text-label);
-  font-weight: 600;
-  letter-spacing: var(--tracking-label);
-  text-transform: uppercase;
-  color: var(--color-ink);
-}
-
+.src-table th,
 .src-table td {
   padding: var(--space-4) var(--space-4) var(--space-4) 0;
   border-bottom: 1px solid var(--color-line);
   vertical-align: top;
+}
+
+.src-table th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-cobalt);
+}
+
+.src-table td {
+  font-size: 0.9375rem;
   color: var(--color-muted);
 }
 
-.src-table__week {
-  width: 6rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.src-table td.src-table__reading {
-  width: 45%;
-  font-family: var(--font-serif);
-  font-size: 1.0625rem;
+.src-table td:nth-child(2) {
+  font-weight: 400;
   color: var(--color-ink);
 }
 
-/* ---------- Source editions disclosure ---------- */
 .src-details {
   margin-top: var(--space-6);
 }
 
-.src-details__summary {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  min-height: 2.75rem;
-  font-size: var(--text-small);
+.src-details summary {
+  padding-block: var(--space-2);
   font-weight: 500;
   color: var(--color-cobalt);
   cursor: pointer;
-  list-style: none;
   transition: color var(--duration) var(--ease);
 }
 
-.src-details__summary::-webkit-details-marker {
-  display: none;
-}
-
-.src-details__summary::after {
-  content: '+';
-  font-weight: 400;
-}
-
-.src-details[open] > .src-details__summary::after {
-  content: '−';
-}
-
-.src-details__summary:hover {
+.src-details summary:hover {
   color: var(--color-ink);
 }
 
-.src-details__list {
-  margin-top: var(--space-4);
+.src-details[open] summary {
+  margin-bottom: var(--space-4);
 }
 
-/* ---------- Operating references ---------- */
-.src-grid {
-  display: grid;
-  gap: var(--space-7);
-}
-
-.src-grid__item {
-  display: grid;
-  align-content: start;
-  gap: var(--space-4);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-ink);
-}
-
-.src-grid__item .src-list {
-  margin-top: var(--space-2);
-  border-top-color: var(--color-line);
-}
-
-/* ---------- Photography and type ---------- */
+/* ---------- Credits ---------- */
 .src-credits {
   display: grid;
   border-top: 1px solid var(--color-ink);
@@ -658,9 +649,50 @@ const governance = [
   border-bottom: 1px solid var(--color-line);
 }
 
+.src-credit__title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.src-credit__body {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.src-credit__text {
+  max-width: 44rem;
+  color: var(--color-muted);
+}
+
+.src-credit__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+}
+
 @media (min-width: 900px) {
-  .src-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .src-contents {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .src-contents__item {
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-4) var(--space-5) 0;
+  }
+
+  .src-contents__item + .src-contents__item {
+    padding-left: var(--space-4);
+    border-left: 1px solid var(--color-line);
+  }
+
+  .src-credit {
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: var(--space-7);
+  }
+
+  .src-credit__title {
+    padding-top: 0.15rem;
   }
 }
 </style>
