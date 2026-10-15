@@ -437,6 +437,16 @@ function onInvestigationKeydown(event: KeyboardEvent) {
 }
 
 const pad = (n: number) => String(n).padStart(2, '0')
+
+const pageNav = [
+  { href: '#overview', label: 'At a glance' },
+  { href: '#courses', label: 'Six courses' },
+  { href: '#rhythm', label: 'A teaching week' },
+  { href: '#weeks', label: 'Weekly arc' },
+  { href: '#outcomes', label: 'Your work' },
+  { href: '#practical', label: 'Practical details' },
+  { href: '#materials', label: 'Documents' },
+] as const
 </script>
 
 <template>
@@ -475,6 +485,16 @@ const pad = (n: number) => String(n).padStart(2, '0')
           </dl>
         </div>
       </section>
+
+      <div class="container sp-toc-block">
+        <nav class="sp-toc" aria-label="On this page">
+          <a v-for="item in pageNav" :key="item.href" class="sp-toc__link" :href="item.href">{{ item.label }}</a>
+        </nav>
+        <p class="sp-toc__note">
+          Proposed program · Admissions not open.
+          <AppLink class="sp-week-link" to="/founding">See what is established and what comes next</AppLink>
+        </p>
+      </div>
 
       <!-- 01 At a glance -->
       <section id="overview" class="sp-section" aria-labelledby="overview-title">
@@ -1103,6 +1123,42 @@ const pad = (n: number) => String(n).padStart(2, '0')
   padding-block: var(--space-7);
   border-bottom: 1px solid var(--color-line);
   background: var(--color-paper);
+}
+
+.sp-toc-block {
+  padding-block: var(--space-5);
+  background: var(--color-paper);
+}
+
+.sp-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding-block: var(--space-4);
+  border-block: 1px solid var(--color-line);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sp-toc__link {
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.sp-toc__link:hover,
+.sp-toc__link:focus-visible {
+  color: var(--color-cobalt);
+}
+
+.sp-toc__note {
+  margin: var(--space-4) 0 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.sp-toc__note .sp-week-link {
+  margin-left: 0.35rem;
 }
 
 .sp-metrics__grid {
