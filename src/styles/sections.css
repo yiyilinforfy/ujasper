@@ -1,0 +1,72 @@
+/* Editorial content sections shared by the Discover and Field semester pages. */
+.sec {
+  font-family: var(--font-sans);
+  font-variant-numeric: lining-nums;
+  font-size: var(--text-body);
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+.sec :where(h2, h3, p, dl, dd, ol, ul, figure, blockquote) {
+  margin: 0;
+}
+
+.sec :where(ol, ul) {
+  padding: 0;
+  list-style: none;
+}
+
+.sec :where(h3) {
+  font-family: var(--font-sans);
+  letter-spacing: normal;
+}
+
+.sec :where(strong, dt, h3) {
+  font-weight: 500;
+}
+
+/* Section heading: label, title, then description and action below. */
+.sec-head {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  max-width: 48rem;
+  margin-bottom: var(--space-7);
+}
+
+.sec-head .label {
+  margin-bottom: var(--space-3);
+  color: var(--color-muted);
+}
+
+.sec-head .cta {
+  margin-top: var(--space-2);
+}
+
+.sec-head > p,
+.sec-head > div > p:not(.label) {
+  color: var(--color-muted);
+}
+
+/* Small label: short rule + uppercase tracking. */
+.sec-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.sec-label::before {
+  content: '';
+  flex: none;
+  width: 1rem;
+  height: 1px;
+  margin-top: 0.56em;
+  background: currentColor;
+}

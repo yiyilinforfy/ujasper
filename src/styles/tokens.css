@@ -1,0 +1,79 @@
+/* Design tokens. Values follow the site's established palette (horizon.css) and type families. */
+:root {
+  /* Colour: cold air, rock, sky, snow, paper, ink */
+  --color-ink: #102f4a;
+  --color-navy: #0f2b44;
+  --color-navy-deep: #0b2236;
+  --color-cobalt: #175d93;
+  --color-ice: #d4ecf7;
+  --color-mist: #edf4f8;
+  --color-cloud: #f0f2f5;
+  --color-paper: #ffffff;
+  --color-muted: #526879;
+  --color-line: #d0dce5;
+  --color-on-dark: #ffffff;
+  --color-on-dark-muted: rgba(255, 255, 255, 0.72);
+  --color-line-on-dark: rgba(255, 255, 255, 0.2);
+
+  /* Site header and footer */
+  --color-footer: #0c2033;
+  --color-header-line: #d9e0e8;
+  --color-accent: #b45309;
+  --color-accent-deep: #92400e;
+  --color-accent-soft: #fcd34d;
+
+  /* Type: sans for information, serif for thought */
+  --font-sans: 'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  --text-hero: clamp(3rem, 7.2vw, 6.25rem);
+  --text-display: clamp(2rem, 3.4vw, 3rem);
+  --text-title: clamp(1.375rem, 2vw, 1.75rem);
+  --text-lead: 1.25rem;
+  --text-body: 1.0625rem;
+  --text-small: 0.9375rem;
+  --text-label: 0.75rem;
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.3;
+  --leading-body: 1.65;
+  --tracking-label: 0.1em;
+
+  /* Space */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-section: clamp(4.5rem, 9vw, 8rem);
+
+  /* Layout */
+  --header-height: 0px;
+  --container-max: var(--site-max);
+  --container-gutter: var(--site-gutter);
+  --measure: 38rem;
+
+  --radius-none: 0;
+  --radius-small: 2px;
+  --shadow-none: none;
+  --shadow-paper: 0 1px 2px rgba(16, 47, 74, 0.08), 0 8px 24px rgba(16, 47, 74, 0.08);
+  --shadow-card: 0 1px 2px rgba(14, 36, 57, 0.06), 0 2px 6px rgba(14, 36, 57, 0.05);
+  --shadow-card-hover: 0 2px 4px rgba(14, 36, 57, 0.06), 0 14px 32px rgba(14, 36, 57, 0.12);
+
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --duration: 200ms;
+
+  /* Header and footer content width */
+  --site-max: 75rem;
+  --site-gutter: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --site-gutter: 2.5rem;
+  }
+}

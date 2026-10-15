@@ -1,0 +1,19 @@
+---
+description: Page redesigns follow the Discover (home) page visual system
+alwaysApply: true
+---
+
+# Follow the home page style
+
+When changing any page, use `src/pages/HomePage.vue` and `src/styles/sections.css` as the reference.
+
+- **Colour**: white (`--color-paper`) and cool grey (`--color-cloud`) sections alternating. No beige, cream or yellow tints. No dark navy section bands inside page content.
+- **Width**: every section uses `.container` (same left/right edges as the home page). Do not use the legacy `.wrap`.
+- **Section structure**: stacked top to bottom: label → (question/deck) → title → description, max-width 48rem, then content below. Avoid left heading / right body split layouts.
+- **Type**:
+  - Section label: sans, uppercase, 600, `--tracking-label`, 0.875rem, cobalt (important, so not tiny).
+  - Title: serif (`--font-serif`), `--text-display`, line-height 1.2, letter-spacing -0.025em; emphasis `em` in cobalt.
+  - Body: Inter 300, 1rem / 1.625, `--color-muted`, max-width ~40rem.
+  - Item titles: serif 1.5rem; long-form reading text: serif ~1.125–1.25rem, line-height 1.8, centred column ≤ 46rem.
+- **Components**: `.cta--primary` / `.link` from `sections.css`/`site.css`; thin rules (`--color-line`, top rule `--color-ink`) instead of cards, shadows, gradients or pills.
+- Do not use a semantic `<header>` element inside page content: a legacy global `header {}` rule styles it as the site header.

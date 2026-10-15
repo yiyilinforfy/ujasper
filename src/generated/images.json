@@ -1,0 +1,500 @@
+{
+  "field/hero": {
+    "width": 2000,
+    "height": 1333,
+    "signature": "9cd28d9d:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/field-hero-640.2c053b70.webp",
+        "bytes": 44262
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/field-hero-960.bd229c8c.webp",
+        "bytes": 91942
+      },
+      {
+        "width": 1280,
+        "src": "/assets/img/field-hero-1280.8c9a1c08.webp",
+        "bytes": 154652
+      },
+      {
+        "width": 1600,
+        "src": "/assets/img/field-hero-1600.36908b6a.webp",
+        "bytes": 224164
+      },
+      {
+        "width": 1920,
+        "src": "/assets/img/field-hero-1920.bd4c64e3.webp",
+        "bytes": 300782
+      }
+    ]
+  },
+  "hero-ridge": {
+    "width": 1024,
+    "height": 468,
+    "signature": "6e55c952:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/hero-ridge-640.1db5e24d.webp",
+        "bytes": 28136
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/hero-ridge-960.fe1fb6a7.webp",
+        "bytes": 57552
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/hero-ridge-1024.5ddde9af.webp",
+        "bytes": 67346
+      }
+    ]
+  },
+  "letter-peaks": {
+    "width": 2000,
+    "height": 1325,
+    "signature": "be586f1e:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/letter-peaks-640.9be5f441.webp",
+        "bytes": 25202
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/letter-peaks-960.f3138f38.webp",
+        "bytes": 53342
+      },
+      {
+        "width": 1280,
+        "src": "/assets/img/letter-peaks-1280.b37bac07.webp",
+        "bytes": 88146
+      },
+      {
+        "width": 1600,
+        "src": "/assets/img/letter-peaks-1600.1d9ae05b.webp",
+        "bytes": 128462
+      },
+      {
+        "width": 1920,
+        "src": "/assets/img/letter-peaks-1920.d194845d.webp",
+        "bytes": 170538
+      }
+    ]
+  },
+  "publications-hero": {
+    "width": 1024,
+    "height": 571,
+    "signature": "ed6dcd85:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/publications-hero-640.63d081da.webp",
+        "bytes": 13286
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/publications-hero-960.7a1a1de9.webp",
+        "bytes": 21944
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/publications-hero-1024.991705ae.webp",
+        "bytes": 24290
+      }
+    ]
+  },
+  "founding-chairs": {
+    "width": 1024,
+    "height": 576,
+    "signature": "336afa93:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/founding-chairs-640.a85dca6a.webp",
+        "bytes": 9270
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/founding-chairs-960.a2c2c757.webp",
+        "bytes": 14958
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/founding-chairs-1024.3c9be5fe.webp",
+        "bytes": 16084
+      }
+    ]
+  },
+  "teach-classroom": {
+    "width": 1024,
+    "height": 576,
+    "signature": "425d1d5f:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/teach-classroom-640.9cfaf81e.webp",
+        "bytes": 16156
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/teach-classroom-960.c56acc10.webp",
+        "bytes": 26430
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/teach-classroom-1024.1dfbd2c2.webp",
+        "bytes": 28952
+      }
+    ]
+  },
+  "apply-signing": {
+    "width": 1024,
+    "height": 683,
+    "signature": "ee278aca:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/apply-signing-640.7ff83736.webp",
+        "bytes": 10158
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/apply-signing-960.d0e2569f.webp",
+        "bytes": 18092
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/apply-signing-1024.bc54712e.webp",
+        "bytes": 20552
+      }
+    ]
+  },
+  "join-hosts": {
+    "width": 1024,
+    "height": 682,
+    "signature": "0b8bbc6d:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/join-hosts-640.85187934.webp",
+        "bytes": 21630
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/join-hosts-960.7afbfba8.webp",
+        "bytes": 36250
+      },
+      {
+        "width": 1024,
+        "src": "/assets/img/join-hosts-1024.9068496c.webp",
+        "bytes": 41814
+      }
+    ]
+  },
+  "jasper": {
+    "width": 4256,
+    "height": 2840,
+    "signature": "3ee8d8bd:hero:640,960,1280,1600,1920:74",
+    "variants": [
+      {
+        "width": 640,
+        "src": "/assets/img/jasper-640.b9c91f98.webp",
+        "bytes": 37762
+      },
+      {
+        "width": 960,
+        "src": "/assets/img/jasper-960.0282a0bd.webp",
+        "bytes": 83334
+      },
+      {
+        "width": 1280,
+        "src": "/assets/img/jasper-1280.6a1c4dc7.webp",
+        "bytes": 145874
+      },
+      {
+        "width": 1600,
+        "src": "/assets/img/jasper-1600.eab67045.webp",
+        "bytes": 235052
+      },
+      {
+        "width": 1920,
+        "src": "/assets/img/jasper-1920.b44d5566.webp",
+        "bytes": 344668
+      }
+    ]
+  },
+  "field/landscape": {
+    "width": 800,
+    "height": 534,
+    "signature": "28a77f6e:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/field-landscape-400.1d192880.webp",
+        "bytes": 11732
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/field-landscape-800.f2420011.webp",
+        "bytes": 39630
+      }
+    ]
+  },
+  "cards/hike": {
+    "width": 800,
+    "height": 534,
+    "signature": "e734ea1a:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-hike-400.fa8aa3b6.webp",
+        "bytes": 24610
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-hike-800.fb79cb68.webp",
+        "bytes": 94596
+      }
+    ]
+  },
+  "cards/train": {
+    "width": 800,
+    "height": 533,
+    "signature": "143ad2f4:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-train-400.fad5a615.webp",
+        "bytes": 8776
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-train-800.a885ee7d.webp",
+        "bytes": 37096
+      }
+    ]
+  },
+  "cards/read": {
+    "width": 800,
+    "height": 533,
+    "signature": "5dde2044:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-read-400.d2a15cf7.webp",
+        "bytes": 16428
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-read-800.b3af6c64.webp",
+        "bytes": 76430
+      }
+    ]
+  },
+  "cards/experiment": {
+    "width": 800,
+    "height": 533,
+    "signature": "c30b1c7f:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-experiment-400.bc7b016c.webp",
+        "bytes": 7494
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-experiment-800.9f3112ce.webp",
+        "bytes": 18620
+      }
+    ]
+  },
+  "cards/make": {
+    "width": 800,
+    "height": 533,
+    "signature": "aa2fc32d:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-make-400.7e2db2b0.webp",
+        "bytes": 12324
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-make-800.b674c4ab.webp",
+        "bytes": 29836
+      }
+    ]
+  },
+  "cards/offline": {
+    "width": 800,
+    "height": 800,
+    "signature": "1c75d6cc:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-offline-400.b11d9656.webp",
+        "bytes": 16156
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-offline-800.f2469c10.webp",
+        "bytes": 42836
+      }
+    ]
+  },
+  "cards/martial": {
+    "width": 800,
+    "height": 600,
+    "signature": "73006b66:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/cards-martial-400.1355ecb3.webp",
+        "bytes": 9768
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/cards-martial-800.df203a5d.webp",
+        "bytes": 24466
+      }
+    ]
+  },
+  "jasper-song-poster": {
+    "width": 1280,
+    "height": 720,
+    "signature": "0f309cd3:photo:400,800,1200:74",
+    "variants": [
+      {
+        "width": 400,
+        "src": "/assets/img/jasper-song-poster-400.47dff10c.webp",
+        "bytes": 6196
+      },
+      {
+        "width": 800,
+        "src": "/assets/img/jasper-song-poster-800.0950e1ac.webp",
+        "bytes": 27896
+      },
+      {
+        "width": 1200,
+        "src": "/assets/img/jasper-song-poster-1200.c449d501.webp",
+        "bytes": 67352
+      }
+    ]
+  },
+  "founding-charter-cover": {
+    "width": 566,
+    "height": 800,
+    "signature": "731a9178:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/founding-charter-cover-283.7d447eff.webp",
+        "bytes": 12464
+      },
+      {
+        "width": 566,
+        "src": "/assets/img/founding-charter-cover-566.c2b95876.webp",
+        "bytes": 43394
+      }
+    ]
+  },
+  "field-semester-cover": {
+    "width": 566,
+    "height": 800,
+    "signature": "129a5b7e:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/field-semester-cover-283.227c5565.webp",
+        "bytes": 10552
+      },
+      {
+        "width": 566,
+        "src": "/assets/img/field-semester-cover-566.bf2cb531.webp",
+        "bytes": 34722
+      }
+    ]
+  },
+  "offline-fieldbook-cover": {
+    "width": 566,
+    "height": 800,
+    "signature": "d4760c5f:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/offline-fieldbook-cover-283.90b0600f.webp",
+        "bytes": 5270
+      },
+      {
+        "width": 566,
+        "src": "/assets/img/offline-fieldbook-cover-566.01ee0cda.webp",
+        "bytes": 16864
+      }
+    ]
+  },
+  "founding-brief-cover": {
+    "width": 566,
+    "height": 800,
+    "signature": "0a05b445:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/founding-brief-cover-283.f5e16d47.webp",
+        "bytes": 11582
+      },
+      {
+        "width": 566,
+        "src": "/assets/img/founding-brief-cover-566.3eca7044.webp",
+        "bytes": 36366
+      }
+    ]
+  },
+  "founding-charter-docx-cover": {
+    "width": 566,
+    "height": 800,
+    "signature": "64f0557c:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/founding-charter-docx-cover-283.bc601266.webp",
+        "bytes": 19362
+      },
+      {
+        "width": 566,
+        "src": "/assets/img/founding-charter-docx-cover-566.028f8b3c.webp",
+        "bytes": 60018
+      }
+    ]
+  },
+  "founding-crest": {
+    "width": 1080,
+    "height": 1080,
+    "signature": "042edffa:crest:96,192,384,640:84",
+    "variants": [
+      {
+        "width": 96,
+        "src": "/assets/img/founding-crest-96.a6098adc.webp",
+        "bytes": 2146
+      },
+      {
+        "width": 192,
+        "src": "/assets/img/founding-crest-192.f41b5907.webp",
+        "bytes": 6754
+      },
+      {
+        "width": 384,
+        "src": "/assets/img/founding-crest-384.8da9109c.webp",
+        "bytes": 22060
+      },
+      {
+        "width": 640,
+        "src": "/assets/img/founding-crest-640.847415bb.webp",
+        "bytes": 47406
+      }
+    ]
+  }
+}
