@@ -386,70 +386,87 @@
     ]
   },
   "founding-charter-cover": {
-    "width": 566,
-    "height": 800,
-    "signature": "731a9178:cover:283,566:80",
+    "width": 439,
+    "height": 620,
+    "signature": "6520aa92:cover:283,566:80",
     "variants": [
       {
         "width": 283,
-        "src": "/assets/img/founding-charter-cover-283.7d447eff.webp",
-        "bytes": 12464
+        "src": "/assets/img/founding-charter-cover-283.560e77a3.webp",
+        "bytes": 12340
       },
       {
-        "width": 566,
-        "src": "/assets/img/founding-charter-cover-566.c2b95876.webp",
-        "bytes": 43394
+        "width": 439,
+        "src": "/assets/img/founding-charter-cover-439.7e43bc50.webp",
+        "bytes": 28562
       }
     ]
   },
   "field-semester-cover": {
-    "width": 566,
-    "height": 800,
-    "signature": "129a5b7e:cover:283,566:80",
+    "width": 439,
+    "height": 620,
+    "signature": "06a0503d:cover:283,566:80",
     "variants": [
       {
         "width": 283,
-        "src": "/assets/img/field-semester-cover-283.227c5565.webp",
-        "bytes": 10552
+        "src": "/assets/img/field-semester-cover-283.cc2e3d88.webp",
+        "bytes": 10372
       },
       {
-        "width": 566,
-        "src": "/assets/img/field-semester-cover-566.bf2cb531.webp",
-        "bytes": 34722
+        "width": 439,
+        "src": "/assets/img/field-semester-cover-439.edd401ba.webp",
+        "bytes": 22934
       }
     ]
   },
   "offline-fieldbook-cover": {
-    "width": 566,
-    "height": 800,
-    "signature": "d4760c5f:cover:283,566:80",
+    "width": 439,
+    "height": 620,
+    "signature": "a22a47da:cover:283,566:80",
     "variants": [
       {
         "width": 283,
-        "src": "/assets/img/offline-fieldbook-cover-283.90b0600f.webp",
-        "bytes": 5270
+        "src": "/assets/img/offline-fieldbook-cover-283.550f702e.webp",
+        "bytes": 5660
       },
       {
-        "width": 566,
-        "src": "/assets/img/offline-fieldbook-cover-566.01ee0cda.webp",
-        "bytes": 16864
+        "width": 439,
+        "src": "/assets/img/offline-fieldbook-cover-439.68deea25.webp",
+        "bytes": 11880
       }
     ]
   },
   "founding-brief-cover": {
-    "width": 566,
-    "height": 800,
-    "signature": "0a05b445:cover:283,566:80",
+    "width": 439,
+    "height": 620,
+    "signature": "4cccc4cb:cover:283,566:80",
     "variants": [
       {
         "width": 283,
-        "src": "/assets/img/founding-brief-cover-283.f5e16d47.webp",
-        "bytes": 11582
+        "src": "/assets/img/founding-brief-cover-283.9a154b52.webp",
+        "bytes": 12338
       },
       {
-        "width": 566,
-        "src": "/assets/img/founding-brief-cover-566.3eca7044.webp",
-        "bytes": 36366
+        "width": 439,
+        "src": "/assets/img/founding-brief-cover-439.45e10c72.webp",
+        "bytes": 28130
+      }
+    ]
+  },
+  "operations-manual-cover": {
+    "width": 439,
+    "height": 620,
+    "signature": "f4f39bb0:cover:283,566:80",
+    "variants": [
+      {
+        "width": 283,
+        "src": "/assets/img/operations-manual-cover-283.53019c39.webp",
+        "bytes": 11704
+      },
+      {
+        "width": 439,
+        "src": "/assets/img/operations-manual-cover-439.b0807f66.webp",
+        "bytes": 25994
       }
     ]
   },

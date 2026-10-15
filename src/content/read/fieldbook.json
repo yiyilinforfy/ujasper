@@ -1,0 +1,658 @@
+{
+ "eyebrow": "Full text · 15 October 2026",
+ "title": "Printable learner fieldbook",
+ "lead": "Paper sheets for observation, physical progression, arguments, experiments, useful work and reflection.",
+ "note": "HTML reading edition from the same source as the PDF. Printed pages and screen sections can differ in pagination.",
+ "pdf": "/offline-fieldbook.pdf",
+ "sections": [
+  {
+   "id": "chapter-1",
+   "eyebrow": "THE LEARNER FIELDBOOK",
+   "title": "A question. A notebook. A beginning.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use this paper fieldbook during the offline Jasper Field Semester. Print additional copies of the route, laboratory and reading sheets as needed. Keep private reflection separate from assessed evidence."
+    },
+    {
+     "type": "h3",
+     "text": "Name / chosen identifier"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "h3",
+     "text": "My question for this semester"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "A strength I bring; someone my learning could help"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "small",
+     "html": "Proposed program: 6 weeks in Jasper; 144 facilitated + 24 independent-study hours. Adults aged 18+. Delivery remains unconfirmed. No degree or academic credit. English edition: 15 October 2026."
+    }
+   ]
+  },
+  {
+   "id": "chapter-2",
+   "eyebrow": "01 / PURPOSE & CHOICE",
+   "title": "Choose how you will learn.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Personal phones, internet and live AI are off during teaching and camps, with agreed private medical, accessibility and essential-contact exceptions. Staff emergency communications remain active. Storage is voluntary and devices are returned on request. Agree the arrangement before formal registration opens."
+    },
+    {
+     "type": "h3",
+     "text": "My purpose and an observable sign of progress"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "A useful adaptation or alternative I choose to share"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Weekly evidence tracker: 1 Attention / 2 Discipline / 3 Evidence / 4 Freedom / 5 Responsibility / 6 Contribution"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "small",
+     "html": "Private health details belong in the agreed confidential process, never in this portfolio. Do not grade beliefs, physique or private experiences."
+    }
+   ]
+  },
+  {
+   "id": "chapter-3",
+   "eyebrow": "02 / FIELD DECISIONS",
+   "title": "Read the place. Plan the return.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Complete with the responsible guide before an authorized outing. This sheet does not approve a route. Make a fresh copy for each trip."
+    },
+    {
+     "type": "h3",
+     "text": "Date / staff / route / current information checked and time"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Map scale / distance / elevation / time range / assumptions"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Weather, access, kit and communications checked; turnaround and exit plan"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "A decision we changed, the evidence and the result"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "Any learner may ask for a stop. The guide controls route decisions. Use indoor equivalents when essential conditions are not met."
+    }
+   ]
+  },
+  {
+   "id": "chapter-4",
+   "eyebrow": "03 / CAMPCRAFT",
+   "title": "Make a camp work for everyone.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Record the actual authorized site, planned night(s), staff coverage and access arrangements. Record a day-camp equivalent honestly if no overnight is completed."
+    },
+    {
+     "type": "h3",
+     "text": "Site / booking checked by staff / people / dates"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "h3",
+     "text": "Shelter, attractant storage, water, toilets, food and waste plan"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Fair roles / quiet hours / help and exit arrangements"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "What worked; what I would change before the next camp"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "No activity depends on campfires, foraging or remote survival. Follow the actual site rules and responsible guide."
+    }
+   ]
+  },
+  {
+   "id": "chapter-5",
+   "eyebrow": "04 / PHYSICAL PROGRESSION",
+   "title": "Strength you can explain",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Complete with the qualified coach. Twelve 30-minute sessions sit within the 36-hour field course. Choose submaximal practice, record technique and recovery privately, and progress one suitable variable when appropriate."
+    },
+    {
+     "type": "h3",
+     "text": "Week 1 baseline: task, support, effort, technique and conditions"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Session log: date / practice / feedback / next adjustment"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Week 6 comparison: what changed; what could explain it?"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "No maximal test or public fitness ranking. Stop for pain, dizziness, distress or loss of control; follow the coach and agreed response plan. This sheet is not a prescription."
+    }
+   ]
+  },
+  {
+   "id": "chapter-6",
+   "eyebrow": "05 / MARTIAL PRACTICE",
+   "title": "Control is the achievement.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Practise only with the qualified coach. Agree touch, partner and intensity each time. Stop on request or discomfort; tell the coach about an injury. No head strikes, hard sparring, chokes, submissions or uncoached takedowns."
+    },
+    {
+     "type": "h3",
+     "text": "My chosen adaptation / stop signal / approved practice"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "h3",
+     "text": "Twelve-session record: date, skill, coach feedback, next adjustment"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "A decision to use restraint, and why it mattered"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "small",
+     "html": "Completion means a coached introductory demonstration of control. It is not a belt, fighting licence or promise of self-defence capability."
+    }
+   ]
+  },
+  {
+   "id": "chapter-7",
+   "eyebrow": "06 / ATTENTION",
+   "title": "Notice. Choose. Return.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use short meditation, quiet drawing, reading or another agreed attention practice. Eyes can stay open. Stop or change an uncomfortable exercise. Share only what you choose."
+    },
+    {
+     "type": "h3",
+     "text": "Method A / setting / duration / observation"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Method B / setting / duration / observation"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "What might explain the difference? What remains uncertain?"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "My preferred method, alternative and stop condition"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "One experience does not support a general health claim. Inner experiences, stillness and personal disclosures are not assessment scores."
+    }
+   ]
+  },
+  {
+   "id": "chapter-8",
+   "eyebrow": "07 / INVESTIGATION",
+   "title": "Let the evidence answer.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Print one copy for each investigation. Distinguish real measurements from supplied illustrative data. Do not discard a result because it disagrees with the prediction."
+    },
+    {
+     "type": "h3",
+     "text": "Question / prediction / a result that would challenge it"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "h3",
+     "text": "Variables / controls / method / equipment / boundaries"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Raw data with units, repeated trials and instrument resolution"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Conclusion / uncertainty / alternative explanation"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "A peer should be able to follow the method. Keep original data and show later corrections without hiding the first entry."
+    }
+   ]
+  },
+  {
+   "id": "chapter-9",
+   "eyebrow": "08 / MATHEMATICAL REASONING",
+   "title": "Make the reasoning visible.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Show assumptions, definitions, units and intermediate steps. Label axes and scale. A correct answer still needs a defensible method."
+    },
+    {
+     "type": "h3",
+     "text": "Model, calculation or geometric argument"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Graph / labelled diagram"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "small",
+     "html": "Identify which claims follow mathematically from assumptions and which depend on uncertain measurements."
+    }
+   ]
+  },
+  {
+   "id": "chapter-10",
+   "eyebrow": "09 / CLOSE READING",
+   "title": "Meet the argument on its terms.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Print a copy for each text. Use the actual assigned edition. Distinguish the author’s claim from your interpretation; keep a precise passage reference."
+    },
+    {
+     "type": "h3",
+     "text": "Author / title / edition / passage / historical context"
+    },
+    {
+     "type": "lines",
+     "count": 2
+    },
+    {
+     "type": "h3",
+     "text": "The central claim and the strongest supporting reason"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "An assumption, a key term and an interpretive uncertainty"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "My objection; a passage that could challenge my reading"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "small",
+     "html": "Do not make different traditions agree by replacing their arguments with a common slogan."
+    }
+   ]
+  },
+  {
+   "id": "chapter-11",
+   "eyebrow": "10 / DEBATE & REVISION",
+   "title": "Understand before answering.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use this sheet for tutorial and essay revision. Preserve a precise passage, a serious objection and your answer. Two essays of 1,200–1,500 words each or agreed equivalents develop across the semester."
+    },
+    {
+     "type": "h3",
+     "text": "Motion / my initial claim / passage evidence"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "The strongest opposing argument and why it has force"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "What I changed after switching sides"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "A revised claim and an unresolved question"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "The aim is a clearer judgment, not a public winner. Record a fair contribution, not speaking volume or confidence."
+    }
+   ]
+  },
+  {
+   "id": "chapter-12",
+   "eyebrow": "11 / THE COMMONS",
+   "title": "Make something useful.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Work in pairs; keep individual reasoning visible. Obtain consent for feedback. Label peer feedback as peer feedback when no local host participates."
+    },
+    {
+     "type": "h3",
+     "text": "User / question / artefact / evidence needed"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Version 1 test: what worked, failed and needs revision"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Version 2: feedback acted on; cost, access and trade-offs"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "My contribution; the evidence that someone can use it"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "A paper guide, model, route-decision worksheet or reader can be a substantial contribution when tested and explained well."
+    }
+   ]
+  },
+  {
+   "id": "chapter-13",
+   "eyebrow": "12 / FINAL PORTFOLIO",
+   "title": "What can I now explain, do and give?",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Collect six weekly entries, two revised essays, an 800–1,200-word scientific dossier or equivalent, useful original work and reviewed physical, field and martial demonstrations. Use the five-dimension rubric and revise missing evidence."
+    },
+    {
+     "type": "h3",
+     "text": "Evidence: practice / reasoning / argument / original work / contribution"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Oral defence: my claim, strongest objection and justified revision"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "A realistic 30-day commitment, resources and next review"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "English edition: 15 October 2026. Founding vision and original crest: Vincent Zhang. Keep private reflection separate. Completion is a descriptive non-credit record."
+    }
+   ]
+  },
+  {
+   "id": "chapter-14",
+   "eyebrow": "13 / OPTIONAL AI RETURN LAB",
+   "title": "Return connected Remain the author",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use after the offline semester in a separately arranged three-hour lab. Choose non-sensitive preserved work. Record model, date, prompt, output and any tool access. Do not upload private information."
+    },
+    {
+     "type": "h3",
+     "text": "Original work and criteria set before viewing output"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Model contribution and consequential claims to verify"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Verification: sources, calculations, errors and uncertainties"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "My final judgment, revision and disclosure"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "Optional and outside the 168 academic hours. One classroom comparison cannot establish general model rankings."
+    }
+   ]
+  },
+  {
+   "id": "chapter-15",
+   "eyebrow": "14 / SYNTHETIC DATA",
+   "title": "Challenge the cooling claim",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Educator-created data, not field measurements. Room: 20°C. Minutes: 0, 5, 10, 15, 20. Cup A °C: 40, 36, 33, 30, 28. Cup B °C: 40, 38, 36.5, 35, 33.5. One demonstration per condition; A unwrapped, B candidate wrap."
+    },
+    {
+     "type": "h3",
+     "text": "Calculate 20-minute temperature drops and their difference; show units"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Graph temperature above ambient or compare interval rates"
+    },
+    {
+     "type": "lines",
+     "count": 4
+    },
+    {
+     "type": "h3",
+     "text": "Challenge this claim: the wrap keeps hikers safe"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "h3",
+     "text": "Revise the conclusion; design a repeatable next test"
+    },
+    {
+     "type": "lines",
+     "count": 3
+    },
+    {
+     "type": "small",
+     "html": "Worked check: drops 12°C and 6.5°C; final-temperature difference 5.5°C. These synthetic unreplicated values cannot establish a causal effect or outdoor performance."
+    }
+   ]
+  }
+ ]
+}

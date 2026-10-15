@@ -40,9 +40,9 @@ const pages: RouteRecordRaw[] = [
     name: 'index',
     component: () => import('../pages/HomePage.vue'),
     meta: {
-      title: 'University of Jasper · Proposed university in Jasper, Alberta',
+      title: 'Strong in body. Free in mind. · University of Jasper',
       description:
-        'University of Jasper is a proposed university in the Canadian Rockies. Its first programme is a six-week, in-person, offline field semester for adults.',
+        'Vincent Zhang’s founding project for an education of body, humanities and inquiry in Jasper, Alberta.',
       bodyClass: 'home',
       nav: '/',
       hero: { image: 'field/hero' },
@@ -53,9 +53,9 @@ const pages: RouteRecordRaw[] = [
     name: 'vision',
     component: () => import('../pages/VisionPage.vue'),
     meta: {
-      title: 'Vision and Mission · University of Jasper',
+      title: 'Vision and mission · University of Jasper',
       description:
-        'The founding vision and mission of University of Jasper: physical training, the world’s humanities and fundamental inquiry, taught together in Jasper, Alberta.',
+        'Physical capability, humanistic depth and fundamental inquiry in one education, rooted in Jasper and open to the world.',
       bodyClass: 'vision-page',
       nav: '/vision',
       image: PEAKS_IMAGE,
@@ -68,7 +68,7 @@ const pages: RouteRecordRaw[] = [
     meta: {
       title: 'The Jasper Field Semester · University of Jasper',
       description:
-        'A proposed six-week, 144-hour offline field semester in Jasper for 6–8 adults: fieldcraft, martial arts, attention, science, philosophy and original inquiry.',
+        'Six weeks in Jasper: 144 facilitated hours, 24 independent-study hours, six courses and an offline community of inquiry.',
       bodyClass: 'program-page',
       nav: '/program',
       hero: { image: 'hero-ridge' },
@@ -90,9 +90,9 @@ const pages: RouteRecordRaw[] = [
         name: 'join',
         component: () => import('../pages/JoinPage.vue'),
         meta: {
-          title: 'Join University of Jasper: teachers, students and hosts',
+          title: 'Join the founding community · University of Jasper',
           description:
-            'Three ways to join the founding work of University of Jasper: teach in the field semester, apply for the proposed field semester, or offer a place, skill or partnership.',
+            'Explore student, educator, local host and supporter pathways for the proposed Jasper Field Semester.',
           bodyClass: 'join-page',
         },
       },
@@ -101,9 +101,9 @@ const pages: RouteRecordRaw[] = [
         name: 'teachers',
         component: () => import('../pages/TeachersPage.vue'),
         meta: {
-          title: 'Teach in the field semester · University of Jasper',
-      description:
-        'Recruiting founding teachers in fieldcraft, martial arts, attention, mathematics and physics, philosophy or original inquiry to teach in person in Jasper.',
+          title: 'Founding teaching roles · University of Jasper',
+          description:
+            'Contribute disciplinary depth, thoughtful coaching and a clear teaching demonstration to the proposed Jasper Field Semester.',
           bodyClass: 'teach-page',
           hero: { image: 'teach-classroom' },
           image: {
@@ -119,9 +119,9 @@ const pages: RouteRecordRaw[] = [
         name: 'students',
         component: () => import('../pages/StudentsPage.vue'),
         meta: {
-          title: 'Field Semester Student Application · University of Jasper',
+          title: 'The student pathway · University of Jasper',
           description:
-            'Prepare an application for the proposed six-week field semester in Jasper, open to adults aged 18 and over. No transcript, test score or portfolio is required.',
+            'Explore the proposed Field Semester, understand the commitment and prepare a private student introduction.',
           bodyClass: 'apply-page',
           hero: { image: 'apply-signing' },
           image: {
@@ -137,9 +137,9 @@ const pages: RouteRecordRaw[] = [
         name: 'hosts',
         component: () => import('../pages/HostsPage.vue'),
         meta: {
-          title: 'Hosts and founding partners · University of Jasper',
+          title: 'Hosts and contributors · University of Jasper',
           description:
-            'Local hosts, activity leads, learning contributors, supporters and future founding directors can introduce themselves and help the first Jasper gathering take shape.',
+            'Prepare a role-specific introduction as a host, educator, activity lead or supporter.',
           bodyClass: 'hosts-page',
           hero: { image: 'join-hosts' },
           image: PEAKS_IMAGE,
@@ -152,9 +152,9 @@ const pages: RouteRecordRaw[] = [
     name: 'publications',
     component: () => import('../pages/PublicationsPage.vue'),
     meta: {
-      title: 'Publications and downloads · University of Jasper',
+      title: 'The publication library · University of Jasper',
       description:
-        'Read and download the core publications of University of Jasper: the Vision and Founding Charter, the Field Semester Instructor Guide and the Offline Learner Fieldbook.',
+        'Read or download the coherent Jasper founding edition: five PDFs, an editable charter and accessible HTML reading alternatives.',
       bodyClass: 'publications-page',
       nav: '/publications',
       hero: { image: 'publications-hero', sizes: PUBLICATIONS_HERO_SIZES },
@@ -169,12 +169,13 @@ const pages: RouteRecordRaw[] = [
           '@type': 'ItemList',
           name: 'University of Jasper publications',
           itemListElement: [
-            publication('Vision & Founding Charter', '/founding-charter.pdf'),
-            publication('Field Semester Instructor Guide', '/field-semester.pdf'),
-            publication('Offline Learner Fieldbook', '/offline-fieldbook.pdf'),
-            publication('Founding Supporter Brief', '/founding-brief.pdf'),
+            publication('Founding charter', '/founding-charter.pdf'),
+            publication('Academic curriculum', '/field-semester.pdf'),
+            publication('Operations and safety manual', '/operations-manual.pdf'),
+            publication('Printable learner fieldbook', '/offline-fieldbook.pdf'),
+            publication('Founding supporter brief', '/founding-brief.pdf'),
             publication(
-              'Editable Founding Charter',
+              'Editable founding charter',
               '/founding-charter.docx',
               'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
             ),
@@ -188,9 +189,9 @@ const pages: RouteRecordRaw[] = [
     name: 'support',
     component: () => import('../pages/SupportPage.vue'),
     meta: {
-      title: 'The Founding Invitation · University of Jasper',
+      title: 'The founding invitation · University of Jasper',
       description:
-        'The founding capital proposal for University of Jasper: a C$10 million ambition through five founding commitments or an anchor patron. No commitments are yet confirmed.',
+        'Explore the C$10 million long-term founding proposal and the evidence needed for a defined first commitment.',
       bodyClass: 'support-page',
       nav: '/support',
       hero: { image: 'founding-chairs' },
@@ -207,9 +208,9 @@ const pages: RouteRecordRaw[] = [
     name: 'letter',
     component: () => import('../pages/LetterPage.vue'),
     meta: {
-      title: 'The Founding Letter by Vincent Zhang · University of Jasper',
+      title: 'The founding letter · University of Jasper',
       description:
-        'Vincent Zhang’s founding letter for University of Jasper, recovered from 2015, with a contemporary welcome to the people who will help build it in Jasper, Alberta.',
+        'Vincent Zhang’s recovered original welcome and Jasper Dream Crying, the founder’s song of place and memory.',
       bodyClass: 'vision-page',
       image: PEAKS_IMAGE,
     },
@@ -219,9 +220,9 @@ const pages: RouteRecordRaw[] = [
     name: 'fieldbook',
     component: () => import('../pages/FieldbookPage.vue'),
     meta: {
-      title: 'Personal fieldbook · University of Jasper',
+      title: 'Your personal fieldbook · University of Jasper',
       description:
-        'An optional browser notebook for the proposed Jasper Field Semester, kept on your own device, with a printable paper fieldbook for weekly notes and practice.',
+        'A browser-local notebook for six weeks of observations, inquiry, revision and contribution.',
       bodyClass: 'fieldbook-page',
       indexable: false,
     },
@@ -231,9 +232,9 @@ const pages: RouteRecordRaw[] = [
     name: 'care',
     component: () => import('../pages/CarePage.vue'),
     meta: {
-      title: 'Care, participation and privacy · University of Jasper',
+      title: 'Care and privacy · University of Jasper',
       description:
-        'Proposed operating principles for the first Jasper field lab: physical challenge, offline learning, camping and martial arts, community and privacy.',
+        'Participation, offline agreements, qualified supervision, local drafts and clear privacy information.',
       bodyClass: '',
       image: PEAKS_IMAGE,
       hero: { image: 'letter-peaks' },
@@ -244,12 +245,76 @@ const pages: RouteRecordRaw[] = [
     name: 'sources',
     component: () => import('../pages/SourcesPage.vue'),
     meta: {
-      title: 'Sources, references and image credits · University of Jasper',
+      title: 'Sources and credits · University of Jasper',
       description:
-        'The research sources, historical references and image credits behind the University of Jasper proposal. External sources do not imply endorsement or affiliation.',
+        'Historical inspirations, primary readings, official operating references and visual credits for University of Jasper.',
       bodyClass: '',
     },
   },
+  {
+    path: '/founding',
+    name: 'founding',
+    component: () => import('../pages/FoundingPage.vue'),
+    meta: {
+      title: 'Founding progress · University of Jasper',
+      description:
+        'Published plans, outstanding delivery conditions and the next decisions for University of Jasper.',
+      bodyClass: 'founding-page',
+      image: PEAKS_IMAGE,
+    },
+  },
+  {
+    path: '/learning',
+    name: 'learning',
+    component: () => import('../pages/LearningPage.vue'),
+    meta: {
+      title: 'Learning you can inspect · University of Jasper',
+      description:
+        'An interactive, clearly labelled teaching example of evidence, scientific modelling, criticism and revision.',
+      bodyClass: 'learning-page',
+      nav: '/program',
+      image: PEAKS_IMAGE,
+    },
+  },
+  ...[
+    {
+      slug: 'charter',
+      component: () => import('../pages/read/CharterRead.vue'),
+      title: 'Founding charter full text · University of Jasper',
+      description: 'The original welcome, vision, educational commitments and staged institutional proposal.',
+    },
+    {
+      slug: 'curriculum',
+      component: () => import('../pages/read/CurriculumRead.vue'),
+      title: 'Academic curriculum full text · University of Jasper',
+      description: 'Six connected courses, timed teaching, Jasper investigations, tutorials, readings and assessment.',
+    },
+    {
+      slug: 'operations',
+      component: () => import('../pages/read/OperationsRead.vue'),
+      title: 'Operations and safety manual full text · University of Jasper',
+      description:
+        'Staffing, field permissions, activity controls, access, communications and release-to-operate decisions.',
+    },
+    {
+      slug: 'fieldbook',
+      component: () => import('../pages/read/FieldbookRead.vue'),
+      title: 'Printable learner fieldbook full text · University of Jasper',
+      description:
+        'Paper sheets for observation, physical progression, arguments, experiments, useful work and reflection.',
+    },
+    {
+      slug: 'supporter',
+      component: () => import('../pages/read/SupporterRead.vue'),
+      title: 'Founding supporter brief full text · University of Jasper',
+      description: 'The first funding conversation, long-term ambition and governance decisions to establish.',
+    },
+  ].map(({ slug, component, title, description }): RouteRecordRaw => ({
+    path: `/read/${slug}`,
+    name: `read-${slug}`,
+    component,
+    meta: { title, description, bodyClass: 'read-page', nav: '/publications', image: PEAKS_IMAGE },
+  })),
 ]
 
 // Keep the original static-site URLs (/vision.html, /index.html …) working.
@@ -262,6 +327,8 @@ const redirects: RouteRecordRaw[] = [
   { path: '/teachers.html', redirect: '/join/teachers' },
   { path: '/students', redirect: '/join/students' },
   { path: '/students.html', redirect: '/join/students' },
+  { path: '/hosts', redirect: '/join/hosts' },
+  { path: '/hosts.html', redirect: '/join/hosts' },
 ]
 
 const notFound: RouteRecordRaw = {
@@ -270,7 +337,7 @@ const notFound: RouteRecordRaw = {
   component: () => import('../pages/NotFoundPage.vue'),
   meta: {
     title: 'Page not found · University of Jasper',
-    description: 'The page you were looking for could not be found on the University of Jasper website.',
+    description: 'This address does not match a University of Jasper page.',
     bodyClass: '',
     indexable: false,
   },

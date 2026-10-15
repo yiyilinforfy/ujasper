@@ -19,12 +19,11 @@ onMounted(() => {
 })
 
 const links = [
-  { to: '/', label: 'Discover' },
-  { to: '/program', label: 'Semester' },
+  { to: '/program', label: 'Field Semester' },
   { to: '/vision', label: 'Vision' },
   { to: '/publications', label: 'Publications' },
   { to: '/join', label: 'Join us' },
-  { to: '/support', label: 'Founding ↗' },
+  { to: '/support', label: 'Support' },
 ]
 
 const current = (to: string) => (route.meta.nav === to ? 'page' : undefined)

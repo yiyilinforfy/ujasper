@@ -1,0 +1,865 @@
+{
+ "eyebrow": "Full text · 15 October 2026",
+ "title": "Operations and safety manual",
+ "lead": "Staffing, field permissions, activity controls, access, communications and release-to-operate decisions.",
+ "note": "HTML reading edition from the same source as the PDF. Printed pages and screen sections can differ in pagination.",
+ "pdf": "/operations-manual.pdf",
+ "sections": [
+  {
+   "id": "chapter-1",
+   "eyebrow": "STAFF COMPANION / OPERATIONS AND SAFETY",
+   "title": "Plan the delivery Protect the learning",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use with the Academic Curriculum. This manual describes the arrangements that responsible staff must establish for the proposed six-week Jasper Field Semester. It is not a completed local operating plan, medical protocol, permission, insurance policy or substitute for qualified judgment."
+    },
+    {
+     "type": "h3",
+     "text": "Program constants"
+    },
+    {
+     "type": "p",
+     "html": "6–8 adults; 144 facilitated hours; 24 independent-study hours; three proposed camping nights. Winter break: mid-December to mid-February. Twelve 30-minute strength sessions are included in fieldcraft. The optional three-hour AI Return Lab is additional and separately resourced."
+    },
+    {
+     "type": "h3",
+     "text": "Release to operate"
+    },
+    {
+     "type": "p",
+     "html": "The accountable operator names the academic lead, field lead, assistant, coaches and second tutor; confirms lawful arrangements, sites, equipment, communications and participant information; and signs a dated go/no-go record. Missing essential arrangements postpone delivery."
+    },
+    {
+     "type": "h3",
+     "text": "Control the edition"
+    },
+    {
+     "type": "p",
+     "html": "English edition: 15 October 2026. Keep staff procedures, participant information and the actual daily plan aligned. Record local revisions and responsible sign-off. Contact Vincent Zhang at vincent@ujasper.ca."
+    },
+    {
+     "type": "small",
+     "html": "University of Jasper is a founding project in Jasper, Alberta, Canada. Its first proposed program is non-degree. No degree-granting authority or current institutional approval is claimed. A venue, teaching appointments, funding and launch dates remain unconfirmed. General inquiries are welcome at vincent@ujasper.ca. Formal admissions and appointments are not open. Website forms prepare local drafts and never submit automatically; a draft is not an application, reservation or offer."
+    }
+   ]
+  },
+  {
+   "id": "chapter-2",
+   "eyebrow": "THE OFFLINE COVENANT",
+   "title": "Attention without disconnection from care.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Learning environment"
+    },
+    {
+     "type": "p",
+     "html": "Personal phones, internet and live AI are off during teaching and camps, with agreed private medical, accessibility and essential-contact exceptions. Staff emergency communications remain active. Storage is voluntary and devices are returned on request. Use printed texts, maps, pencils, analogue watches and dedicated measuring instruments. A basic offline calculator can be an access option."
+    },
+    {
+     "type": "h3",
+     "text": "Voluntary storage and exceptions"
+    },
+    {
+     "type": "p",
+     "html": "Explain the arrangement before registration. Learners may switch devices off and retain them in a sealed pouch, or choose documented secure storage. Devices are returned on request; no searches, punitive confiscation or forced isolation. Agree private exceptions for disability, medical equipment, caregiving, essential work and urgent contact."
+    },
+    {
+     "type": "h3",
+     "text": "Emergency communications remain live"
+    },
+    {
+     "type": "p",
+     "html": "Designate a staff phone and a tested satellite communicator where coverage warrants it, with backup power and an off-site contact. The learning group does not browse. Staff obtain current weather, closure and emergency information before each departure and whenever conditions change. Personal silence never prevents warnings, help-seeking or navigation communication. [S1]"
+    },
+    {
+     "type": "h3",
+     "text": "Offline preparation"
+    },
+    {
+     "type": "p",
+     "html": "Before the first class, prepare the printed reader, maps and route cards, contact card, fieldbook, equipment instructions, scientific tables and a labelled set of illustrative claim cards. Check every page is legible. Carry spare paper and accessibility formats."
+    },
+    {
+     "type": "h3",
+     "text": "Evidence and privacy"
+    },
+    {
+     "type": "p",
+     "html": "No routine filming, location posting or recording of private reflection. Learners decide what personal writing to share. Keep operational health and emergency information separate from assessed portfolios. No learner needs to surrender private journal pages."
+    },
+    {
+     "type": "small",
+     "html": "The offline format is an educational choice. Do not advertise it as a cure, a “dopamine reset” or a scientifically proven path to superiority."
+    }
+   ]
+  },
+  {
+   "id": "chapter-3",
+   "eyebrow": "JAS 101 / THE CAMPING PROGRESSION",
+   "title": "Earn the overnight.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Week 2: one night"
+    },
+    {
+     "type": "p",
+     "html": "Use the B/D learning days consecutively at or near a reserved serviced campground. Day B fieldcraft establishes the camp. Reading, discussion and commons work use a permitted sheltered space. Meals and evening rest are ungraded. Day D begins with the normal attention practice, followed by a short field session and review. Return to the base venue if weather prevents discussion outdoors."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5: two nights"
+    },
+    {
+     "type": "p",
+     "html": "Use the same standard of access and supervision; two nights add responsibility and repeated practice, not remoteness. B and D hold the scheduled learning; the second evening is quiet recovery. Saturday is breakfast, camp closure and return, without an extra compulsory lesson or fitness test."
+    },
+    {
+     "type": "h3",
+     "text": "Readiness gate before either camp"
+    },
+    {
+     "type": "p",
+     "html": "The lead verifies bookings and relevant permissions, two competent staff and rest coverage, usable toilets and potable-water arrangements, food storage, weather and closure review, transport and exit options, participant equipment, private support arrangements, an off-site contact and functioning emergency communications. A missing essential item postpones the camp."
+    },
+    {
+     "type": "h3",
+     "text": "Same educational standing without an overnight"
+    },
+    {
+     "type": "p",
+     "html": "A learner may use an accessible sleeping arrangement, return to local accommodation with arranged transport, or complete a supervised day-camp equivalent. They demonstrate shelter planning, storage, navigation, decision-making and contribution. Record what they actually completed; do not imply overnight experience they did not have."
+    },
+    {
+     "type": "h3",
+     "text": "Camp conduct"
+    },
+    {
+     "type": "p",
+     "html": "Use designated sites and the booking’s conditions. Secure all attractants when not in use, including toiletries and rubbish. No curriculum activity depends on a campfire, foraging, collecting park objects or approaching wildlife. Plan hygiene, food allergies, medication access and respectful quiet hours privately. [S4]"
+    },
+    {
+     "type": "small",
+     "html": "The academic curriculum does not authorize a location. The photograph of Spirit Island is part of the university identity, not a course destination."
+    }
+   ]
+  },
+  {
+   "id": "chapter-4",
+   "eyebrow": "PHYSICAL PRACTICE / QUALIFIED COACHING",
+   "title": "Progress with clear decisions",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Before the first session"
+    },
+    {
+     "type": "p",
+     "html": "Verify coach competence, relevant coverage, floor and equipment, private access arrangements and a confidential route for necessary health information. The coach chooses appropriate variations; the institution does not diagnose conditions or prescribe rehabilitation."
+    },
+    {
+     "type": "h3",
+     "text": "Session design"
+    },
+    {
+     "type": "p",
+     "html": "Each 30-minute block includes readiness/warm-up, demonstration, practice with rest and recovery/recording. Choose appropriate supported squat, hinge, push, pull, carry or trunk tasks. No maximal strength test, forced exhaustion or unsupervised loaded progression is part of this beginner course."
+    },
+    {
+     "type": "h3",
+     "text": "Progression and assessment"
+    },
+    {
+     "type": "p",
+     "html": "Record movement, support, load if used, repetitions/time, technique and perceived effort privately. Progress one suitable variable only when technique and recovery support it. Use comparable submaximal tasks in Weeks 1 and 6; explain familiarity and changed conditions. No public fitness ranking."
+    },
+    {
+     "type": "h3",
+     "text": "Stopping and escalation"
+    },
+    {
+     "type": "p",
+     "html": "Stop for pain, dizziness, distress or loss of control; use the established first-aid and emergency plan. Suspected concussion requires removal and appropriate medical assessment, with no same-day return. Qualified professionals determine further management. Follow current Canadian guidance."
+    },
+    {
+     "type": "h3",
+     "text": "Martial boundaries"
+    },
+    {
+     "type": "p",
+     "html": "Use the existing beginner boundaries: no head strikes, hard sparring, chokes, neck cranks, submissions, weapons or uncoached takedowns. Suitable mats and consent are essential. A judo course or any change in contact practice needs a qualified coach’s separately approved plan and verified facilities."
+    },
+    {
+     "type": "small",
+     "html": "Relevant sources: CSEP adult movement guidance; Judo Canada coaching and Safe Sport resources; Parachute Canadian Guideline on Concussion in Sport. General guidelines do not replace individual coaching decisions."
+    }
+   ]
+  },
+  {
+   "id": "chapter-5",
+   "eyebrow": "STAFFING / COUNT PEOPLE AND TIME",
+   "title": "Resource the actual program",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Responsibility",
+      "Minimum teaching allocation for planning"
+     ],
+     "rows": [
+      [
+       "Field lead and assistant",
+       "36 hours each; the strength coach must be competent for the included 6 hours. Camp duty, travel and rest coverage are additional."
+      ],
+      [
+       "Martial coach",
+       "18 contact hours plus preparation and assessment; relevant coaching competence and suitable space."
+      ],
+      [
+       "Science educator",
+       "30 contact hours plus source preparation, equipment and dossier review."
+      ],
+      [
+       "Philosophy lead",
+       "30 contact hours plus reader preparation, essay feedback and assessment."
+      ],
+      [
+       "Second tutorial educator",
+       "6 additional staff-contact hours: one hour weekly in the Day D studio; preparation and feedback additional."
+      ],
+      [
+       "Attention and Commons facilitation",
+       "12 + 18 contact hours; may be covered by qualified staff with no timetable conflict."
+      ],
+      [
+       "External reviewer or AI lab facilitator",
+       "Only when agreed. Reviewer time is additional staffing; optional AI lab has 3 additional learner-contact hours."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "No double counting"
+    },
+    {
+     "type": "p",
+     "html": "144 hours are learner contact, not the total labour required. The assistant and second tutor create simultaneous staffing. Camp duty, preparation, transport and administration must be costed separately. One person may cover roles only with competence and real availability."
+    },
+    {
+     "type": "small",
+     "html": "For eight learners, two tutors run four 30-minute pair appointments in a 60-minute studio. Confirm two suitable educators and shared supervised writing space before enrolment."
+    }
+   ]
+  },
+  {
+   "id": "chapter-6",
+   "eyebrow": "BUDGET & FEASIBILITY",
+   "title": "Fund the field semester.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use the digital planning files to establish feasibility before committing funds. Protect the founder’s personal capital: obtain real quotes and secure sufficient external support for qualified staff, supervised camping, insurance and program delivery before launch."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Resource to quote",
+      "Quantity basis",
+      "Record before launch"
+     ],
+     "rows": [
+      [
+       "Instruction",
+       "144 lead teaching hours + field assistant 36h + second tutor 6h; preparation and camp duty additional",
+       "Qualified people, rates, preparation and assessment time"
+      ],
+      [
+       "Camp coverage",
+       "Three nights; two field staff minimum in this design",
+       "Actual duty/rest roster, coverage and compensation"
+      ],
+      [
+       "Facilities",
+       "24 teaching days; indoor room and suitable martial space",
+       "Venue agreement, access and contingency availability"
+      ],
+      [
+       "Camping &amp; travel",
+       "One one-night camp + one two-night camp for 6-8 adults",
+       "Authorized site capacity, fees, transport and food"
+      ],
+      [
+       "Equipment &amp; materials",
+       "8 learners + staff; printed reader/maps, camp kit, mats/pads and low-risk science materials",
+       "Condition, loan terms, replacements and consumables"
+      ],
+      [
+       "Operations",
+       "Guide requirements, permissions, insurance, communications",
+       "Written confirmation and emergency-response arrangements"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "A real budget equation"
+    },
+    {
+     "type": "p",
+     "html": "Total delivery cost = teaching + preparation/assessment + additional field/camp staffing + facilities + transport + camping/food + equipment + permissions/insurance + communications + contingency. Record cash and in-kind contributions separately. Obtain current local quotes; do not present a hypothetical rate as an offer."
+    },
+    {
+     "type": "h3",
+     "text": "A zero-purchase beginning"
+    },
+    {
+     "type": "p",
+     "html": "With an already available room, printed or borrowed texts and a competent discussion host, begin with curriculum review or a short reading-and-reasoning demonstration. This does not authorize the field semester. Do not improvise overnight or contact activities to stay below the spending ceiling."
+    },
+    {
+     "type": "small",
+     "html": "Do not announce free tuition, enrolment dates or included equipment until the funding and delivery arrangements are confirmed. No funds, bookings or appointments are created by this document."
+    }
+   ]
+  },
+  {
+   "id": "chapter-7",
+   "eyebrow": "LAUNCH & DAILY DECISIONS",
+   "title": "A clear go / no-go standard.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Before recruitment"
+    },
+    {
+     "type": "p",
+     "html": "Before formal applications or appointments open, confirm the responsible operator and obtain written advice and any required authorization for the name, structure, public advertising and planned activities. Confirm insurance, qualified people, venues, camp reservations, access and participant information. Review the current public presentation in that process; a founding-status label is not legal clearance."
+    },
+    {
+     "type": "h3",
+     "text": "Before each field departure"
+    },
+    {
+     "type": "p",
+     "html": "The field lead checks current closures, post-wildfire hazards, weather and air quality; route suitability and exit options; participant readiness; functioning communications; food/water and kit; daylight and turnaround time. Record a decision and the source/time of checks. Never infer current safety from a historic map or brochure. [S1]"
+    },
+    {
+     "type": "h3",
+     "text": "Authority to stop"
+    },
+    {
+     "type": "p",
+     "html": "Any participant may request a stop. The responsible instructor may shorten, adapt, move indoors, postpone or cancel. Unsafe conditions are not an exam. If a safety-critical requirement is unconfirmed, choose the venue-based alternative."
+    },
+    {
+     "type": "h3",
+     "text": "Emergency roles"
+    },
+    {
+     "type": "p",
+     "html": "Before departure, name the incident lead, first-aid lead, group-care lead and off-site contact; one person may hold compatible roles. Record the actual location, access points, communications procedure and overdue trigger. Call emergency services when needed; staff must know how to use the selected satellite device. Test the non-emergency functions before the trip. [S1]"
+    },
+    {
+     "type": "h3",
+     "text": "Health information and follow-up"
+    },
+    {
+     "type": "p",
+     "html": "Collect only information necessary to plan access and respond to emergencies, through a private process. Keep it out of the learning portfolio. Agree storage, access and deletion arrangements before collection. Document incidents and near misses, notify relevant people and review the program before resuming."
+    },
+    {
+     "type": "small",
+     "html": "This is an operating framework for qualified local staff. It is not a wilderness medicine manual, a route approval or a substitute for on-site professional judgment."
+    }
+   ]
+  },
+  {
+   "id": "chapter-8",
+   "eyebrow": "ADAPTATION & QUALITY",
+   "title": "Protect the learning purpose.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "If the original activity cannot run",
+      "Equivalent task",
+      "Evidence retained"
+     ],
+     "rows": [
+      [
+       "Route closed, smoke or weather unsuitable",
+       "Indoor map/grade problem, route decision hearing and kit simulation",
+       "Navigation reasoning and a justified decision"
+      ],
+      [
+       "Camp postponed or overnight inaccessible",
+       "Supervised day-camp setup in an authorized venue plus a tabletop overnight plan",
+       "Shelter, storage, roles and contingency reasoning"
+      ],
+      [
+       "Martial contact not appropriate",
+       "Coach-led solo movement, observation analysis and a verbal boundary task",
+       "Coordination, consent, control and explanation"
+      ],
+      [
+       "Meditation uncomfortable",
+       "Quiet drawing, reading, sensory orientation or supported reflection",
+       "A chosen attention method and reasoned adaptation"
+      ],
+      [
+       "Science equipment absent",
+       "Clearly labelled printed dataset plus critique of method and a paper model",
+       "Mathematical analysis; no claim of having performed the experiment"
+      ],
+      [
+       "External recipient unavailable",
+       "Consenting peer usability review labelled as peer feedback",
+       "A test, revision and honest evidence boundary"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Evaluate the program, too"
+    },
+    {
+     "type": "p",
+     "html": "Week 1: baseline reasoning task and private access check. Week 3: review workload, assessment consistency and adaptations. Week 6: compare the same reasoning task, collect voluntary anonymous feedback, review incidents and inspect portfolios. Report the denominator and missing data; six to eight learners cannot establish broad causal effects."
+    },
+    {
+     "type": "h3",
+     "text": "The next cohort"
+    },
+    {
+     "type": "p",
+     "html": "Retain changes justified by evidence. Revise unclear readings, inaccessible activities and tasks that reward performance without understanding. Ask whether the program strengthened agency, judgment and dependable contribution."
+    },
+    {
+     "type": "small",
+     "html": "One University → One Family is sustained through voluntary, reciprocal relationships. No compulsory alumni duty, public confession, secrecy agreement or lifelong personal obligation is part of this curriculum."
+    }
+   ]
+  },
+  {
+   "id": "chapter-9",
+   "eyebrow": "LOCAL AUTHORITY / EVIDENCE BEFORE DELIVERY",
+   "title": "Confirm the operator and the activity",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Name and program status"
+    },
+    {
+     "type": "p",
+     "html": "Obtain current Alberta advice and any required authorization for university-name use, public advertising and the proposed educational activities. University of Jasper remains the founding identity; this publication does not establish permission to operate under that name."
+    },
+    {
+     "type": "h3",
+     "text": "Licences and guide requirements"
+    },
+    {
+     "type": "p",
+     "html": "Before an organised outing, the lead confirms with Parks Canada which business licence, guided-activity permissions, guide qualifications and identification cards apply to the exact route, activity and operator. Record evidence and conditions. Free or non-profit delivery is not assumed exempt; route-specific exceptions do not remove every other requirement."
+    },
+    {
+     "type": "h3",
+     "text": "Before accepting commitments"
+    },
+    {
+     "type": "p",
+     "html": "Identify the lawful recipient, decision authority, approved budget, insurance and contract terms. Publish actual dates, inclusions, costs, cancellation rules and access arrangements. No application fee, tuition, appointment or donor agreement is authorized by a website draft."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Decision record",
+      "Evidence to retain"
+     ],
+     "rows": [
+      [
+       "Operator and authorized decision-maker",
+       "Legal form, responsible person and current advice"
+      ],
+      [
+       "Venue and field locations",
+       "Written permission, permitted use, bookings and access review"
+      ],
+      [
+       "Staff and coverage",
+       "Verified competence, references, role agreement and duty roster"
+      ],
+      [
+       "Go or postpone",
+       "Date, unresolved conditions, accountable sign-off and next review"
+      ]
+     ]
+    },
+    {
+     "type": "small",
+     "html": "Primary references: Alberta Post-secondary Learning Act and program oversight; Parks Canada Jasper guided and business licensing. Review the exact current rules with the competent authorities."
+    }
+   ]
+  },
+  {
+   "id": "chapter-10",
+   "eyebrow": "FIELD CONDITIONS / STAFF DECISION RECORD",
+   "title": "Plan for change Keep a way out",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Weather, smoke and closures"
+    },
+    {
+     "type": "p",
+     "html": "Before each departure and when conditions change, record dated official forecasts, air-quality information, fire restrictions and park closures. The field lead sets route-specific stop and turnaround criteria with the actual group. No fixed threshold in this publication overrides a closure or a qualified on-site decision."
+    },
+    {
+     "type": "h3",
+     "text": "Wildlife and attractants"
+    },
+    {
+     "type": "p",
+     "html": "Brief the actual route and current Parks Canada wildlife guidance. Keep the group together, maintain required distances and never approach or feed wildlife. The competent lead determines required bear-safety equipment and staff training. At camp, secure food, toiletries and other attractants using the site’s approved storage; keep sleeping areas clear."
+    },
+    {
+     "type": "h3",
+     "text": "Water, cold and terrain"
+    },
+    {
+     "type": "p",
+     "html": "The first program excludes swimming, wading, cold-water immersion, glacier travel, technical climbing and deliberate cold-exposure tests. Use marked viewpoints with safe separation from banks and cliffs. Indoor warmth investigations do not validate outdoor equipment. Staff approve layers, shelter, drinking water and an accessible indoor or return option."
+    },
+    {
+     "type": "h3",
+     "text": "Communications and an overdue group"
+    },
+    {
+     "type": "p",
+     "html": "Check device coverage, power, a tested satellite option where required, off-site contact and a written check-in schedule. Record route, location format, exit points and the exact overdue trigger agreed with the off-site contact. Test routine functions without making a false emergency call. Staff obtain current warnings even while learners are offline."
+    },
+    {
+     "type": "h3",
+     "text": "If a participant needs help"
+    },
+    {
+     "type": "p",
+     "html": "Stop or adapt the activity. The trained first-aid lead follows their current competence and the agreed emergency plan, contacts emergency services as appropriate and documents the incident. Do not invent treatment protocols, promise rescue timing or resume solely to preserve the timetable."
+    },
+    {
+     "type": "small",
+     "html": "A staff briefing and a tabletop emergency rehearsal must precede delivery. Review any incident or near miss before repeating the activity."
+    }
+   ]
+  },
+  {
+   "id": "chapter-11",
+   "eyebrow": "PEOPLE AND TRUST / REQUIRED ARRANGEMENTS",
+   "title": "Make care accountable",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Staff vetting and conduct"
+    },
+    {
+     "type": "p",
+     "html": "Verify identity, relevant qualifications, first-aid currency where needed, references and appropriate screening for the role. Publish role boundaries, conflict declarations and a code addressing harassment, discrimination, violence, coercion, retaliation and substance-related impairment. Obtain written agreements before anyone teaches or supervises."
+    },
+    {
+     "type": "h3",
+     "text": "Complaints and independent review"
+    },
+    {
+     "type": "p",
+     "html": "Before enrolment, name a confidential reporting contact and an alternative independent of the person complained about, including the founder. Publish acknowledgement and response timelines, escalation, record handling and appeal arrangements. Separate an urgent safety response from assessment disagreement. No retaliation for raising a concern."
+    },
+    {
+     "type": "h3",
+     "text": "Consent that can be withdrawn"
+    },
+    {
+     "type": "p",
+     "html": "Discuss activity, touch, partner, intensity and adaptations each time. Offer equivalent ways to meet learning outcomes. Obtain separate, optional permission for photography, recording, public portfolios and testimonials. Withdrawal of publicity consent must not affect assessment or belonging; explain any practical limit for already distributed material."
+    },
+    {
+     "type": "h3",
+     "text": "Minimal records and access"
+    },
+    {
+     "type": "p",
+     "html": "Collect only necessary contact, emergency and access information through the agreed private process. Assign record access, retention and deletion before collection. Keep health information separate from academic work. A public website draft is not a channel for health records, identification or safeguarding reports."
+    },
+    {
+     "type": "h3",
+     "text": "Fair review of learning"
+    },
+    {
+     "type": "p",
+     "html": "Give criteria and equivalents in advance. A second qualified educator reviews a disputed assessment without a relevant conflict. Record the evidence, reasons and revision opportunity. Keep private beliefs, body measurements and journal entries outside public ranking."
+    },
+    {
+     "type": "small",
+     "html": "These are requirements to establish, not a claim that named complaint officers, contracts or privacy systems are already in place."
+    }
+   ]
+  },
+  {
+   "id": "chapter-12",
+   "eyebrow": "LOCAL DELIVERY / SOURCES AND PERMISSIONS",
+   "title": "Prepare the place and the evidence",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Authorization before field research"
+    },
+    {
+     "type": "p",
+     "html": "Ask Parks Canada to determine requirements for the actual research, observation or collection activity. A learning label creates no automatic exemption. Preserve written determinations and relevant conditions before delivery; allow the authority’s stated lead time. Published data and approved low-risk indoor exercises are the default while permissions remain unresolved."
+    },
+    {
+     "type": "h3",
+     "text": "Teaching from published material"
+    },
+    {
+     "type": "p",
+     "html": "The first science sequence can use sourced maps, imagery and published data with low-risk indoor experiments. Select dated glacier images with a defensible scale and registration. Never describe illustrative grids or invented flow values as field measurements. Archive provenance and reuse terms."
+    },
+    {
+     "type": "h3",
+     "text": "Route and transport reality"
+    },
+    {
+     "type": "p",
+     "html": "Medicine Lake, Maligne Lake, Miette and the Columbia Icefield are different locations. No itinerary promises all of them. Select feasible local observations and transport before advertising outings. Travel is not silently counted as teaching. Check closures and current conditions for each date."
+    },
+    {
+     "type": "h3",
+     "text": "Night-sky sessions"
+    },
+    {
+     "type": "p",
+     "html": "Confirm darkness, weather, site access, lighting for safe movement, transport, staff duty and next-day recovery. Reschedule the existing 60-minute attention seminar if used; do not add compulsory time. A printed-sky equivalent remains available."
+    },
+    {
+     "type": "h3",
+     "text": "Community work"
+    },
+    {
+     "type": "p",
+     "html": "A willing host defines useful scope and accepts responsibilities. Do not promise recovery labour, construction, collecting or access to restricted areas. Obtain consent for feedback and publication. Record partner approval or label the activity as peer-reviewed classroom work."
+    },
+    {
+     "type": "h3",
+     "text": "Indoor investigation controls"
+    },
+    {
+     "type": "p",
+     "html": "The science educator checks equipment and an activity-specific risk assessment. Use stable unbreakable cups on trays, ordinary thermometers and staff-prepared warm water; no boiling water, flame or human cold-exposure test. Demonstrate handling and spills before use. Published mineral values require no chemical sampling."
+    },
+    {
+     "type": "small",
+     "html": "Sources: Parks Canada research and collection permits and applicant’s guide; Jasper current conditions and relevant site guidance. Actual permits and local procedures must be confirmed for the proposed dates."
+    }
+   ]
+  },
+  {
+   "id": "chapter-13",
+   "eyebrow": "WORKLOAD / LEARNER AND STAFF LEDGERS",
+   "title": "Make every hour visible",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Learner commitment",
+      "Six-week total"
+     ],
+     "rows": [
+      [
+       "Fieldcraft and physical practice",
+       "36 h: 6 strength + 30 other field work"
+      ],
+      [
+       "Martial / Attention / Science",
+       "18 h / 12 h / 30 h"
+      ],
+      [
+       "Philosophy / Commons",
+       "30 h / 18 h"
+      ],
+      [
+       "Facilitated academic work",
+       "144 h"
+      ],
+      [
+       "Independent study",
+       "24 h: 4 h weekly"
+      ],
+      [
+       "Planned academic workload",
+       "168 h"
+      ],
+      [
+       "Meals, breaks, travel and camp duty",
+       "Additional; publish actual arrangements"
+      ],
+      [
+       "Optional AI Return Lab",
+       "3 h after the semester; separately scheduled"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Weekly independent-study plan"
+    },
+    {
+     "type": "p",
+     "html": "Plan about 90 minutes reading, 90 minutes essay work and 60 minutes science preparation or revision. In-class reading and writing remain. Review the actual load at Week 3 and adapt support without removing the requirement for independent understanding."
+    },
+    {
+     "type": "h3",
+     "text": "Tutorial staffing"
+    },
+    {
+     "type": "p",
+     "html": "The lead is present for Day D philosophy. A second tutor overlaps for one hour weekly. Two simultaneous stations provide four 30-minute pair tutorials to eight learners. Budget preparation and feedback; do not advertise that personal attention as costless."
+    },
+    {
+     "type": "small",
+     "html": "A 60-minute night-sky session replaces the attention seminar when used. The final Commons presentation occupies its existing 60-minute slot. Public attendance, an external reviewer and an AI lab are conditional on actual arrangements."
+    }
+   ]
+  },
+  {
+   "id": "chapter-14",
+   "eyebrow": "STAFF SOURCES / KEEP CURRENT",
+   "title": "Verify before you commit",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Parks Canada research permits"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://www.parcs.canada.ca/nature/science/recherche-research/permis-permits\">https://www.parcs.canada.ca/nature/science/recherche-research/permis-permits</a>"
+    },
+    {
+     "type": "h3",
+     "text": "Parks Canada applicant guide"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://www.parks.canada.ca/nature/science/recherche-research/permis-permits/guide\">https://www.parks.canada.ca/nature/science/recherche-research/permis-permits/guide</a>"
+    },
+    {
+     "type": "h3",
+     "text": "CSEP adult movement guidelines"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://csepguidelines.ca/wp-content/uploads/2022/05/24HMovementGuidelines-Adults-18-64-ENG.pdf\">https://csepguidelines.ca/wp-content/uploads/2022/05/24HMovementGuidelines-Adults-18-64-ENG.pdf</a>"
+    },
+    {
+     "type": "h3",
+     "text": "Judo Canada coaching"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://learning.judocanada.org/national-coaching-certification-program/\">https://learning.judocanada.org/national-coaching-certification-program/</a>"
+    },
+    {
+     "type": "h3",
+     "text": "Parachute concussion guidance"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://parachute.ca/en/professional-resource/concussion-collection/canadian-guideline-on-concussion-in-sport/\">https://parachute.ca/en/professional-resource/concussion-collection/canadian-guideline-on-concussion-in-sport/</a>"
+    },
+    {
+     "type": "h3",
+     "text": "Oxford tutorial model"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://www.ox.ac.uk/admissions/undergraduate/courses/learning-at-oxford/personalised-learning\">https://www.ox.ac.uk/admissions/undergraduate/courses/learning-at-oxford/personalised-learning</a>"
+    },
+    {
+     "type": "h3",
+     "text": "Alberta and park operating requirements"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://www.alberta.ca/post-secondary-program-standards-oversight\">Alberta program standards and oversight</a>; <a href=\"https://open.alberta.ca/publications/p19p5\">Post-secondary Learning Act</a>; <a href=\"https://parks.canada.ca/pn-np/ab/jasper/gestion-management/permis-permits/licence/guides\">Jasper guided business licences</a>."
+    },
+    {
+     "type": "small",
+     "html": "Source review: 15 October 2026. Recheck current local rules, conditions and professional guidance before delivery. Blank operating arrangements must be completed by the accountable team, not inferred from this publication."
+    }
+   ]
+  },
+  {
+   "id": "chapter-15",
+   "eyebrow": "ACTIVITY REFERENCES / SOURCE INDEX",
+   "title": "Practice, place and source care",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "S1 / Parks Canada: Jasper visitor safety"
+    },
+    {
+     "type": "p",
+     "html": "Current closures, wildfire, wildlife and communication links; staff verify conditions before departure. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/securite-safety\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S2 / Parks Canada: Guided adventures"
+    },
+    {
+     "type": "p",
+     "html": "Check a guide’s lawful operation and qualifications appropriate to the activity. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/activguides-guidedactiv\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S3 / Parks Canada: Jasper business licences"
+    },
+    {
+     "type": "p",
+     "html": "Operating and guided-business categories; confirm the actual program’s requirements. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/gestion-management/permis-permits/licence\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S4 / Parks Canada: Backcountry planning guide"
+    },
+    {
+     "type": "p",
+     "html": "Camp reservations, designated sites and secure attractant storage; site-specific rules control. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry/planif-plan\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S5 / Parachute: Canadian Guideline on Concussion in Sport, 2nd ed."
+    },
+    {
+     "type": "p",
+     "html": "Removal, assessment and return-to-sport processes. This course does not provide medical clearance. <a href=\"https://parachute.ca/wp-content/uploads/2019/06/Concussion-Guideline-2024.pdf\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S6 / NCCIH: Meditation and Mindfulness"
+    },
+    {
+     "type": "p",
+     "html": "Benefits, limitations and potential adverse experiences; educational practices are not treatment. <a href=\"https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety\">Read source</a>."
+    },
+    {
+     "type": "small",
+     "html": "S1–S6 retain identifiers from the earlier activity plans. Staff must recheck current requirements and source availability before delivery. These sources are not partners or approvers."
+    },
+    {
+     "type": "small",
+     "html": "Founding vision and original crest: Vincent Zhang. Photograph: Morning at Spirit Island, Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0. Resized and cropped presentation retains the same licence; no teaching location is implied."
+    }
+   ]
+  }
+ ]
+}

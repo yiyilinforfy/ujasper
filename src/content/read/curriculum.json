@@ -1,0 +1,2213 @@
+{
+ "eyebrow": "Full text · 15 October 2026",
+ "title": "Academic curriculum",
+ "lead": "Six connected courses, timed teaching, Jasper investigations, tutorials, readings and assessment.",
+ "note": "HTML reading edition from the same source as the PDF. Printed pages and screen sections can differ in pagination.",
+ "pdf": "/field-semester.pdf",
+ "sections": [
+  {
+   "id": "chapter-1",
+   "eyebrow": "THE JASPER FIELD SEMESTER / ACADEMIC CURRICULUM",
+   "title": "Strong in body. Free in mind.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "A six-week education in physical capability, independent thought and useful creation. Learn in person in Jasper, Alberta, through field practice, science, philosophy and a small community of inquiry."
+    },
+    {
+     "type": "figure",
+     "image": "jasper",
+     "alt": "Spirit Island and Maligne Lake in Jasper National Park",
+     "caption": "© Sergey Pesterev / Wikimedia Commons · CC BY-SA 4.0"
+    },
+    {
+     "type": "p",
+     "html": "Understanding demonstrated through responsible action."
+    },
+    {
+     "type": "small",
+     "html": "Proposed non-degree program | 6–8 adults aged 18+ | 144 facilitated + 24 independent-study hours. English edition: 15 October 2026. General inquiries are welcome at vincent@ujasper.ca. Formal admissions and appointments are not open. Website forms prepare local drafts and never submit automatically; a draft is not an application, reservation or offer."
+    }
+   ]
+  },
+  {
+   "id": "chapter-2",
+   "eyebrow": "01 / EDUCATIONAL PURPOSE",
+   "title": "The whole human.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Our mission"
+    },
+    {
+     "type": "p",
+     "html": "To unite sustained physical training, humanistic learning across world civilisations, and original inquiry in mathematics, physics, chemistry and economics. Through life in nature, lectures, close dialogue, debate, field study, experiments and shared projects, we cultivate people of courage, deep learning, independent judgment, initiative, self-discipline and a commitment to justice. We use AI to extend inquiry while strengthening human understanding, creativity and responsibility."
+    },
+    {
+     "type": "h3",
+     "text": "What this semester must make possible"
+    },
+    {
+     "type": "p",
+     "html": "Learners should be able to care for themselves and companions outdoors; train with control; direct attention voluntarily; measure and reason from evidence; interpret texts and challenge arguments fairly; and complete useful work with others."
+    },
+    {
+     "type": "h3",
+     "text": "Three foundations, six courses"
+    },
+    {
+     "type": "p",
+     "html": "Physical practice develops capability and judgment. World humanities examine purpose and responsibility. Mathematics, physics, chemistry and economics make explanations precise and testable. Jasper’s setting connects the work; disagreement remains welcome."
+    },
+    {
+     "type": "h3",
+     "text": "AI and human agency"
+    },
+    {
+     "type": "p",
+     "html": "The long-term mission includes thoughtful use of AI. The six-week core establishes an independent record of observation and reasoning offline. Personal phones, internet and live AI are off during teaching and camps, with agreed private medical, accessibility and essential-contact exceptions. Staff emergency communications remain active. Storage is voluntary and devices are returned on request. An optional three-hour AI Return Lab follows separately, outside the 168 academic hours; no seventh residential week is promised."
+    },
+    {
+     "type": "h3",
+     "text": "The standard of excellence"
+    },
+    {
+     "type": "p",
+     "html": "High expectations apply to preparation, precision, honesty, revision and care. Distance covered, combat dominance, meditation endurance, obedience and agreement with the founder are not measures of worth."
+    },
+    {
+     "type": "small",
+     "html": "Fearless in learning. Lead by example. One University → One Family means mutual care with freedom to disagree, decline a practice or leave the program."
+    }
+   ]
+  },
+  {
+   "id": "chapter-3",
+   "eyebrow": "02 / ACADEMIC ARCHITECTURE",
+   "title": "Six courses. One education.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Course",
+      "Hours",
+      "Evidence"
+     ],
+     "rows": [
+      [
+       "JAS 101<br>Fieldcraft &amp; Physical Practice",
+       "36",
+       "A route-and-camp dossier; coached strength progression; field judgment"
+      ],
+      [
+       "JAS 102<br>Martial Arts &amp; Restraint",
+       "18",
+       "A coached control demonstration; practice record"
+      ],
+      [
+       "JAS 103<br>Attention &amp; Reflective Practice",
+       "12",
+       "An attention-method comparison; personal protocol"
+      ],
+      [
+       "JAS 104<br>Jasper as Laboratory",
+       "30",
+       "Scientific dossier with data, model, uncertainty and individual defence"
+      ],
+      [
+       "JAS 105<br>Philosophy &amp; the Jasper Tutorial",
+       "30",
+       "Weekly pair tutorials; two revised essays and a fair counterargument"
+      ],
+      [
+       "JAS 106<br>The Commons &amp; Original Inquiry",
+       "18",
+       "A useful analogue artefact; stewardship and cost account"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "html": "Total: 144 facilitated learning hours = 24 days × 6 hours. Weekly allocation: fieldcraft 6; martial arts 3; attention 2; science 5; philosophy 5; commons 3. Course codes are internal design labels, not accredited credit codes."
+    },
+    {
+     "type": "h3",
+     "text": "The learner profile"
+    },
+    {
+     "type": "p",
+     "html": "Adults aged 18 or over; cohort of 6-8; no martial-arts experience required. An opening diagnostic checks arithmetic, graph reading, short-text comprehension and support needs. It shapes teaching and adaptations, not a public ranking."
+    },
+    {
+     "type": "h3",
+     "text": "Workload and scope"
+    },
+    {
+     "type": "p",
+     "html": "Four teaching days provide 24 facilitated hours weekly. Four additional independent-study hours cover reading, essay development and laboratory preparation: 24 over six weeks, making 168 planned academic hours in total. Guided reading and writing also occur in class. Camp duties, meals, breaks and travel are additional commitments, not hidden teaching hours. No full residential provision is promised."
+    }
+   ]
+  },
+  {
+   "id": "chapter-4",
+   "eyebrow": "03 / THE WEEKLY TIMETABLE",
+   "title": "A demanding, humane rhythm.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Day",
+      "Morning",
+      "Afternoon"
+     ],
+     "rows": [
+      [
+       "A",
+       "09:00 attention 15m<br>09:15 science 150m<br>11:45 break 15m",
+       "12:00 lunch 45m<br>12:45 martial arts 90m<br>14:15 break 15m<br>14:30 philosophy 105m"
+      ],
+      [
+       "B",
+       "09:00 attention 15m<br>09:15 fieldcraft: 180m taught + 30m breaks",
+       "12:45 lunch 45m<br>13:30 philosophy 90m<br>15:00 commons 75m"
+      ],
+      [
+       "C",
+       "09:00 attention 15m<br>09:15 science 150m<br>11:45 break 15m",
+       "12:00 lunch 45m<br>12:45 martial arts 90m<br>14:15 break 15m<br>14:30 attention seminar 60m<br>15:30 commons 45m"
+      ],
+      [
+       "D",
+       "09:00 attention 15m<br>09:15 fieldcraft: 180m taught + 30m breaks",
+       "12:45 lunch 45m<br>13:30 philosophy 105m<br>15:15 commons 60m"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "html": "Each day ends at 16:15. Every day contains exactly 360 teaching minutes and 75 minutes of meals/breaks. Field breaks may be redistributed by the lead; access, weather and health needs take priority over the clock."
+    },
+    {
+     "type": "h3",
+     "text": "Academic calendar / winter break"
+    },
+    {
+     "type": "p",
+     "html": "Winter break: mid-December to mid-February, approximately two months. No required teaching or camping takes place during this period. Six-week cohorts finish before the break or begin after it. Exact cohort dates remain unconfirmed."
+    },
+    {
+     "type": "h3",
+     "text": "Camping weeks"
+    },
+    {
+     "type": "p",
+     "html": "In camping weeks use A on Tuesday, C on Wednesday, B on Thursday and D on Friday. Week 2 has one night; Week 5 has two nights, with Saturday checkout. Evening attention may replace the Day C 60-minute attention seminar only when staffing, darkness and recovery arrangements are confirmed. The hour is moved, never added or counted twice."
+    },
+    {
+     "type": "small",
+     "html": "Three days have no scheduled contact teaching; four independent-study hours are planned separately. Camp rest and duty need their own staffing. Night-sky work is optional or replaces an existing attention hour. Keep an approximately nine-hour sleep opportunity at camp."
+    }
+   ]
+  },
+  {
+   "id": "chapter-5",
+   "eyebrow": "SIGNATURE INQUIRY / DESIGN",
+   "title": "One question Six disciplines",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "A shared question connects physical effort, scientific reasoning, primary texts and contribution. Each component stays within its course allocation."
+    },
+    {
+     "type": "h3",
+     "text": "Warmth / What does it take to keep someone warm?"
+    },
+    {
+     "type": "p",
+     "html": "Jasper’s mountain conditions make warmth a question about physical preparation, heat transfer and shared responsibility. Create a tested preparation resource for a consenting user. Show the evidence behind each recommendation and revise what the user misunderstands."
+    },
+    {
+     "type": "h3",
+     "text": "Water / Where does the water go?"
+    },
+    {
+     "type": "p",
+     "html": "Medicine Lake opens a question about hidden systems, chemical evidence and the limits of what we can know. Produce an annotated water-system model for a consenting reader. Make the uncertainty understandable rather than hiding it."
+    },
+    {
+     "type": "h3",
+     "text": "Judgment / What would change your mind?"
+    },
+    {
+     "type": "p",
+     "html": "A difficult text, an uncertain measurement and a real responsibility test the same capacity: judgment. Complete useful work for a consenting peer or confirmed host. Defend your contribution; optionally audit AI against the preserved work after the semester."
+    },
+    {
+     "type": "h3",
+     "text": "Integration without extra hours"
+    },
+    {
+     "type": "p",
+     "html": "Count each session once under its scheduled course. A field observation can supply a science question, but it cannot also be claimed as a second block of teaching hours. The learner’s portfolio makes the connections visible."
+    },
+    {
+     "type": "small",
+     "html": "Jasper is the setting for a proposed program, not an approved laboratory or booked campus."
+    }
+   ]
+  },
+  {
+   "id": "chapter-6",
+   "eyebrow": "SIGNATURE INQUIRY / FROM WATER TO JUDGMENT",
+   "title": "Where does the water go?",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Begin with Jasper"
+    },
+    {
+     "type": "p",
+     "html": "Use Parks Canada’s account of Medicine Lake and an approved local observation or printed site material. Draw what is visible, what is inferred and what remains unknown. The basin is a problem to understand, not a place for unauthorized sampling."
+    },
+    {
+     "type": "h3",
+     "text": "Build a model"
+    },
+    {
+     "type": "p",
+     "html": "Write a water balance with storage, inflow, outflow, precipitation and evaporation. Mark the units and the measurements you would need. Compare two possible explanations for a changing lake level."
+    },
+    {
+     "type": "h3",
+     "text": "Read chemical evidence"
+    },
+    {
+     "type": "p",
+     "html": "Analyse the published Miette ion concentrations. Convert units, compare molar quantities and explain why a partial mineral list is not a complete water analysis. Distinguish this published dataset from anything you measured."
+    },
+    {
+     "type": "h3",
+     "text": "Examine responsibility"
+    },
+    {
+     "type": "p",
+     "html": "Use a selected primary argument about knowledge and action or shared resources. Ask what a community may reasonably decide when its knowledge is incomplete. Defend a view in tutorial and answer a serious objection."
+    },
+    {
+     "type": "h3",
+     "text": "Give the work a use"
+    },
+    {
+     "type": "p",
+     "html": "Produce an annotated model or explainer for a consenting reader. Test whether they can tell facts, assumptions and unknowns apart. Revise it and defend your own reasoning."
+    },
+    {
+     "type": "small",
+     "html": "This sequence draws on existing science, philosophy, fieldcraft and Commons sessions. Full sources and data-preparation requirements appear later in this curriculum."
+    }
+   ]
+  },
+  {
+   "id": "chapter-7",
+   "eyebrow": "05 / ASSESSMENT",
+   "title": "Evidence before prestige.",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Use five dimensions, scored 0-3. Apply the same standards to equivalent adapted tasks. Provide the rubric before teaching, descriptive feedback in Week 3 and a revision opportunity in Week 6."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Dimension",
+      "2: competent for this introductory course",
+      "3: strong independent evidence"
+     ],
+     "rows": [
+      [
+       "Practice &amp; care",
+       "Prepares, observes boundaries, adapts load and acts reliably.",
+       "Anticipates needs and helps peers without taking over."
+      ],
+      [
+       "Evidence &amp; reasoning",
+       "Uses units, sources and a defensible method; names limitations.",
+       "Tests alternatives and explains consequences of uncertainty."
+      ],
+      [
+       "Interpretation &amp; argument",
+       "Cites a passage, reconstructs an opposing view and answers it.",
+       "Makes a precise distinction and revises after a strong objection."
+      ],
+      [
+       "Original work &amp; revision",
+       "Makes a useful artefact, tests it and documents a revision.",
+       "A peer can reproduce or use it; revisions improve demonstrated quality."
+      ],
+      [
+       "Contribution &amp; autonomy",
+       "Keeps an agreed commitment; respects consent and dissent.",
+       "Creates fair conditions for others to contribute and choose."
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "html": "Level 0: evidence absent or task not yet demonstrated. Level 1: partial evidence requiring substantial prompts. A high score in one dimension does not cancel a missing safety-critical demonstration."
+    },
+    {
+     "type": "h3",
+     "text": "Completion rule"
+    },
+    {
+     "type": "p",
+     "html": "Submit six weekly entries, two revised essays, a scientific dossier and useful original work. Reach level 2 in each dimension after revision; demonstrate required field and martial stop procedures. Complete physical practice records and an individual defence. Address missing work through documented equivalents. Award only a descriptive non-credit record."
+    },
+    {
+     "type": "h3",
+     "text": "Fairness"
+    },
+    {
+     "type": "p",
+     "html": "Assess what learners can show, not personality, confidence, physique, spiritual experience or agreement with a doctrine. Allow oral, written, diagrammatic and adapted demonstrations. A second educator reviews disputed assessments."
+    }
+   ]
+  },
+  {
+   "id": "chapter-8",
+   "eyebrow": "06 / THE SIX-WEEK ARC",
+   "title": "From attention to contribution.",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Week",
+      "Shared question",
+      "Weekly portfolio"
+     ],
+     "rows": [
+      [
+       "1 / Attention",
+       "What do I notice, and what do I merely assume?",
+       "A 400–600-word opening argument, two annotated passages and a tutorial revision."
+      ],
+      [
+       "2 / Discipline",
+       "When does restraint make us stronger?",
+       "An Essay 1 draft connecting a precise textual claim with one observed practice; distinguish habit from conformity."
+      ],
+      [
+       "3 / Evidence",
+       "What would change my mind?",
+       "Essay 1 revised to 1,200–1,500 words or equivalent; answer a counterexample in tutorial."
+      ],
+      [
+       "4 / Freedom",
+       "What makes disagreement productive?",
+       "A 600–800-word Essay 2 proposal, an opposing argument represented fairly and a learner-council decision record."
+      ],
+      [
+       "5 / Responsibility",
+       "What do I owe to a place and to other people?",
+       "Essay 2 draft; a proposed rule with monitoring, revision and a fair account of who bears its costs."
+      ],
+      [
+       "6 / Contribution",
+       "What can I now explain, do and give?",
+       "Essay 2 revised to 1,200–1,500 words or equivalent; individual defence and a justified continuation plan."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "The Jasper learning cycle"
+    },
+    {
+     "type": "p",
+     "html": "Encounter something directly. Form a question before consulting authority. Make a model or argument. Try to disprove it. Ask a peer to challenge it. Revise it. Give the resulting knowledge or work a practical use."
+    },
+    {
+     "type": "h3",
+     "text": "One example across all six courses"
+    },
+    {
+     "type": "p",
+     "html": "A cold morning prompts a field decision about clothing and shelter. Science compares heat retention. Mathematics makes a graph. Philosophy asks what hardship is for. Martial practice tests restraint under effort. Meditation notices a response without demanding endurance. The commons project produces a tested, readable packing guide."
+    },
+    {
+     "type": "small",
+     "html": "Every week must leave a trace of changed judgment, not merely a memory of attendance. The final work should reveal how the learner grew and what still needs study."
+    }
+   ]
+  },
+  {
+   "id": "chapter-9",
+   "eyebrow": "JAS 101 / 36 HOURS",
+   "title": "Fieldcraft and Physical Practice",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Purpose and outcomes"
+    },
+    {
+     "type": "p",
+     "html": "Develop physical capability and field judgment together. Practise strength with a qualified coach, prepare and navigate an approved outing, share camp responsibilities and lead a bounded part of a culminating field mission. Explain the evidence behind an adjustment."
+    },
+    {
+     "type": "h3",
+     "text": "Teaching conditions"
+    },
+    {
+     "type": "p",
+     "html": "Two competent field staff for the proposed group of eight, as a design minimum rather than a universal legal ratio. The responsible guide sets a lower ratio if required by the route, participants, insurer or authorization. Use licensed local guiding arrangements where required and instructors whose qualifications match the terrain. [S2, S3]"
+    },
+    {
+     "type": "h3",
+     "text": "Scope"
+    },
+    {
+     "type": "p",
+     "html": "The first program uses maintained non-technical routes and frontcountry camping. The culminating mission combines preparation, navigation, sustained appropriate effort, observation and shared leadership. Exact routes, loads and progression are set for the actual group by the responsible lead. See the companion manual for operating boundaries."
+    },
+    {
+     "type": "h3",
+     "text": "Each 180-minute block"
+    },
+    {
+     "type": "p",
+     "html": "30 minutes coached strength and movement; 15 route/camp briefing; 95 guided travel or campcraft; 25 observation or decision work; 15 debrief. The separately scheduled 30-minute field break is not instruction. Twelve blocks provide 6 strength hours and 30 other field hours. Rearrangement for the approved setting must preserve these totals."
+    },
+    {
+     "type": "h3",
+     "text": "Kit and progression"
+    },
+    {
+     "type": "p",
+     "html": "Move from an individual baseline and sound technique toward repeatable practice, greater appropriate challenge and shared leadership. The coach can progress movement quality, range, repetitions or resistance as appropriate. The guide progresses field responsibility. More load, remoteness or speed is never automatic."
+    },
+    {
+     "type": "h3",
+     "text": "Completion evidence"
+    },
+    {
+     "type": "p",
+     "html": "A private baseline and retest record, twelve coached practice entries, a route-and-camp dossier, observed preparation and a justified field decision. Demonstrate a progression appropriate to you and explain the part you played in the group mission."
+    }
+   ]
+  },
+  {
+   "id": "chapter-10",
+   "eyebrow": "JAS 101 / SIX HOURS WITHIN THE FIELD COURSE",
+   "title": "Strength with a purpose",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "The purpose"
+    },
+    {
+     "type": "p",
+     "html": "Build a sustainable practice in moving, carrying and controlling the body. Twelve 30-minute sessions provide deliberate coaching within the 36-hour field course. They support field capability and do not claim a guaranteed physical transformation in six weeks."
+    },
+    {
+     "type": "h3",
+     "text": "A 30-minute coached session"
+    },
+    {
+     "type": "p",
+     "html": "5 minutes private readiness check and warm-up; 5 demonstration and rehearsal; 15 practice with rest and feedback; 5 recovery and a brief record. Choose an appropriate subset of supported squat/sit-to-stand, hinge, push, pull, carry and trunk-stability patterns. Equipment and variations depend on the qualified coach and venue."
+    },
+    {
+     "type": "h3",
+     "text": "A baseline that belongs to the learner"
+    },
+    {
+     "type": "p",
+     "html": "In Week 1 the coach selects two or three submaximal tasks and records the movement, support, load if used, repetitions or time, technique and self-reported effort. No maximal lifts, timed exhaustion test or public ranking. Repeat comparable tasks in Week 6 and record changes in conditions."
+    },
+    {
+     "type": "h3",
+     "text": "What is assessed"
+    },
+    {
+     "type": "p",
+     "html": "Consistent practice, sound technique at an appropriate challenge, responsiveness to feedback and a reasoned progression. Strength numbers are private evidence, never measures of character or a required universal threshold. An adapted task can meet the same learning outcomes."
+    },
+    {
+     "type": "small",
+     "html": "The coach writes individual variations and stop decisions. This curriculum is not a personal exercise prescription. Staffing, equipment and operational procedures are in the companion manual."
+    }
+   ]
+  },
+  {
+   "id": "chapter-11",
+   "eyebrow": "JAS 101 / TWELVE COACHED SESSIONS",
+   "title": "Progress you can explain",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Week",
+      "Sessions A and B",
+      "Evidence"
+     ],
+     "rows": [
+      [
+       "1",
+       "Choose baseline tasks; practise technique and record a starting point.",
+       "Private task conditions and one specific goal."
+      ],
+      [
+       "2",
+       "Repeat with feedback; establish a manageable practice before camp.",
+       "Technique correction and recovery note."
+      ],
+      [
+       "3",
+       "Progress one suitable variable when technique and recovery support it.",
+       "Reason for progression or for holding steady."
+      ],
+      [
+       "4",
+       "Apply control to coach-approved carrying or supported field movement.",
+       "Task transfer and an access adaptation."
+      ],
+      [
+       "5",
+       "Maintain practice through the camp week; adjust to total workload.",
+       "A decision balancing effort and recovery."
+      ],
+      [
+       "6",
+       "Repeat comparable tasks; teach one principle and plan continuation.",
+       "Honest before/after record and a sustainable next step."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "The culminating field mission"
+    },
+    {
+     "type": "p",
+     "html": "Week 5 brings two authorized camp nights and supervised leadership on an approved daytime route. The group produces a route plan, shares roles, completes one observation and revises a decision. Each learner explains a choice that mattered; staff retain route and safety authority."
+    },
+    {
+     "type": "small",
+     "html": "Tasks progress individually. Do not infer a training effect from a better result without considering familiarity, technique, conditions and other explanations."
+    }
+   ]
+  },
+  {
+   "id": "chapter-12",
+   "eyebrow": "JAS 101 / FIELD SESSIONS",
+   "title": "Fieldcraft: Weeks 1-3.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1A / Read a place"
+    },
+    {
+     "type": "p",
+     "html": "Use a staff-approved short local route. Record ten observations, three inferences and one uncertainty. Read legend, scale and orientation at three agreed stops. Evidence: A sketch with orientation, units and an observation/inference distinction."
+    },
+    {
+     "type": "h3",
+     "text": "1B / Plan before departure"
+    },
+    {
+     "type": "p",
+     "html": "At the venue, compare two printed route plans and test a packed-kit checklist. Practise a regroup and a plain-language help message without leaving the supervised area. Evidence: A route card with turnaround time, exit options and named responsibilities."
+    },
+    {
+     "type": "h3",
+     "text": "2A / Make a camp work"
+    },
+    {
+     "type": "p",
+     "html": "At a reserved serviced campsite, practise shelter setup, layout, dry storage and shared chores. The lead teaches the site’s actual food and wildlife procedures. Use staff-approved cooking equipment only. Evidence: A camp layout and witnessed food/attractant check; no food stored in sleeping space."
+    },
+    {
+     "type": "h3",
+     "text": "2B / First-night review"
+    },
+    {
+     "type": "p",
+     "html": "After the first camping night, complete a short guided walk or an accessible observation circuit. Compare predicted and actual clothing, sleep and equipment needs; pack out and leave the site clean. Evidence: Three adjustments justified by experience, not a public sleep or toughness score."
+    },
+    {
+     "type": "h3",
+     "text": "3A / Pacing and uncertainty"
+    },
+    {
+     "type": "p",
+     "html": "Choose an approved route with simple observation stops. Measure sections against the printed map; explain why pace, grade and weather change a time estimate. Evidence: A revised time estimate with a range and a stated limitation."
+    },
+    {
+     "type": "h3",
+     "text": "3B / A decision to turn"
+    },
+    {
+     "type": "p",
+     "html": "The guide presents a tabletop change in weather, pace or access. Learners choose proceed, shorten, move indoors or cancel and communicate their reasons. No unsafe situation is staged. Evidence: A decision record showing evidence, alternatives and who may veto departure."
+    }
+   ]
+  },
+  {
+   "id": "chapter-13",
+   "eyebrow": "JAS 101 / FIELD SESSIONS",
+   "title": "Fieldcraft: Weeks 4-6.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "4A / Shared navigation"
+    },
+    {
+     "type": "p",
+     "html": "Pairs explain the next short section while the guide retains control. Rotate leader, navigator, companion-check and recorder roles. Keep the party together. Evidence: A map-based explanation and a peer check, not an unsupported navigation claim."
+    },
+    {
+     "type": "h3",
+     "text": "4B / Shelter as a system"
+    },
+    {
+     "type": "p",
+     "html": "Compare two camp layouts on paper and set up approved shelter on permitted ground. Examine wind, drainage, accessibility and shared space without digging, cutting or building structures. Evidence: A labelled plan with two trade-offs and an accessible alternative."
+    },
+    {
+     "type": "h3",
+     "text": "5A / Establish the two-night camp"
+    },
+    {
+     "type": "p",
+     "html": "Repeat the readiness gate. Set up in a reserved serviced site; assign fair chores, verify communications and practise the agreed regroup location. Evidence: A signed camp plan and private access arrangements; no automatic remote progression."
+    },
+    {
+     "type": "h3",
+     "text": "5B / Lead with responsibility"
+    },
+    {
+     "type": "p",
+     "html": "Complete the culminating field mission from the authorized camp. Learners take bounded leader, navigator, companion-check and recorder roles on an approved route. Integrate one scientific observation and a real resource decision. Evidence: A justified adjustment, a contribution record and a debrief distinguishing individual and group work."
+    },
+    {
+     "type": "h3",
+     "text": "6A / Repeat and explain"
+    },
+    {
+     "type": "p",
+     "html": "Repeat the coach-selected submaximal baseline tasks and revisit a comparable route or map problem. Record support, load, technique, conditions and perceived effort privately. Evidence: Explain physical and decision-making changes without treating speed or strength as character."
+    },
+    {
+     "type": "h3",
+     "text": "6B / Teach a useful skill"
+    },
+    {
+     "type": "p",
+     "html": "In the supervised venue, teach a peer one approved field skill, check their understanding and revise the handout. Finish with a leave-no-trace audit of the actual learning space. Evidence: A usable instruction sheet and a witnessed teach-back."
+    }
+   ]
+  },
+  {
+   "id": "chapter-14",
+   "eyebrow": "JAS 102 / 18 HOURS",
+   "title": "Martial Arts & Restraint",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Purpose"
+    },
+    {
+     "type": "p",
+     "html": "Develop disciplined effort, balance, technical understanding and restraint through a qualified coach’s introductory martial practice. Discuss Kanō’s principles of efficient effort and mutual benefit as one educational influence. The initial format uses controlled footwork and pad work; a judo variant requires a separate coach-approved plan and suitable facilities."
+    },
+    {
+     "type": "h3",
+     "text": "People, space and consent"
+    },
+    {
+     "type": "p",
+     "html": "Use a qualified, insured martial-arts coach with current first aid and a clear safeguarding process. Inspect floor, spacing, mats and cleaned shared equipment. Match partners by consent, size, experience and comfort. Touch, partner changes and intensity each require agreement. Observing, solo practice or an adapted movement task earns equivalent learning evidence."
+    },
+    {
+     "type": "h3",
+     "text": "Boundaries of this beginner course"
+    },
+    {
+     "type": "p",
+     "html": "No head strikes, hard sparring, knockouts, chokeholds, neck cranks, joint submissions, weapon work or uncoached takedowns. Floor exercises require suitable mats and a coach competent to teach them. No technique is taught on a trail or beside a fire. Do not claim the course makes a learner safe in a real assault."
+    },
+    {
+     "type": "h3",
+     "text": "Every 90-minute lesson"
+    },
+    {
+     "type": "p",
+     "html": "5 minutes readiness and consent; 15 warm-up; 20 coached technique; 25 controlled practice; 15 stop-signal, pacing and recovery work; 10 journal and peer teach-back. Rest and adaptation occur throughout. Stop immediately for pain, dizziness, distress or loss of control."
+    },
+    {
+     "type": "h3",
+     "text": "Assessment"
+    },
+    {
+     "type": "p",
+     "html": "Acknowledge the partner’s consent, maintain an agreed pace, respond immediately to stop, explain one mechanical principle and reflect on restraint. No grading by winning a bout or enduring discomfort."
+    }
+   ]
+  },
+  {
+   "id": "chapter-15",
+   "eyebrow": "JAS 102 / COACHED LESSONS",
+   "title": "Martial practice: Weeks 1-3.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1A / Base and boundaries"
+    },
+    {
+     "type": "p",
+     "html": "Practise posture, spacing, footwork and a verbal stop cue with a coach. Use solo movement before any paired task. Evidence: Explain where balance is lost and demonstrate an immediate stop."
+    },
+    {
+     "type": "h3",
+     "text": "1B / Coordination before force"
+    },
+    {
+     "type": "p",
+     "html": "Use slow pad-target work or a solo equivalent selected by the coach. Notice stance recovery rather than power or speed. Evidence: A coach checks alignment and a learner names a correction."
+    },
+    {
+     "type": "h3",
+     "text": "2A / Balance under a small change"
+    },
+    {
+     "type": "p",
+     "html": "On suitable mats, use coach-chosen low-resistance balance tasks; no throws or submissions. Partners continuously agree the level of contact. Evidence: Relate base of support to the science lesson without claiming a universal fighting rule."
+    },
+    {
+     "type": "h3",
+     "text": "2B / Pacing and recovery"
+    },
+    {
+     "type": "p",
+     "html": "Repeat a short coach-set practice at a conversational effort where appropriate. Learners choose and explain rest intervals. Evidence: A personal pacing plan with a reason to reduce or stop."
+    },
+    {
+     "type": "h3",
+     "text": "3A / Observe, do not assume"
+    },
+    {
+     "type": "p",
+     "html": "Watch a short technical demonstration and distinguish what was seen from what was inferred. Practise the selected correction slowly. Evidence: Two observations and one testable technique question."
+    },
+    {
+     "type": "h3",
+     "text": "3B / Partner feedback"
+    },
+    {
+     "type": "p",
+     "html": "One learner practises, one observes a single coach-approved cue, then they change roles. Feedback is specific and consent-based. Evidence: Describe one improvement without comparing people’s bodies."
+    }
+   ]
+  },
+  {
+   "id": "chapter-16",
+   "eyebrow": "JAS 102 / COACHED LESSONS",
+   "title": "Martial practice: Weeks 4-6.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "4A / Boundary language"
+    },
+    {
+     "type": "p",
+     "html": "Rehearse assertive verbal boundaries, stepping away and seeking help through non-contact scenarios. No simulated ambush or coercive role-play. Evidence: Clear communication and a decision to disengage."
+    },
+    {
+     "type": "h3",
+     "text": "4B / Control under distraction"
+    },
+    {
+     "type": "p",
+     "html": "Use a predictable coach-led cue change during solo footwork or pad practice. Learners stop, reset and describe what changed. Evidence: Control and responsiveness, not reaction-speed ranking."
+    },
+    {
+     "type": "h3",
+     "text": "5A / Cooperative sequence"
+    },
+    {
+     "type": "p",
+     "html": "Design a short safe sequence from previously approved movements, then have the coach review it before practice. Evidence: A sequence card with purpose, stop conditions and adaptations."
+    },
+    {
+     "type": "h3",
+     "text": "5B / Teach with humility"
+    },
+    {
+     "type": "p",
+     "html": "Explain one approved movement to a peer under the coach’s supervision. The coach corrects any unsafe instruction. Evidence: A clear cue, a check for understanding and a correction accepted."
+    },
+    {
+     "type": "h3",
+     "text": "6A / Demonstration rehearsal"
+    },
+    {
+     "type": "p",
+     "html": "Practise the final sequence at an agreed pace. Show the solo or adapted equivalent. Include a stop and restart decision. Evidence: Feedback against the published control criteria."
+    },
+    {
+     "type": "h3",
+     "text": "6B / Control demonstration"
+    },
+    {
+     "type": "p",
+     "html": "Complete a three-minute coached demonstration, explain one physics connection and discuss one decision to exercise restraint. Evidence: Coach-reviewed evidence; no belt, fighting licence or professional credential."
+    }
+   ]
+  },
+  {
+   "id": "chapter-17",
+   "eyebrow": "JAS 103 / 12 HOURS",
+   "title": "Attention & Reflective Practice",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Purpose and allocation"
+    },
+    {
+     "type": "p",
+     "html": "Learn to notice distraction, choose an attention method and return to a task. Each week has four 15-minute opening sessions and one 60-minute seminar: two hours weekly, twelve in total. Meditation is one available method, alongside quiet drawing, attentive walking, reading or sensory orientation."
+    },
+    {
+     "type": "h3",
+     "text": "Daily opening: 15 minutes"
+    },
+    {
+     "type": "p",
+     "html": "2 minutes: offer choices and notice comfort. Up to 10 minutes: selected practice, beginning with shorter intervals in early weeks. At least 3 minutes: write one observation and choose an intention. Unused practice time becomes orientation or journalling, not pressure to sit longer."
+    },
+    {
+     "type": "h3",
+     "text": "A usable invitation"
+    },
+    {
+     "type": "p",
+     "html": "“Choose a comfortable seated or standing position. Eyes may remain open. Notice an ordinary sound, a visible object or natural breathing. When attention moves, notice that and choose where to place it next. You may change the practice, stop or step out.” Do not direct unusual breathing, breath holding or pain endurance."
+    },
+    {
+     "type": "h3",
+     "text": "The 60-minute seminar"
+    },
+    {
+     "type": "p",
+     "html": "10 minutes of context and choice; 10 of practice or an equivalent; 15 comparing observations; 15 discussing an idea; 10 designing a personal protocol. Keep personal disclosures voluntary. The instructor never interprets someone’s distress as necessary progress."
+    },
+    {
+     "type": "h3",
+     "text": "Professional boundary"
+    },
+    {
+     "type": "p",
+     "html": "Use a facilitator trained to offer short, accessible practices and respond appropriately to distress. This is education, not psychotherapy or treatment. Stop or change an uncomfortable exercise; offer private support and appropriate referral when needed. Evidence on benefits and adverse effects is mixed, so no clinical promises are made. [S6]"
+    },
+    {
+     "type": "h3",
+     "text": "Assessment"
+    },
+    {
+     "type": "p",
+     "html": "Explain how a method affects your own attention, distinguish an observation from a belief, and make a reasonable adaptation. Stillness, closed eyes, spiritual experiences and willingness to disclose are not graded."
+    }
+   ]
+  },
+  {
+   "id": "chapter-18",
+   "eyebrow": "JAS 103 / WEEKLY PRACTICE",
+   "title": "Attention: Weeks 1-3.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Week 1 / Notice"
+    },
+    {
+     "type": "p",
+     "html": "Use 3-5 minute intervals within the opening. Compare attending to a sound and to a visible object. Seminar question: When did attention change? What did you observe rather than assume? Evidence: A private two-column observation/inference note; share only a chosen example."
+    },
+    {
+     "type": "h3",
+     "text": "Week 2 / Return"
+    },
+    {
+     "type": "p",
+     "html": "Use up to 5-7 minutes if comfortable, or stay with shorter intervals. The seminar compares a rigid rule with a flexible, repeatable practice. Seminar question: Can discipline include changing the plan? Evidence: A protocol with a preferred method, duration, alternative and stop condition."
+    },
+    {
+     "type": "h3",
+     "text": "Week 3 / Test"
+    },
+    {
+     "type": "p",
+     "html": "Compare quiet reading with attentive observation on separate occasions. Keep setting and task similar where practical. Seminar question: Does one experience justify a general claim about everyone? Evidence: A short method comparison with confounders and no health conclusion."
+    },
+    {
+     "type": "h3",
+     "text": "Facilitator review"
+    },
+    {
+     "type": "p",
+     "html": "Invite a private check-in, not a compulsory emotional disclosure. Record attendance or the chosen equivalent; do not retain intimate journal content. If a practice is not helpful, changing it is an acceptable result."
+    },
+    {
+     "type": "small",
+     "html": "The shared university vision protects independent thought. A meditation instructor’s authority never extends to requiring a worldview, secrecy, isolation or unquestioning obedience."
+    }
+   ]
+  },
+  {
+   "id": "chapter-19",
+   "eyebrow": "JAS 103 / WEEKLY PRACTICE",
+   "title": "Attention: Weeks 4-6.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Week 4 / Listen"
+    },
+    {
+     "type": "p",
+     "html": "Use paired listening: two minutes speaking, two listening, then a faithful restatement and a check. Silent presence is optional. Seminar question: Can I understand a position before preparing my reply? Evidence: A restatement the speaker recognises as fair."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5 / Attend in company"
+    },
+    {
+     "type": "p",
+     "html": "Study the night sky from an approved supervised location when conditions and staffing permit. Record three observations, one inference and one uncertainty; compare attention to a star chart with attention to the actual sky. Use a daytime printed-sky session if necessary. The 60-minute seminar is rescheduled, not added, and camp sleep remains protected."
+    },
+    {
+     "type": "h3",
+     "text": "Week 6 / Choose"
+    },
+    {
+     "type": "p",
+     "html": "Try the preferred method for up to 10 minutes; shorter or non-meditative alternatives remain equally valid. Design a realistic continuation. Seminar question: What helps me return to worthwhile work? Evidence: A 30-day plan without a promise of transformation or mandatory reporting."
+    },
+    {
+     "type": "h3",
+     "text": "Facilitator review"
+    },
+    {
+     "type": "p",
+     "html": "Invite a private check-in, not a compulsory emotional disclosure. Record attendance or the chosen equivalent; do not retain intimate journal content. If a practice is not helpful, changing it is an acceptable result."
+    },
+    {
+     "type": "small",
+     "html": "The shared university vision protects independent thought. A meditation instructor’s authority never extends to requiring a worldview, secrecy, isolation or unquestioning obedience."
+    }
+   ]
+  },
+  {
+   "id": "chapter-20",
+   "eyebrow": "JAS 104 / 30 HOURS",
+   "title": "Jasper as Laboratory",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Intellectual ambition"
+    },
+    {
+     "type": "p",
+     "html": "Use Jasper’s sky, water, landscapes and shared resources to build models and test explanations. Mathematics supplies scale, geometry, rates, uncertainty and dimensional reasoning. Physics and chemistry explain mechanisms; economics examines choices. Every learner must defend a model, an alternative and a limitation."
+    },
+    {
+     "type": "h3",
+     "text": "Entry support and extension"
+    },
+    {
+     "type": "p",
+     "html": "Use three challenge levels within each investigation: Foundation reconstructs units and a supplied model with prompts; Standard independently analyses evidence and tests one alternative; Extension examines sensitivity, compares competing models or derives an additional prediction. All levels require source honesty, a defensible conclusion and individual explanation. Support changes access, not the obligation to reason."
+    },
+    {
+     "type": "h3",
+     "text": "Every 150-minute lab"
+    },
+    {
+     "type": "p",
+     "html": "15 minutes: individual prediction. 20: model and method discussion. 45: investigation. 25: calculation and graph. 25: peer challenge or replication. 20: revise and write an exit claim. Include safety checks within instruction; scheduled breaks remain outside these minutes."
+    },
+    {
+     "type": "h3",
+     "text": "Materials"
+    },
+    {
+     "type": "p",
+     "html": "Printed Jasper maps and sources; dated glacier imagery with usable scale; a star chart; published Miette mineral values; site diagrams; rulers, protractors, string, ordinary thermometers and low-risk tabletop apparatus. The educator must assemble and verify the source pack before enrolment. Label every illustrative dataset."
+    },
+    {
+     "type": "h3",
+     "text": "The laboratory standard"
+    },
+    {
+     "type": "p",
+     "html": "Label every datum with a unit or category; preserve original measurements; record repeated trials, relevant controls and limitations. A failed prediction can be excellent work. Illustrative datasets in this guide are invented for teaching and must never be presented as Jasper field measurements."
+    },
+    {
+     "type": "h3",
+     "text": "Evidence"
+    },
+    {
+     "type": "p",
+     "html": "Submit an 800–1,200-word scientific dossier or agreed equivalent, with an attributable dataset, calculations, a model, a competing explanation and uncertainty. Keep raw notes. A peer audits the method; each learner defends the reasoning individually. Permission to deliver the actual field activities must be established separately."
+    }
+   ]
+  },
+  {
+   "id": "chapter-21",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 1 and 2",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1 / A map is a model"
+    },
+    {
+     "type": "p",
+     "html": "How does a representation shape a journey? Use a licensed or reusable Jasper map with date, scale and legend. Make five independent measurements of a short segment; convert to ground distance. Read the published account of Samson Beaver’s map used by Mary Schäffer in 1908. Distinguish precision, cultural knowledge and the limits of a printed representation."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Scale, ratios and uncertainty. Extend to alternative route geometries and an uncertainty range."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: An annotated map, repeated measurements, source credit and a written limit. Maps support learning; staff approve routes separately."
+    },
+    {
+     "type": "h3",
+     "text": "2 / A landscape in three dimensions"
+    },
+    {
+     "type": "p",
+     "html": "What can we infer without reaching a summit? Estimate a fixed feature’s height from an approved observation point or an indoor model. Compare similar triangles with angle-and-baseline geometry. Record slope, observer height and assumptions. Use a Jasper landscape image with a valid scale only when the geometry supports measurement."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Similar triangles; tan(theta) = height difference / horizontal baseline. Derive and critique the construction."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: Two estimates, a diagram and a sensitivity check. No approach to cliffs or water edges is needed."
+    }
+   ]
+  },
+  {
+   "id": "chapter-22",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 3 and 4",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "3 / The sky as a coordinate system"
+    },
+    {
+     "type": "p",
+     "html": "How could the sky help us find direction? Use a sourced star chart and Jasper’s latitude to construct horizon and celestial diagrams. Explain Earth’s rotation and a circumpolar star’s apparent path. If a supervised observation is feasible, record time and conditions. Otherwise work from the printed chart, labelled as such."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Angles, rotation and proportional time; the idealised relation between celestial-pole altitude and observer latitude."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A coordinate diagram and a prediction with assumptions. This is an astronomy model, not a substitute for practical navigation training."
+    },
+    {
+     "type": "h3",
+     "text": "4 / The evidence of retreat"
+    },
+    {
+     "type": "p",
+     "html": "What does a changed glacier outline establish? Compare two dated, attributable images or maps of the Athabasca Glacier after checking scale and registration. Identify a defensible common reference and estimate a terminus displacement with uncertainty. A change in terminus position is not a direct measure of ice mass."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Distance / elapsed time; scale correction and an uncertainty range. Advanced work compares more dates or competing rate models."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A reproducible overlay or tracing and an uncertainty statement. Published imagery is the default; no glacier travel is required."
+    }
+   ]
+  },
+  {
+   "id": "chapter-23",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 5 and 6",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "5 / Water that disappears"
+    },
+    {
+     "type": "p",
+     "html": "How can we explain Medicine Lake? Read Parks Canada’s account, draw the visible and underground pathways, and construct a water budget. Compare seasonal inflow change with a change in drainage capacity. Mark observations separately from assumptions. Use an explicitly illustrative flow card for numerical practice."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Change in storage = total inflow minus total outflow over an interval. Track volume and time units; identify unknown terms."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A balanced example and a list of observations needed to discriminate explanations. No dye, tracer or water collection."
+    },
+    {
+     "type": "h3",
+     "text": "6 / Heat and preparation"
+    },
+    {
+     "type": "p",
+     "html": "Which model explains the cooling curve? Compare wrapped and unwrapped identical cups using staff-prepared warm water indoors. Record equal starting conditions and repeat measurements. Plot temperature difference from room temperature. Explain how a controlled model relates to mountain preparation and where that comparison fails."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Rates, graphs and an exponential-cooling extension using supplied logarithm tables; discuss conduction, convection and evaporation."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: Raw observations, a graph, two confounders and a justified revision. Materials and temperatures follow the staff manual."
+    }
+   ]
+  },
+  {
+   "id": "chapter-24",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 7 and 8",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "7 / Water as chemical evidence"
+    },
+    {
+     "type": "p",
+     "html": "What does Miette’s mineral list actually tell us? Use the published Parks Canada dataset: sulphate 1130, calcium 307, bicarbonate 124, magnesium 56 and sodium 10.5 mg/L. Convert a selected value into mmol/L using supplied molar masses. Compare charge equivalents and explain why the listed species may not close a complete charge balance."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Mass concentration, amount of substance, ionic charge and units. Identify measurement-date and completeness limitations."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A transparent calculation and an explanation of why these published values are not this cohort’s field samples. No claim about drinking safety."
+    },
+    {
+     "type": "h3",
+     "text": "8 / Recovery and comparison"
+    },
+    {
+     "type": "p",
+     "html": "What would count as evidence after fire? Use sourced Jasper recovery material and a clearly labelled printed teaching grid to compare sampling plans. For a real dataset, identify dates, locations, selection and missing observations. Explain why one burned/unburned comparison cannot isolate the fire’s effect from prior differences."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Sampling bias, proportions, variability and confounding. Compare results under two sample-selection rules."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: An auditable sampling plan and a cautious interpretation. No unapproved plots, collecting or entry into closed areas."
+    }
+   ]
+  },
+  {
+   "id": "chapter-25",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 9 and 10",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "9 / Energy and a decision"
+    },
+    {
+     "type": "p",
+     "html": "What does gaining height cost in a model? Use a fictional mass and an approved or clearly illustrative route profile. Calculate gravitational energy and average mechanical power. Compare route choices by time, access, effort and purpose. Explain why the energy calculation is not a personal calorie prescription."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Delta E = mgh; power = energy / time; opportunity cost and sensitivity to assumptions."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A calculation with units and a reasoned choice. No collection or publication of classmates’ body mass."
+    },
+    {
+     "type": "h3",
+     "text": "10 / Models under pressure"
+    },
+    {
+     "type": "p",
+     "html": "How could a useful explanation fail? Return to one water, sky, heat or glacier model. Change a stated assumption and derive a new prediction. Use a low-risk tabletop test or a fresh published observation when available. Require the other pair to challenge the prediction rather than merely repeat arithmetic."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Choose geometry, rates, concentration or uncertainty analysis appropriate to the question. Explain the model’s domain."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A comparison of two explanations and a stated observation that could distinguish them."
+    }
+   ]
+  },
+  {
+   "id": "chapter-26",
+   "eyebrow": "JAS 104 / 150 MINUTES PER INVESTIGATION",
+   "title": "Investigations 11 and 12",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "11 / An investigation of your own"
+    },
+    {
+     "type": "p",
+     "html": "What can we now investigate with intellectual honesty? Complete a scoped proposal using already approved methods or published data. State the question, source provenance, predicted result, alternative explanation, method and limitation. Keep failed trials and unresolved questions. Field research needs prior determination and authorization where required."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Select and defend a suitable model. Advanced work may compare models or test robustness; a new equation is not required."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: A documented dataset, analysis and first dossier. Label original observations, sourced records and invented exercises distinctly."
+    },
+    {
+     "type": "h3",
+     "text": "12 / Defend and revise"
+    },
+    {
+     "type": "p",
+     "html": "Can your explanation survive a serious question? Exchange dossiers and audit one critical calculation or method. Each learner answers questions about evidence, assumptions and alternatives, then revises the conclusion. Retain the pre-revision account for the optional AI Return Lab."
+    },
+    {
+     "type": "p",
+     "html": "Mathematical demand: Check units, model assumptions, uncertainty and logical inference. Explain one thing the evidence cannot establish."
+    },
+    {
+     "type": "small",
+     "html": "Evidence: Final scientific dossier and an individual defence; an impressive graphic cannot substitute for understanding."
+    }
+   ]
+  },
+  {
+   "id": "chapter-27",
+   "eyebrow": "JAS 104 / DATA AND MODEL CHECKS",
+   "title": "Make the reasoning inspectable",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Published Miette chemistry"
+    },
+    {
+     "type": "p",
+     "html": "Parks Canada reports calcium at 307 mg/L. Using 40.08 g/mol, 0.307 g/L ÷ 40.08 g/mol = 0.00766 mol/L, or about 7.66 mmol/L. As Ca2+, this corresponds to about 15.3 milliequivalents/L. This is a calculation from a published value, not a current analysis of a learner’s sample. [D4]"
+    },
+    {
+     "type": "h3",
+     "text": "An illustrative water balance"
+    },
+    {
+     "type": "p",
+     "html": "A teaching scenario gives inflow 2.0 m3/s and total outflow 2.5 m3/s for one hour, with other terms already included. Storage changes by (2.0 - 2.5) × 3600 = -1800 m3. These numbers are invented. A real lake-level change cannot be converted to that volume without the basin geometry."
+    },
+    {
+     "type": "h3",
+     "text": "An illustrative glacier calculation"
+    },
+    {
+     "type": "p",
+     "html": "A fictional mapped displacement of 120 ± 20 m over 10 years gives an average 12 ± 2 m/year if the dates are treated as exact. It does not reveal year-to-year variation or ice-mass loss. Real imagery needs scale, registration and dating before the same method is defensible."
+    },
+    {
+     "type": "h3",
+     "text": "A claim is not an authority"
+    },
+    {
+     "type": "p",
+     "html": "Instructor-written claims may test reasoning, but are not evidence of an AI model’s behaviour. Preserve the learner’s own explanation before the optional connected audit. Cite the actual model output, prompt and date when one is later used."
+    },
+    {
+     "type": "small",
+     "html": "The primary-source pack identifies real data. Teaching values remain visibly labelled wherever copied into a learner’s work."
+    }
+   ]
+  },
+  {
+   "id": "chapter-28",
+   "eyebrow": "EDUCATOR-CREATED EXAMPLE / SYNTHETIC DATA",
+   "title": "What the cooling curve can establish",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "This worked example demonstrates reasoning. The values are synthetic teaching data, not measurements from Jasper or a learner cohort. Imagine two identical cups starting at 40°C in a 20°C room; Cup A is unwrapped and Cup B has a candidate wrap. There is one demonstration per condition."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Time min",
+      "Cup A °C",
+      "Cup B °C"
+     ],
+     "rows": [
+      [
+       "0",
+       "40",
+       "40"
+      ],
+      [
+       "5",
+       "36",
+       "38"
+      ],
+      [
+       "10",
+       "33",
+       "36.5"
+      ],
+      [
+       "15",
+       "30",
+       "35"
+      ],
+      [
+       "20",
+       "28",
+       "33.5"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "A transparent calculation"
+    },
+    {
+     "type": "p",
+     "html": "At 20 minutes, A cooled by 40 − 28 = 12°C and B by 40 − 33.5 = 6.5°C. Their final-temperature difference is 5.5°C. Mean temperature-drop rates are 0.60 and 0.325°C/min over this interval; these averages do not establish a constant cooling rate."
+    },
+    {
+     "type": "h3",
+     "text": "An overclaim and a correction"
+    },
+    {
+     "type": "p",
+     "html": "Overclaim: “This wrap keeps hikers safe.” Revision: “In this synthetic, unreplicated demonstration B stays warmer over 20 minutes. We cannot isolate the wrap’s causal effect, estimate reliable variability or establish outdoor clothing performance.”"
+    },
+    {
+     "type": "h3",
+     "text": "The next defensible test"
+    },
+    {
+     "type": "p",
+     "html": "Use repeated independent trials, matched water volumes and cup geometry, calibrated thermometers, consistent timing and stable ambient conditions. Randomise cup position and record evaporation or airflow. Compare temperature above ambient; preserve all trials, including those that challenge the prediction."
+    },
+    {
+     "type": "small",
+     "html": "n = 1 demonstration per condition. No statistical generalisation or safety recommendation follows. Actual warm-water activities require staff preparation and the manual’s handling controls."
+    }
+   ]
+  },
+  {
+   "id": "chapter-29",
+   "eyebrow": "EVIDENCE STUDIO / THREE CHALLENGE LEVELS",
+   "title": "One question More depth",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Level",
+      "Task",
+      "Evidence"
+     ],
+     "rows": [
+      [
+       "Foundation",
+       "Calculate the two drops; label a graph and units; distinguish synthetic values from observation.",
+       "An explained calculation and one limitation."
+      ],
+      [
+       "Standard",
+       "Analyse temperature above ambient; compare interval rates; identify confounders and propose repeated trials.",
+       "A method critique and a justified revised claim."
+      ],
+      [
+       "Extension",
+       "Test an exponential-cooling model with supplied logarithm tables; examine residuals and sensitivity to ambient temperature.",
+       "Model assumptions, alternative explanation and an auditable prediction."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "How an educator would respond"
+    },
+    {
+     "type": "p",
+     "html": "The calculation earns credit for explicit units and a reproducible method. The revised claim earns credit for separating a result from its proposed explanation. Full independence requires the learner to defend why the next test could distinguish alternatives. A polished graph alone earns no extra inference."
+    },
+    {
+     "type": "h3",
+     "text": "Keep the revision visible"
+    },
+    {
+     "type": "p",
+     "html": "Keep the first claim, the strongest objection, the corrected account and the new question together. Use the same evidence pattern in a reading argument or a shared-resource decision. Publish only separately consented work, labelled accurately as educator-created or learner-produced."
+    },
+    {
+     "type": "small",
+     "html": "These tasks fit existing science, tutorial and Commons time. They do not add hours or require a learner to choose the most mathematically advanced route to meet the introductory standard."
+    }
+   ]
+  },
+  {
+   "id": "chapter-30",
+   "eyebrow": "JAS 105 / 30 HOURS",
+   "title": "Philosophy and the Jasper Tutorial",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Purpose"
+    },
+    {
+     "type": "p",
+     "html": "Read closely enough to understand a thinker, argue carefully enough to expose a weakness, and remain free enough to revise your own view. Place texts in historical and cultural context. No author or civilization represents a single timeless doctrine."
+    },
+    {
+     "type": "h3",
+     "text": "Day A: 105 minutes"
+    },
+    {
+     "type": "p",
+     "html": "15 context and vocabulary; 30 quiet reading with optional read-aloud support; 30 reconstruct the argument; 20 paired explanation; 10 exit question. Mark claim, reason, assumption and a passage reference."
+    },
+    {
+     "type": "h3",
+     "text": "Day B: 90 minutes"
+    },
+    {
+     "type": "p",
+     "html": "10 retrieval; 20 close reading of a disputed passage; 30 exploratory discussion; 20 present the strongest opposing position; 10 revise a sentence. The opponent must recognise their view before rebuttal begins."
+    },
+    {
+     "type": "h3",
+     "text": "Day D: 105 minutes"
+    },
+    {
+     "type": "p",
+     "html": "15 minutes preparation; 60 in two tutorial rotations; 20 plenary comparison; 10 written revision. Two tutors each meet two pairs for 30 minutes; the other rotation is supervised writing. Each learner receives one pair tutorial weekly."
+    },
+    {
+     "type": "h3",
+     "text": "The 35-minute debate protocol"
+    },
+    {
+     "type": "p",
+     "html": "Two four-minute openings; six minutes clarifying questions; ten evidence and objections; six role reversal; five written revision. The chair protects time and fair participation. Written questions are welcome."
+    },
+    {
+     "type": "h3",
+     "text": "Reading load and access"
+    },
+    {
+     "type": "p",
+     "html": "Prepare 3,000–5,000 core words weekly, adjusted for complexity and access. Four independent-study hours cover reading, essays and science; in-class work remains. Provide exact editions, passages and glossaries. Extension reading is optional."
+    },
+    {
+     "type": "h3",
+     "text": "Assessment"
+    },
+    {
+     "type": "p",
+     "html": "Two revised essays of 1,200–1,500 words each or an equivalent: Essay 1 in Weeks 1–3; Essay 2 in Weeks 4–6. Defend a precise claim, primary passages, a serious counterargument and a justified revision. Keep tutorial notes."
+    }
+   ]
+  },
+  {
+   "id": "chapter-31",
+   "eyebrow": "JAS 105 / THE WEEKLY TUTORIAL",
+   "title": "A claim worth defending",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Before the conversation"
+    },
+    {
+     "type": "p",
+     "html": "Bring a written argument or essay section and two passage references. Your partner brings the strongest objection they can construct fairly. The tutor reads submitted work in preparation; this time belongs in the staffing budget."
+    },
+    {
+     "type": "h3",
+     "text": "Thirty minutes for two learners"
+    },
+    {
+     "type": "p",
+     "html": "4 minutes first learner’s claim; 4 second learner’s response; 12 tutor-led examination of text, reasoning and alternatives; 6 minutes reversing or strengthening positions; 4 minutes agreeing one substantive revision. Rotate opening roles weekly. Each person must explain their own reasoning."
+    },
+    {
+     "type": "h3",
+     "text": "Two tutors and four pairs"
+    },
+    {
+     "type": "p",
+     "html": "During the 60-minute Day D studio, Tutor A meets pairs 1 and 2; Tutor B meets pairs 3 and 4. Each appointment lasts 30 minutes. The other pairs write under the studio’s shared supervision. A second academically competent tutor is required for one hour weekly, plus preparation; this is additional staffing, not additional learner contact hours."
+    },
+    {
+     "type": "h3",
+     "text": "The final defence"
+    },
+    {
+     "type": "p",
+     "html": "In Week 6, each learner uses 15 minutes of their pair’s slot to defend their own work. The other learner may observe by agreement. Accessible written or supported responses preserve the reasoning standard. A qualified external reviewer may join if secured, with their role and conflicts disclosed."
+    },
+    {
+     "type": "small",
+     "html": "The schedule requires the named staff and suitable space before launch. Assessment cannot depend on a promised external reviewer who has not agreed to participate."
+    }
+   ]
+  },
+  {
+   "id": "chapter-32",
+   "eyebrow": "JAS 105 / PRIMARY TEXTS AND ARGUMENT",
+   "title": "Reading and argument Weeks 1 and 2",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1 / Attention"
+    },
+    {
+     "type": "p",
+     "html": "What deserves our attention? Plato, Apology: selected passages on examination and responsibility; Laozi, Tao Te Ching: Chapters 1, 2 and 11. Compare what argument reveals with what naming may conceal."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: A 400–600-word opening argument, two annotated passages and a tutorial revision."
+    },
+    {
+     "type": "h3",
+     "text": "2 / Discipline"
+    },
+    {
+     "type": "p",
+     "html": "When does practice become character? Aristotle, Nicomachean Ethics II.1–6; Confucius, Analects 2.4, 4.17, 12.1 and 15.24. Read Dhammapada II, verses 21–32 as a short third perspective on attention and conduct."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: An Essay 1 draft connecting a precise textual claim with one observed practice; distinguish habit from conformity."
+    },
+    {
+     "type": "small",
+     "html": "Assign bounded selections, not every complete work listed. The weekly reader, tutorial and essay stages belong to one coherent question. Readings are invitations to inquiry, not required beliefs."
+    }
+   ]
+  },
+  {
+   "id": "chapter-33",
+   "eyebrow": "JAS 105 / PRIMARY TEXTS AND ARGUMENT",
+   "title": "Reading and argument Weeks 3 and 4",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "3 / Evidence"
+    },
+    {
+     "type": "p",
+     "html": "Can we know and fail to act? Wang Yangming’s knowledge/action exchange recorded by Xu Ai, paired with Hume, Enquiry IV on experience and inference. Preserve their different questions and historical settings."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: Essay 1 revised to 1,200–1,500 words or equivalent; answer a counterexample in tutorial."
+    },
+    {
+     "type": "h3",
+     "text": "4 / Freedom"
+    },
+    {
+     "type": "p",
+     "html": "Who has the standing to speak? Mill, On Liberty II; Wollstonecraft, Vindication II. Examine the institutions and educational opportunities needed for meaningful independence."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: A 600–800-word Essay 2 proposal, an opposing argument represented fairly and a learner-council decision record."
+    },
+    {
+     "type": "small",
+     "html": "Assign bounded selections, not every complete work listed. The weekly reader, tutorial and essay stages belong to one coherent question. Readings are invitations to inquiry, not required beliefs."
+    }
+   ]
+  },
+  {
+   "id": "chapter-34",
+   "eyebrow": "JAS 105 / PRIMARY TEXTS AND ARGUMENT",
+   "title": "Reading and argument Weeks 5 and 6",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "5 / Responsibility"
+    },
+    {
+     "type": "p",
+     "html": "How should a community govern what it shares? Selected passages from Ostrom, Governing the Commons, Chapter 3, alongside Tagore, Gitanjali 35–36 and local published mapping history. Test an institutional rule against a concrete shared-resource problem."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: Essay 2 draft; a proposed rule with monitoring, revision and a fair account of who bears its costs."
+    },
+    {
+     "type": "h3",
+     "text": "6 / Contribution"
+    },
+    {
+     "type": "p",
+     "html": "What can personal agency change? Douglass, Narrative VI–VII; Epictetus, Enchiridion 1, 5 and 30. Ask what requires personal practice and what requires changing institutions."
+    },
+    {
+     "type": "p",
+     "html": "Evidence: Essay 2 revised to 1,200–1,500 words or equivalent; individual defence and a justified continuation plan."
+    },
+    {
+     "type": "small",
+     "html": "Assign bounded selections, not every complete work listed. The weekly reader, tutorial and essay stages belong to one coherent question. Readings are invitations to inquiry, not required beliefs."
+    }
+   ]
+  },
+  {
+   "id": "chapter-35",
+   "eyebrow": "JAS 105 / CORE READER SOURCES",
+   "title": "Read closely Weeks 1 to 3",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Week 1 / Plato"
+    },
+    {
+     "type": "p",
+     "html": "Apology. 29d–30b and 38a. Benjamin Jowett. <a href=\"https://classics.mit.edu/Plato/apology.html\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 1 / Laozi"
+    },
+    {
+     "type": "p",
+     "html": "Tao Te Ching. Chapters 1, 2 and 11. James Legge. <a href=\"https://www.gutenberg.org/ebooks/216\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 2 / Aristotle"
+    },
+    {
+     "type": "p",
+     "html": "Nicomachean Ethics. Book II.1–6; bounded passages to be selected. W. D. Ross. <a href=\"https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 2 / Confucius"
+    },
+    {
+     "type": "p",
+     "html": "Analects. 2.4, 4.17, 12.1 and 15.24. James Legge. <a href=\"https://www.gutenberg.org/ebooks/3330\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 2 / Dhammapada"
+    },
+    {
+     "type": "p",
+     "html": "Heedfulness. Chapter II, verses 21–32. Thanissaro Bhikkhu. <a href=\"https://accesstoinsight.org/tipitaka/kn/dhp/dhp.02.than\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 3 / Wang Yangming"
+    },
+    {
+     "type": "p",
+     "html": "Unity of Knowing and Acting. Xu Ai exchange; Sources of Chinese Tradition, 2nd edition, vol.1, pp.849–850. Columbia Asia for Educators excerpt. <a href=\"https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-yangming-knowing-acting.htm\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 3 / David Hume"
+    },
+    {
+     "type": "p",
+     "html": "Enquiry Concerning Human Understanding. Section IV, Parts I–II; bounded passages to be selected. Specified Gutenberg source. <a href=\"https://www.gutenberg.org/ebooks/9662\">Source edition</a>."
+    },
+    {
+     "type": "small",
+     "html": "These are source locations. The academic lead must prepare bounded selections within 3,000–5,000 core words weekly, verify Canadian reproduction terms, number passages and provide accessible copies. A linked edition is not permission to reproduce it."
+    }
+   ]
+  },
+  {
+   "id": "chapter-36",
+   "eyebrow": "JAS 105 / CORE READER SOURCES",
+   "title": "Read closely Weeks 4 to 6",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Week 4 / John Stuart Mill"
+    },
+    {
+     "type": "p",
+     "html": "On Liberty. Chapter II; selected fallibility argument. Specified Gutenberg source. <a href=\"https://www.gutenberg.org/ebooks/34901\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 4 / Mary Wollstonecraft"
+    },
+    {
+     "type": "p",
+     "html": "A Vindication of the Rights of Woman. Chapter II; selected passages on education and reason. Specified Gutenberg source. <a href=\"https://www.gutenberg.org/ebooks/3420\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5 / Elinor Ostrom"
+    },
+    {
+     "type": "p",
+     "html": "Governing the Commons. Chapter 3, pp.58–102 is the source range; a bounded passage is still to be selected. Cambridge University Press, licensed or library copy. <a href=\"https://doi.org/10.1017/CBO9780511807763.005\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5 / Rabindranath Tagore"
+    },
+    {
+     "type": "p",
+     "html": "Gitanjali. Poems 35 and 36. Author’s English rendering. <a href=\"https://www.gutenberg.org/ebooks/7164\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5 / Parks Canada"
+    },
+    {
+     "type": "p",
+     "html": "Maligne Lake area and Mary Schäffer Loop. Published account crediting Samson Beaver’s map; exact dated excerpt to be archived. Official site account. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/maligne\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 6 / Frederick Douglass"
+    },
+    {
+     "type": "p",
+     "html": "Narrative of the Life of Frederick Douglass. Chapters VI–VII; bounded passages to be selected. Specified Gutenberg source. <a href=\"https://www.gutenberg.org/ebooks/23\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Week 6 / Epictetus"
+    },
+    {
+     "type": "p",
+     "html": "Enchiridion. Sections 1, 5 and 30. Elizabeth Carter. <a href=\"https://classics.mit.edu/Epictetus/epicench.html\">Source edition</a>."
+    },
+    {
+     "type": "small",
+     "html": "Modern translations and the Ostrom selection require the appropriate licensed access or permission. The prepared reader must identify exact pages or paragraphs; broad chapter ranges are not an instruction to assign entire books."
+    }
+   ]
+  },
+  {
+   "id": "chapter-37",
+   "eyebrow": "JAS 105 / READER PREPARATION",
+   "title": "Make the reader ready to teach",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "A prepared reader is a launch requirement"
+    },
+    {
+     "type": "p",
+     "html": "The lead must record the selected edition, translation, exact passage boundaries, word count, source date, rights basis and accessible format for every week. Core reading is about 3,000–5,000 words weekly, adjusted for complexity. Guided reading also occurs in class; reading, essays and science share four independent-study hours weekly."
+    },
+    {
+     "type": "h3",
+     "text": "The weekly question governs selection"
+    },
+    {
+     "type": "p",
+     "html": "Weeks 1–6 address attention, discipline, evidence, freedom, responsibility and contribution. Preserve real differences between authors. Primary arguments are studied in context, not reduced to a common slogan or compulsory belief."
+    },
+    {
+     "type": "h3",
+     "text": "Optional / E. Pauline Johnson"
+    },
+    {
+     "type": "p",
+     "html": "Legends of Vancouver. Author’s foreword and The Siwash Rock. Specified Gutenberg source. <a href=\"https://www.gutenberg.org/ebooks/3478\">Source edition</a>."
+    },
+    {
+     "type": "h3",
+     "text": "Optional means optional"
+    },
+    {
+     "type": "p",
+     "html": "Johnson’s account remains an extension or back-catalogue resource, not an extra compulsory Week 5 reading. Any new selection must have a clear question, sufficient teaching time and verified reuse arrangements. Ibn Khaldun and further traditions belong in later carefully designed sequences."
+    },
+    {
+     "type": "h3",
+     "text": "A usable offline pack"
+    },
+    {
+     "type": "p",
+     "html": "Number passages; provide readable type, a glossary, source notes and prompt sheets. Retain historical context and identify translation choices. The academic lead signs off the actual pack before formal applications open; this curriculum does not contain a complete anthology."
+    },
+    {
+     "type": "small",
+     "html": "Public access to a text, public-domain status in another country and permission to reproduce a modern translation are different questions. Verify the actual edition and intended Canadian use."
+    }
+   ]
+  },
+  {
+   "id": "chapter-38",
+   "eyebrow": "JAS 106 / 18 HOURS",
+   "title": "The Commons & Original Inquiry",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Purpose and weekly structure"
+    },
+    {
+     "type": "p",
+     "html": "Make knowledge useful. Each week: a 75-minute workshop, 45-minute project clinic and 60-minute review. Rotate convenor, recorder, materials steward, access reviewer and critic."
+    },
+    {
+     "type": "h3",
+     "text": "Week 1 / A charter for working together"
+    },
+    {
+     "type": "p",
+     "html": "A learner council decides discussion norms, shared duties and an approved project choice. Record dissent and revisions. Staff retain safety, complaint, employment and financial responsibilities. Choose an inquiry and begin the portfolio."
+    },
+    {
+     "type": "h3",
+     "text": "Week 2 / The cost of a choice"
+    },
+    {
+     "type": "p",
+     "html": "Workshop: allocate a fictional fixed resource budget. Clinic: compare time, materials and access costs. Review: examine who loses an opportunity when a choice is made. Output: an explicit opportunity-cost account; no real spending is required."
+    },
+    {
+     "type": "h3",
+     "text": "Week 3 / Failure becomes information"
+    },
+    {
+     "type": "p",
+     "html": "Workshop: exchange incomplete experiments and identify the most useful criticism. Clinic: choose a prototype. Review: name what failed and revise one method. Output: a prototype brief with an honest evidence boundary."
+    },
+    {
+     "type": "h3",
+     "text": "Week 4 / A claim deserves a test"
+    },
+    {
+     "type": "p",
+     "html": "Test the proposed capstone against evidence or a primary argument. The council allocates presentation time or another approved non-financial resource. Assign a sceptical peer and a testable plan. AI comparison follows after the semester."
+    },
+    {
+     "type": "h3",
+     "text": "Week 5 / Build for someone"
+    },
+    {
+     "type": "p",
+     "html": "A confirmed host may define a useful task; otherwise work with a consenting peer. Test an explanation, source guide or shared-resource proposal and label feedback honestly. No recovery work, construction or partnership is promised without agreement."
+    },
+    {
+     "type": "h3",
+     "text": "Week 6 / Give and continue"
+    },
+    {
+     "type": "p",
+     "html": "Workshop: prepare the final evidence table. Clinic: rehearse the oral defence. Review: present, challenge and revise. Output: a portable portfolio, useful artefact and voluntary 30-day continuation."
+    }
+   ]
+  },
+  {
+   "id": "chapter-39",
+   "eyebrow": "JAS 106 / CAPSTONE",
+   "title": "The Jasper Commons Hearing",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "The task"
+    },
+    {
+     "type": "p",
+     "html": "In pairs, investigate one question that joins physical experience, scientific reasoning and a human judgment. Produce a paper artefact usable by a consenting peer or confirmed local host. Every learner also explains their own reasoning independently."
+    },
+    {
+     "type": "h3",
+     "text": "Examples with a real intellectual demand"
+    },
+    {
+     "type": "p",
+     "html": "A packing guide based on a controlled heat-retention comparison; an accessible route-decision worksheet using scale, grade and uncertainty; a fair-use plan for shared camp materials with an opportunity-cost analysis; or a philosophical reader that makes a genuine disagreement understandable. No unapproved construction, environmental sampling or human health research."
+    },
+    {
+     "type": "h3",
+     "text": "Required dossier"
+    },
+    {
+     "type": "p",
+     "html": "One-page question and context; relevant source passages; original raw data or documented observations; a model or argument; limitations and a competing explanation; artefact versions 1 and 2; a record of consenting feedback; cost/access consequences; individual contribution statements."
+    },
+    {
+     "type": "h3",
+     "text": "Final Day D commons session: 60 minutes"
+    },
+    {
+     "type": "p",
+     "html": "5 minutes opening. Up to four pairs receive 10 minutes each: 3 demonstration, 3 evidence questions, 2 individual questions (one minute per learner) and 2 revision summary. Use the remaining 15 minutes for private feedback and a next-step commitment. With three pairs, use spare time for deeper critique."
+    },
+    {
+     "type": "h3",
+     "text": "A separate individual academic defence"
+    },
+    {
+     "type": "p",
+     "html": "Science Investigation 12 and the Week 6 tutorial assess each learner independently. Invite a qualified external reviewer when one is secured; disclose their role and conflicts. The final Commons Hearing may become a public showcase with participants’ separate consent and a confirmed host, using the existing 60-minute session."
+    },
+    {
+     "type": "h3",
+     "text": "Judgment and limits"
+    },
+    {
+     "type": "p",
+     "html": "Use the five-dimension rubric, plus the instructor-reviewed field and martial demonstrations. “Original” means a genuine question, choice or revision by the learner, not a claim of a globally novel discovery. Intellectual honesty is essential."
+    },
+    {
+     "type": "small",
+     "html": "The work must be useful, inspectable and proportionate to six weeks of learning. A modest result explained well is stronger than an impressive claim that cannot be defended."
+    }
+   ]
+  },
+  {
+   "id": "chapter-40",
+   "eyebrow": "OPTIONAL AFTER THE SEMESTER / THREE HOURS",
+   "title": "Return to AI Keep your judgment",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "An optional connected laboratory examines AI using work the learner produced offline. It follows the six-week core and is separately scheduled, staffed and resourced. It is not a compulsory seventh week or part of the 168-hour academic workload."
+    },
+    {
+     "type": "h3",
+     "text": "Before using a model"
+    },
+    {
+     "type": "p",
+     "html": "Choose a non-sensitive calculation, argument or design from the preserved portfolio. Record your own answer and a criterion for improvement before viewing the model’s response. Participation and sharing are optional."
+    },
+    {
+     "type": "h3",
+     "text": "A 180-minute laboratory"
+    },
+    {
+     "type": "p",
+     "html": "20 minutes select work and define criteria; 20 write and record a prompt; 35 inspect output; 45 verify consequential claims using sources or data; 30 revise independently; 20 compare accounts with a peer; 10 write a decision about future use. Record model, date, prompt, output and any tool access."
+    },
+    {
+     "type": "h3",
+     "text": "The evidence"
+    },
+    {
+     "type": "p",
+     "html": "A four-column audit: original work; model contribution; verification; final judgment. Identify a learner error, a model error if found, and an unresolved uncertainty. Disclose assistance. A model that helps one task may fail another."
+    },
+    {
+     "type": "h3",
+     "text": "A fair comparison"
+    },
+    {
+     "type": "p",
+     "html": "Use the same task and criteria; separate tool-assisted verification from the model’s unaided answer. Do not infer broad model rankings, human superiority or causation from a small classroom exercise."
+    },
+    {
+     "type": "small",
+     "html": "No account purchase or data upload is required by this proposal. A facilitator can prepare an attributed, permission-cleared example for those who do not use an account. No private learner or third-party data should be entered into an external tool without appropriate permission."
+    }
+   ]
+  },
+  {
+   "id": "chapter-41",
+   "eyebrow": "REFERENCES / PRIMARY MATERIALS",
+   "title": "Follow the evidence",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Jasper science sources"
+    },
+    {
+     "type": "p",
+     "html": "[D1] Parks Canada, Jasper Dark-Sky Preserve. [D2] Glaciers and icefields. [D3] Medicine Lake. [D4] Miette Hot Springs mineral concentrations. [D5] Maligne Lake area and the Mary Schäffer Loop. URLs and source-pack requirements are on the following page; checked 15 October 2026."
+    },
+    {
+     "type": "h3",
+     "text": "Reading sources"
+    },
+    {
+     "type": "p",
+     "html": "[R1] Columbia University, Asia for Educators: Wang Yangming on the Unity of Knowing and Acting. [R2] Access to Insight: Dhammapada II. [R3] Cambridge University Press: Governing the Commons, Chapter 3. Original reading locations remain in the printed-reader guide. Modern translations require appropriate reuse rights."
+    },
+    {
+     "type": "h3",
+     "text": "Educational and physical practice"
+    },
+    {
+     "type": "p",
+     "html": "Oxford’s tutorial model informs close feedback; Deep Springs’ academics, labour and self-government inform shared responsibility; Kanō’s principles inform discussion of martial education. These are inspirations, not affiliations. CSEP adult movement guidance supports including strengthening work; the responsible coach designs actual practice."
+    },
+    {
+     "type": "h3",
+     "text": "Use the companion manual"
+    },
+    {
+     "type": "p",
+     "html": "The Operations and Safety Manual holds staffing, field and camp decisions, physical and martial procedures, access, privacy, budgeting and research-permission checks. Both documents are needed to plan delivery. This curriculum does not approve a specific route or authorize an event."
+    },
+    {
+     "type": "small",
+     "html": "Founding vision and original crest: Vincent Zhang. Proposed six-week program. English edition: 15 October 2026. Contact: vincent@ujasper.ca. No degree or professional certification offered."
+    }
+   ]
+  },
+  {
+   "id": "chapter-42",
+   "eyebrow": "SOURCE PACK / PREPARE BEFORE TEACHING",
+   "title": "Real places Traceable materials",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "D1 / Dark-sky preserve"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://parks.canada.ca/~/~/~/link.aspx?_id=03038F177E7044559197C51732328A87&amp;_z=z\">https://parks.canada.ca/~/~/~/link.aspx?_id=03038F177E7044559197C51732328A87&amp;_z=z</a>"
+    },
+    {
+     "type": "h3",
+     "text": "D2 / Glaciers and icefields"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://www.parks.canada.ca/pn-np/ab/jasper/nature/environment/ecosys/glaciers\">https://www.parks.canada.ca/pn-np/ab/jasper/nature/environment/ecosys/glaciers</a>"
+    },
+    {
+     "type": "h3",
+     "text": "D3 / Medicine Lake"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/medicine\">https://parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/medicine</a>"
+    },
+    {
+     "type": "h3",
+     "text": "D4 / Miette mineral values"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs\">https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs</a>"
+    },
+    {
+     "type": "h3",
+     "text": "D5 / Maligne mapping history"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/maligne\">https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/maligne</a>"
+    },
+    {
+     "type": "h3",
+     "text": "R1 / Wang Yangming"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-yangming-knowing-acting.htm\">https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-yangming-knowing-acting.htm</a>"
+    },
+    {
+     "type": "h3",
+     "text": "R2 / Dhammapada II"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://accesstoinsight.org/tipitaka/kn/dhp/dhp.02.than\">https://accesstoinsight.org/tipitaka/kn/dhp/dhp.02.than</a>"
+    },
+    {
+     "type": "h3",
+     "text": "R3 / Ostrom Chapter 3"
+    },
+    {
+     "type": "p",
+     "html": "<a href=\"https://doi.org/10.1017/CBO9780511807763.005\">https://doi.org/10.1017/CBO9780511807763.005</a>"
+    },
+    {
+     "type": "small",
+     "html": "Archive source date, title, author/provider, units, scale and reuse terms. Dated and scaled glacier images still need educator selection. No invented observation may be labelled as a Jasper measurement."
+    }
+   ]
+  },
+  {
+   "id": "chapter-43",
+   "eyebrow": "ACTIVITY REFERENCES / SOURCE INDEX",
+   "title": "Practice, place and source care",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "S1 / Parks Canada: Jasper visitor safety"
+    },
+    {
+     "type": "p",
+     "html": "Current closures, wildfire, wildlife and communication links; staff verify conditions before departure. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/securite-safety\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S2 / Parks Canada: Guided adventures"
+    },
+    {
+     "type": "p",
+     "html": "Check a guide’s lawful operation and qualifications appropriate to the activity. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/experience/sentiers-trails/activguides-guidedactiv\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S3 / Parks Canada: Jasper business licences"
+    },
+    {
+     "type": "p",
+     "html": "Operating and guided-business categories; confirm the actual program’s requirements. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/gestion-management/permis-permits/licence\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S4 / Parks Canada: Backcountry planning guide"
+    },
+    {
+     "type": "p",
+     "html": "Camp reservations, designated sites and secure attractant storage; site-specific rules control. <a href=\"https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry/planif-plan\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S5 / Parachute: Canadian Guideline on Concussion in Sport, 2nd ed."
+    },
+    {
+     "type": "p",
+     "html": "Removal, assessment and return-to-sport processes. This course does not provide medical clearance. <a href=\"https://parachute.ca/wp-content/uploads/2019/06/Concussion-Guideline-2024.pdf\">Read source</a>."
+    },
+    {
+     "type": "h3",
+     "text": "S6 / NCCIH: Meditation and Mindfulness"
+    },
+    {
+     "type": "p",
+     "html": "Benefits, limitations and potential adverse experiences; educational practices are not treatment. <a href=\"https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety\">Read source</a>."
+    },
+    {
+     "type": "small",
+     "html": "S1–S6 retain identifiers from the earlier activity plans. Staff must recheck current requirements and source availability before delivery. These sources are not partners or approvers."
+    },
+    {
+     "type": "small",
+     "html": "Founding vision and original crest: Vincent Zhang. Photograph: Morning at Spirit Island, Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0. Resized and cropped presentation retains the same licence; no teaching location is implied."
+    }
+   ]
+  }
+ ]
+}

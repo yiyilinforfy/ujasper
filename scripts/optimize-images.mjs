@@ -46,6 +46,7 @@ const IMAGES = {
   'field-semester-cover': 'cover',
   'offline-fieldbook-cover': 'cover',
   'founding-brief-cover': 'cover',
+  'operations-manual-cover': 'cover',
   'founding-charter-docx-cover': 'cover',
   'founding-crest': 'crest',
 }

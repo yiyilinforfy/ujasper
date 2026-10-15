@@ -1,0 +1,624 @@
+{
+ "eyebrow": "Full text · 15 October 2026",
+ "title": "Founding charter",
+ "lead": "The original welcome, vision, educational commitments and staged institutional proposal.",
+ "note": "HTML reading edition from the same source as the PDF. Printed pages and screen sections can differ in pagination.",
+ "pdf": "/founding-charter.pdf",
+ "sections": [
+  {
+   "id": "chapter-1",
+   "eyebrow": "VISION AND FOUNDING CHARTER",
+   "title": "An education for the whole human",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "University of Jasper seeks to bring physical training, world humanities and fundamental inquiry into one demanding education, rooted in Jasper and open to people across cultures."
+    },
+    {
+     "type": "figure",
+     "image": "jasper",
+     "alt": "Spirit Island and Maligne Lake in Jasper National Park",
+     "caption": "© Sergey Pesterev / Wikimedia Commons · CC BY-SA 4.0"
+    },
+    {
+     "type": "h3",
+     "text": "Our vision"
+    },
+    {
+     "type": "p",
+     "html": "To establish in Jasper a university for the world, where people across cultures and backgrounds develop physical strength, depth of knowledge, independent minds and integrity. We envision a lifelong community that defends freedom, pursues truth, creates with courage and accepts public responsibility, whose members advance human flourishing through their own growth, their example and their contribution to others."
+    },
+    {
+     "type": "small",
+     "html": "Strong in body. Free in mind. | One University → One Family"
+    },
+    {
+     "type": "small",
+     "html": "University of Jasper is a founding project in Jasper, Alberta, Canada. Its first proposed program is non-degree. No degree-granting authority or current institutional approval is claimed. A venue, teaching appointments, funding and launch dates remain unconfirmed."
+    }
+   ]
+  },
+  {
+   "id": "chapter-2",
+   "eyebrow": "THE ORIGINAL WELCOME / 2015",
+   "title": "Your style of family",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Welcome to University of Jasper"
+    },
+    {
+     "type": "p",
+     "html": "We human beings have our special responsibilities to make our society and world better. So we not only focus on knowledge training, but also have a keen interest in the studies of our own minds and our history. We chase ancient civilization and culture."
+    },
+    {
+     "type": "p",
+     "html": "Welcome you to come here to grow up together and team work to realize our dreams. Hope U of Jasper is your style of family. We share each other's value and passion to make our school great."
+    },
+    {
+     "type": "p",
+     "html": "Cheers!"
+    },
+    {
+     "type": "small",
+     "html": "Vincent Zhang · Founder"
+    },
+    {
+     "type": "small",
+     "html": "Original welcome, identified by Vincent Zhang as written in 2015; spacing normalized."
+    },
+    {
+     "type": "h3",
+     "text": "The founding purpose today"
+    },
+    {
+     "type": "p",
+     "html": "As AI and robotics extend what people can do, education must deepen what people can understand, judge and take responsibility for."
+    },
+    {
+     "type": "p",
+     "html": "Jasper brings physical practice, humanistic study and fundamental inquiry into an education whose quality becomes visible in what a learner can explain, do and contribute. The original welcome remains the starting point; the pages that follow develop the program."
+    },
+    {
+     "type": "small",
+     "html": "The contemporary statement above is separate from the original letter."
+    }
+   ]
+  },
+  {
+   "id": "chapter-3",
+   "eyebrow": "OUR MISSION",
+   "title": "Strength with purpose",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "To unite sustained physical training, humanistic learning across world civilisations, and original inquiry in mathematics, physics, chemistry and economics. Through life in nature, lectures, close dialogue, debate, field study, experiments and shared projects, we cultivate people of courage, deep learning, independent judgment, initiative, self-discipline and a commitment to justice. We use AI to extend inquiry while strengthening human understanding, creativity and responsibility. This is the long-term mission. The first field semester develops introductory foundations; it does not claim a university degree or a research qualification. AI study follows separately in the optional Return Lab."
+    },
+    {
+     "type": "h3",
+     "text": "A / Physical strength and discipline"
+    },
+    {
+     "type": "p",
+     "html": "Make substantial, sustained outdoor practice and progressive physical training part of everyday education. Develop strength, endurance, coordination, resilience and sound judgment in changing conditions. Adapt challenge to the person and include recovery, restraint and mutual care. Value lasting progress and dependable action."
+    },
+    {
+     "type": "h3",
+     "text": "B / World humanities and character"
+    },
+    {
+     "type": "p",
+     "html": "Study philosophy, history, literature, art, ethics and social thought across civilisations. Read named texts in context, understand achievements and limitations, and engage real disagreements. Through comparison, debate and lived practice, develop freedom of thought, justice, integrity, restraint, empathy and the ability to lead responsibly."
+    },
+    {
+     "type": "h3",
+     "text": "C / Fundamental inquiry and original research"
+    },
+    {
+     "type": "p",
+     "html": "Build foundations in mathematics, physics, chemistry and economics. Begin with nature, social life and unresolved questions; develop abstraction, deduction, observation, experimentation, modelling and argument. Teachers and learners investigate together, publish methods and revise explanations in light of evidence."
+    },
+    {
+     "type": "small",
+     "html": "The three foundations belong together. Physical practice informs judgment; humanities examine purpose; science makes our explanations answerable to evidence."
+    }
+   ]
+  },
+  {
+   "id": "chapter-4",
+   "eyebrow": "FOUNDING EDUCATIONAL DECLARATION",
+   "title": "The person we become",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "A university is a place for the formation of a person. At Jasper, physical practice, deep study, independent judgment and character belong in one education. Knowledge should enter life; courage should be guided by reason; excellence should become visible in what we contribute to others."
+    },
+    {
+     "type": "p",
+     "html": "We draw inspiration from ancient Greek inquiry and the education of body and mind; Bologna's traditions of protecting scholars; Vienna's research culture; classical study and close discussion at Oxford and Cambridge; the agency expressed in Harvard's elective tradition; and Humboldt's ideal of linking teaching and research. We bring these inspirations into conversation with the intellectual and cultural resources of civilisations around the world."
+    },
+    {
+     "type": "p",
+     "html": "As AI and robotics extend what people can do, education must deepen what people can understand, judge and take responsibility for. We want learners to ask worthwhile questions, examine evidence, create knowledge and remain accountable for their choices."
+    },
+    {
+     "type": "p",
+     "html": "Nature is a source of physical challenge, attention and original questions. Mathematics, physics, chemistry and economics provide foundations for inquiry. History, philosophy, literature, art and ethics help us examine what our knowledge is for."
+    },
+    {
+     "type": "p",
+     "html": "Excellence is expressed through character, achievement and contribution. A diverse community can carry valuable traditions forward through study, criticism and renewal. Leadership means taking initiative, serving others and enabling people to act together."
+    },
+    {
+     "type": "p",
+     "html": "University of Jasper aspires to a community of strength, learning, freedom and restraint, joined by courage and care. Its members should set examples through their work and their lives, sustaining a lifelong commitment to mutual help."
+    },
+    {
+     "type": "small",
+     "html": "Founding vision by Vincent Zhang. Historical traditions are sources of inspiration, not affiliations or endorsements."
+    }
+   ]
+  },
+  {
+   "id": "chapter-5",
+   "eyebrow": "THE JASPER METHOD",
+   "title": "A question that travels with you",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Understanding demonstrated through responsible action. Carry a worthwhile question across movement, primary texts, scientific investigation and a contribution someone else can use. Each learner learns to defend a conclusion and act on it with judgment."
+    },
+    {
+     "type": "h3",
+     "text": "Begin with an encounter"
+    },
+    {
+     "type": "p",
+     "html": "Observe something directly. Separate what happened from what you assume. Form a question before consulting an answer."
+    },
+    {
+     "type": "h3",
+     "text": "Make your explanation accountable"
+    },
+    {
+     "type": "p",
+     "html": "Construct a model or argument. Predict a result that could challenge it. Preserve observations, units, passage references and uncertainty."
+    },
+    {
+     "type": "h3",
+     "text": "Invite a serious objection"
+    },
+    {
+     "type": "p",
+     "html": "Let a peer test the method or argue the strongest alternative. Explain what changed and what still remains unresolved."
+    },
+    {
+     "type": "h3",
+     "text": "Create something useful"
+    },
+    {
+     "type": "p",
+     "html": "Turn the inquiry into a paper guide, experiment, argument, model or teaching session. Test it with a consenting user and revise it."
+    },
+    {
+     "type": "h3",
+     "text": "Three signature inquiries"
+    },
+    {
+     "type": "p",
+     "html": "Warmth: What does it take to keep someone warm? Water: Where does the water go? Judgment: What would change your mind? The academic curriculum connects these questions through Jasper’s setting, weekly tutorials and useful original work."
+    },
+    {
+     "type": "small",
+     "html": "The standard is observable growth and useful work. A new learner can produce original insight without claiming a novel scientific discovery."
+    }
+   ]
+  },
+  {
+   "id": "chapter-6",
+   "eyebrow": "THE FIRST PROGRAM",
+   "title": "The Jasper Field Semester",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "Six weeks in person in Jasper for 6–8 adults aged 18 or older. Four teaching days each week provide 144 facilitated hours. Plan four additional hours of independent study weekly: 24 across the semester. Three proposed camping nights fall in Weeks 2 and 5."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Course",
+      "Hours"
+     ],
+     "rows": [
+      [
+       "Fieldcraft and physical practice",
+       "36"
+      ],
+      [
+       "Martial arts and restraint",
+       "18"
+      ],
+      [
+       "Attention and reflective practice",
+       "12"
+      ],
+      [
+       "Jasper as Laboratory",
+       "30"
+      ],
+      [
+       "Philosophy and the Jasper Tutorial",
+       "30"
+      ],
+      [
+       "The Commons and original inquiry",
+       "18"
+      ],
+      [
+       "Total facilitated learning",
+       "144"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "A stronger practice"
+    },
+    {
+     "type": "p",
+     "html": "The 36-hour field course includes 12 coached 30-minute strength sessions. Weekly two-person tutorials sit inside philosophy, with a second tutor explicitly resourced. Science connects mathematics, physics and chemistry to Jasper; the Commons develops economic reasoning and practical contribution."
+    },
+    {
+     "type": "h3",
+     "text": "The academic calendar"
+    },
+    {
+     "type": "p",
+     "html": "Winter break runs from mid-December to mid-February, approximately two months. Exact cohort dates remain unconfirmed. The optional AI Return Lab is outside the six-week core."
+    },
+    {
+     "type": "small",
+     "html": "Meals, travel, camp duty and rest are separately planned. Six-week accommodation, fees and included costs are not confirmed."
+    }
+   ]
+  },
+  {
+   "id": "chapter-7",
+   "eyebrow": "PROGRESS AND ASSESSMENT",
+   "title": "Earn the confidence to explain your work",
+   "blocks": [
+    {
+     "type": "table",
+     "head": [
+      "Week",
+      "Question",
+      "Evidence"
+     ],
+     "rows": [
+      [
+       "1 / Attention",
+       "What do I notice?",
+       "Observation baseline and a first position."
+      ],
+      [
+       "2 / Discipline",
+       "When does restraint make us stronger?",
+       "First camp review and a reasoned practice plan."
+      ],
+      [
+       "3 / Evidence",
+       "What would change my mind?",
+       "Repeatable experiment and revised claim."
+      ],
+      [
+       "4 / Freedom",
+       "What makes disagreement productive?",
+       "Fair debate and a capstone proposal."
+      ],
+      [
+       "5 / Responsibility",
+       "What do I owe to others?",
+       "Two-night camp review and a prototype test."
+      ],
+      [
+       "6 / Contribution",
+       "What can I now explain, do and give?",
+       "Final portfolio and individual oral defence."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "The five dimensions"
+    },
+    {
+     "type": "p",
+     "html": "Practice and care; evidence and reasoning; interpretation and argument; original work and revision; contribution and autonomy. Learners receive the rubric in advance, formative feedback and a chance to revise."
+    },
+    {
+     "type": "h3",
+     "text": "What completion means"
+    },
+    {
+     "type": "p",
+     "html": "Six weekly entries; two revised essays of 1,200–1,500 words each or an agreed equivalent; a scientific dossier; an individual defence; useful original work; and coached field and physical demonstrations. Completion would receive a descriptive non-credit record. No degree or professional certification is offered."
+    },
+    {
+     "type": "small",
+     "html": "Assess demonstrated work, not physique, charisma, private beliefs or agreement with the founder. Equivalent adapted tasks use the same standards."
+    }
+   ]
+  },
+  {
+   "id": "chapter-8",
+   "eyebrow": "FREEDOM AND BELONGING",
+   "title": "One University One Family",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "One University → One Family is a lifelong commitment to mutual care across ancestry, nationality, ethnicity and race. We build trust through honesty, generosity and keeping our word. Belonging includes the freedom to disagree, think independently and choose one's own path."
+    },
+    {
+     "type": "h3",
+     "text": "Freedom and truth"
+    },
+    {
+     "type": "p",
+     "html": "Protect honest questions, independent inquiry and reasoned disagreement."
+    },
+    {
+     "type": "h3",
+     "text": "Courage and restraint"
+    },
+    {
+     "type": "p",
+     "html": "Undertake difficult work with judgment, recovery and self-discipline."
+    },
+    {
+     "type": "h3",
+     "text": "Excellence and responsibility"
+    },
+    {
+     "type": "p",
+     "html": "Pursue rigour and originality, and account for methods, promises and consequences."
+    },
+    {
+     "type": "h3",
+     "text": "Learning across civilisations"
+    },
+    {
+     "type": "p",
+     "html": "Study traditions in context and carry wisdom forward through dialogue and renewal."
+    },
+    {
+     "type": "h3",
+     "text": "Fellowship and community"
+    },
+    {
+     "type": "p",
+     "html": "Build lifelong ties through equal dignity, care, cooperation and trust."
+    },
+    {
+     "type": "h3",
+     "text": "Human agency in a technological age"
+    },
+    {
+     "type": "p",
+     "html": "The six-week core is offline: direct observation, paper, conversation and original work. Personal phones, internet and live AI are set aside during teaching and camps; staff emergency communications and private access exceptions remain. After the semester, an optional three-hour AI Return Lab compares a learner’s preserved work with recorded model outputs. It is separately scheduled and resourced, outside the 144 facilitated hours and 24 independent-study hours. No seventh residential week is promised."
+    },
+    {
+     "type": "small",
+     "html": "Private reflection belongs to the learner. Consent to share a story, photograph or project is separate from participation. A person can question a view, decline a practice or leave without being treated as disloyal."
+    }
+   ]
+  },
+  {
+   "id": "chapter-9",
+   "eyebrow": "THE PEOPLE WHO WILL BUILD IT",
+   "title": "Teach with depth Learn with courage",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "For founding teachers"
+    },
+    {
+     "type": "p",
+     "html": "Bring disciplinary depth, a demonstrated practice and the ability to make difficult ideas understandable. Propose a twenty-minute lesson: a question, an activity, evidence of understanding and an adaptation for a learner who needs another approach."
+    },
+    {
+     "type": "h3",
+     "text": "The teaching team"
+    },
+    {
+     "type": "p",
+     "html": "The six course areas require scientific, humanistic, outdoor, strength-coaching, martial and facilitation competence. Weekly tutorial rotations require a second academically competent tutor for one hour. Field delivery needs a guide and assistant, with camp duty separately covered."
+    },
+    {
+     "type": "h3",
+     "text": "For prospective students"
+    },
+    {
+     "type": "p",
+     "html": "Bring curiosity, a willingness to practise and the courage to revise a belief. Describe a question you care about, an effort you have sustained and a contribution you want to make. A portfolio can include an experiment, a practical skill, writing, art or community work."
+    },
+    {
+     "type": "h3",
+     "text": "An honest invitation"
+    },
+    {
+     "type": "p",
+     "html": "General inquiries are welcome at vincent@ujasper.ca. Formal admissions and appointments are not open. Website forms prepare local drafts and never submit automatically; a draft is not an application, reservation or offer. Enrolment conditions, compensation, costs and delivery dates will be published when established."
+    },
+    {
+     "type": "h3",
+     "text": "A fair review process to establish"
+    },
+    {
+     "type": "p",
+     "html": "Publish criteria, access arrangements, decision responsibilities and data retention before collecting applications. Judge relevant work and potential to learn; offer an accessible alternative to each demonstration. Avoid collecting transcripts or sensitive health details without a necessary, defined purpose."
+    },
+    {
+     "type": "small",
+     "html": "Share relevant interests or work in a general inquiry. Do not send sensitive health records, identification documents or money. A future admissions notice will state criteria, deadlines and the review process."
+    }
+   ]
+  },
+  {
+   "id": "chapter-10",
+   "eyebrow": "FOUNDING CAPITAL AND STEWARDSHIP",
+   "title": "Build something worth passing on",
+   "blocks": [
+    {
+     "type": "p",
+     "html": "The founding capital ambition is C$10 million. The immediate purpose is to establish the people, evidence, operating capacity and financial discipline that could justify substantial long-term support."
+    },
+    {
+     "type": "h3",
+     "text": "The Founding Five"
+    },
+    {
+     "type": "p",
+     "html": "The Founding Five is Vincent Zhang’s proposal for five founding positions at C$2 million each, toward a C$10 million ambition. His intended model includes lifetime board voting rights. These rights are not established. The legal structure, governing documents, appointment, election, removal and voting rules require independent legal review. No contribution currently purchases or guarantees a directorship or vote."
+    },
+    {
+     "type": "h3",
+     "text": "An anchor family or foundation"
+    },
+    {
+     "type": "p",
+     "html": "A substantial anchor gift or commitment could be discussed as an alternative funding route. It is an option for exploration, not a second confirmed campaign or a confirmed donor relationship. The same educational purpose, independent oversight and clear contribution agreements would apply."
+    },
+    {
+     "type": "h3",
+     "text": "Use of funds before prestige"
+    },
+    {
+     "type": "p",
+     "html": "A costed plan should prioritise qualified staff, local delivery, access for learners, equipment, insurance, evaluation and operating reserves. Premises follow verified need, lawful use, finance and an affordable long-term plan. There is no approved capital allocation yet."
+    },
+    {
+     "type": "h3",
+     "text": "Terms that must be clear"
+    },
+    {
+     "type": "p",
+     "html": "Contributions require a lawful recipient, staged use of funds, reporting, conditions for cancellation and conflict-of-interest rules. No investment return, tax receipt, lifetime appointment or accreditation is promised. No commitments or appointments are confirmed."
+    },
+    {
+     "type": "small",
+     "html": "Federal not-for-profit corporations elect directors for a term within a prescribed four-year period. Re-election may be possible; that does not establish automatic lifetime tenure. Other structures and member rights require separate advice. [F1]"
+    }
+   ]
+  },
+  {
+   "id": "chapter-11",
+   "eyebrow": "FROM PROPOSAL TO PRACTICE",
+   "title": "Begin small Build on evidence",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1 / Establish feasibility"
+    },
+    {
+     "type": "p",
+     "html": "Confirm a responsible operator, a capable Jasper host and appropriately qualified educators. Obtain written advice and any required authorization for the name, structure, public advertising and actual activities before taking enrolments, fees or binding commitments. Gather current local quotes."
+    },
+    {
+     "type": "h3",
+     "text": "2 / Seek support for a defined first step"
+    },
+    {
+     "type": "p",
+     "html": "Prepare a Feasibility and Host Review: named owners, written host interest, proposed staff evidence, legal and permit determinations, actual quotes and a dated go/no-go recommendation. Its budget is to be quoted. A separately scoped Jasper introductory event may follow; it is not the six-week semester."
+    },
+    {
+     "type": "h3",
+     "text": "3 / Deliver and examine the evidence"
+    },
+    {
+     "type": "p",
+     "html": "With the required arrangements in place, record attendance, learner work, access barriers, actual costs, feedback and incidents. Publish only consented material. Review whether the learning outcomes justify another cohort."
+    },
+    {
+     "type": "h3",
+     "text": "4 / Expand only when the case is stronger"
+    },
+    {
+     "type": "p",
+     "html": "Use real delivery evidence, a capable team and a multiyear operating model to approach major supporters. Larger funding and reliable demand should precede property commitments."
+    },
+    {
+     "type": "h3",
+     "text": "An asset-light beginning"
+    },
+    {
+     "type": "p",
+     "html": "Use appropriate existing space when feasible. Jasper townsite land is federal Crown land leased under park rules; a cheap freehold-campus assumption is unsuitable. A specific site requires separate checks on tenure, permitted use, access and full operating cost. [F2]"
+    },
+    {
+     "type": "small",
+     "html": "A website and curriculum make the proposal reviewable. An operating institution requires people, resources, permissions and sustained delivery. None of those is created by the appearance of a website."
+    }
+   ]
+  },
+  {
+   "id": "chapter-12",
+   "eyebrow": "PUBLICATION NOTES AND REFERENCES",
+   "title": "The origin and the next chapter",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Founding authorship"
+    },
+    {
+     "type": "p",
+     "html": "Vision, original crest and original welcome: Vincent Zhang. Original welcome, identified by Vincent Zhang as written in 2015; spacing normalized. Contemporary program text develops the founding purpose separately."
+    },
+    {
+     "type": "h3",
+     "text": "The final English edition"
+    },
+    {
+     "type": "p",
+     "html": "15 October 2026. Public website: ujasper.ca. Read with the same-edition curriculum, operations manual, fieldbook and supporter brief; HTML reading editions accompany the print files. Inquiries: vincent@ujasper.ca. Formal admissions and appointments are not open."
+    },
+    {
+     "type": "h3",
+     "text": "Educational inspiration"
+    },
+    {
+     "type": "p",
+     "html": "The Academy’s project work, feedback and practical experience offer useful design references. Jasper’s proposed focus is physical training, world humanities and fundamental inquiry in an offline Jasper setting. No comparative outcome evidence establishes either model as superior. [E1]"
+    },
+    {
+     "type": "h3",
+     "text": "Sources"
+    },
+    {
+     "type": "p",
+     "html": "[E1] The Academy: theacademysf.com/program. [F1] Canada Not-for-profit Corporations Act s.128 and Regulations s.28: laws-lois.justice.gc.ca/eng/acts/C-7.75/section-128.html and laws-lois.justice.gc.ca/eng/regulations/SOR-2011-223/FullText.html. [F2] Parks Canada Jasper land-use and realty guidance. These sources inform planning; they do not approve this project."
+    },
+    {
+     "type": "h3",
+     "text": "Historical and curriculum references"
+    },
+    {
+     "type": "p",
+     "html": "The Sources page links the historical inspirations. The academic curriculum identifies primary readings, scientific data and preparation requirements. The companion manual holds operating procedures. All local delivery requirements must be checked before launch."
+    },
+    {
+     "type": "h3",
+     "text": "Photography and music"
+    },
+    {
+     "type": "p",
+     "html": "Morning at Spirit Island, Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0. Resized and cropped presentation retains that licence. The landscape is not an approved teaching venue or campus. Jasper Dream Crying is written by Vincent Zhang and produced by FarJasper Stories Canada; the website links to the recording."
+    },
+    {
+     "type": "small",
+     "html": "Original crest retained. Personal names and dates are separate from the institutional mark. The public presentation and proposed university name need current legal review; a founding-status statement is not legal clearance."
+    }
+   ]
+  }
+ ]
+}

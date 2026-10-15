@@ -9,6 +9,7 @@ var CANONICAL_HOST = 'ujasper.ca';
 var REDIRECTS = {
   '/teachers': '/join/teachers',
   '/students': '/join/students',
+  '/hosts': '/join/hosts',
   '/index': '/'
 };
 
